@@ -46,6 +46,7 @@ log/out/*
 
 !lib/**
 !DareFightingICE/**
+!data/**
 **/__pycache__
 **/.DS_Store
 
