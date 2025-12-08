@@ -98,6 +98,11 @@ public final class ServiceProto {
       return new RunGameRequest();
     }
 
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return protoc.ServiceProto.internal_static_service_RunGameRequest_descriptor;
@@ -427,13 +432,11 @@ public final class ServiceProto {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
     public static protoc.ServiceProto.RunGameRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-
     public static protoc.ServiceProto.RunGameRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1002,7 +1005,7 @@ public final class ServiceProto {
        * @return This builder for chaining.
        */
       public Builder setGameNumber(int value) {
-
+        
         gameNumber_ = value;
         bitField0_ |= 0x00000010;
         onChanged();
@@ -1133,6 +1136,11 @@ public final class ServiceProto {
       return new RunGameResponse();
     }
 
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return protoc.ServiceProto.internal_static_service_RunGameResponse_descriptor;
@@ -1321,13 +1329,11 @@ public final class ServiceProto {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
     public static protoc.ServiceProto.RunGameResponse parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-
     public static protoc.ServiceProto.RunGameResponse parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1795,6 +1801,11 @@ public final class ServiceProto {
       return new SpectateRequest();
     }
 
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return protoc.ServiceProto.internal_static_service_SpectateRequest_descriptor;
@@ -2020,13 +2031,11 @@ public final class ServiceProto {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
     public static protoc.ServiceProto.SpectateRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-
     public static protoc.ServiceProto.SpectateRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -2299,7 +2308,7 @@ public final class ServiceProto {
        * @return This builder for chaining.
        */
       public Builder setInterval(int value) {
-
+        
         interval_ = value;
         bitField0_ |= 0x00000001;
         onChanged();
@@ -2331,7 +2340,7 @@ public final class ServiceProto {
        * @return This builder for chaining.
        */
       public Builder setFrameDataFlag(boolean value) {
-
+        
         frameDataFlag_ = value;
         bitField0_ |= 0x00000002;
         onChanged();
@@ -2363,7 +2372,7 @@ public final class ServiceProto {
        * @return This builder for chaining.
        */
       public Builder setScreenDataFlag(boolean value) {
-
+        
         screenDataFlag_ = value;
         bitField0_ |= 0x00000004;
         onChanged();
@@ -2395,7 +2404,7 @@ public final class ServiceProto {
        * @return This builder for chaining.
        */
       public Builder setAudioDataFlag(boolean value) {
-
+        
         audioDataFlag_ = value;
         bitField0_ |= 0x00000008;
         onChanged();
@@ -2427,7 +2436,7 @@ public final class ServiceProto {
        * @return This builder for chaining.
        */
       public Builder setKeepAlive(boolean value) {
-
+        
         keepAlive_ = value;
         bitField0_ |= 0x00000010;
         onChanged();
@@ -2620,6 +2629,11 @@ public final class ServiceProto {
       return new SpectatorGameState();
     }
 
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return protoc.ServiceProto.internal_static_service_SpectatorGameState_descriptor;
@@ -2633,7 +2647,6 @@ public final class ServiceProto {
               protoc.ServiceProto.SpectatorGameState.class, protoc.ServiceProto.SpectatorGameState.Builder.class);
     }
 
-    private int bitField0_;
     public static final int STATE_FLAG_FIELD_NUMBER = 1;
     private int stateFlag_ = 0;
     /**
@@ -2660,7 +2673,7 @@ public final class ServiceProto {
      */
     @java.lang.Override
     public boolean hasGameData() {
-      return ((bitField0_ & 0x00000001) != 0);
+      return gameData_ != null;
     }
     /**
      * <code>.service.GrpcGameData game_data = 2;</code>
@@ -2686,7 +2699,7 @@ public final class ServiceProto {
      */
     @java.lang.Override
     public boolean hasFrameData() {
-      return ((bitField0_ & 0x00000002) != 0);
+      return frameData_ != null;
     }
     /**
      * <code>.service.GrpcFrameData frame_data = 3;</code>
@@ -2712,7 +2725,7 @@ public final class ServiceProto {
      */
     @java.lang.Override
     public boolean hasScreenData() {
-      return ((bitField0_ & 0x00000004) != 0);
+      return screenData_ != null;
     }
     /**
      * <code>.service.GrpcScreenData screen_data = 4;</code>
@@ -2738,7 +2751,7 @@ public final class ServiceProto {
      */
     @java.lang.Override
     public boolean hasAudioData() {
-      return ((bitField0_ & 0x00000008) != 0);
+      return audioData_ != null;
     }
     /**
      * <code>.service.GrpcAudioData audio_data = 5;</code>
@@ -2764,7 +2777,7 @@ public final class ServiceProto {
      */
     @java.lang.Override
     public boolean hasRoundResult() {
-      return ((bitField0_ & 0x00000010) != 0);
+      return roundResult_ != null;
     }
     /**
      * <code>.service.GrpcRoundResult round_result = 6;</code>
@@ -2799,19 +2812,19 @@ public final class ServiceProto {
       if (stateFlag_ != protoc.EnumProto.GrpcFlag.EMPTY.getNumber()) {
         output.writeEnum(1, stateFlag_);
       }
-      if (((bitField0_ & 0x00000001) != 0)) {
+      if (gameData_ != null) {
         output.writeMessage(2, getGameData());
       }
-      if (((bitField0_ & 0x00000002) != 0)) {
+      if (frameData_ != null) {
         output.writeMessage(3, getFrameData());
       }
-      if (((bitField0_ & 0x00000004) != 0)) {
+      if (screenData_ != null) {
         output.writeMessage(4, getScreenData());
       }
-      if (((bitField0_ & 0x00000008) != 0)) {
+      if (audioData_ != null) {
         output.writeMessage(5, getAudioData());
       }
-      if (((bitField0_ & 0x00000010) != 0)) {
+      if (roundResult_ != null) {
         output.writeMessage(6, getRoundResult());
       }
       getUnknownFields().writeTo(output);
@@ -2827,23 +2840,23 @@ public final class ServiceProto {
         size += com.google.protobuf.CodedOutputStream
           .computeEnumSize(1, stateFlag_);
       }
-      if (((bitField0_ & 0x00000001) != 0)) {
+      if (gameData_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(2, getGameData());
       }
-      if (((bitField0_ & 0x00000002) != 0)) {
+      if (frameData_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(3, getFrameData());
       }
-      if (((bitField0_ & 0x00000004) != 0)) {
+      if (screenData_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(4, getScreenData());
       }
-      if (((bitField0_ & 0x00000008) != 0)) {
+      if (audioData_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(5, getAudioData());
       }
-      if (((bitField0_ & 0x00000010) != 0)) {
+      if (roundResult_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(6, getRoundResult());
       }
@@ -2970,13 +2983,11 @@ public final class ServiceProto {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
     public static protoc.ServiceProto.SpectatorGameState parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-
     public static protoc.ServiceProto.SpectatorGameState parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -3040,23 +3051,13 @@ public final class ServiceProto {
 
       // Construct using protoc.ServiceProto.SpectatorGameState.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getGameDataFieldBuilder();
-          getFrameDataFieldBuilder();
-          getScreenDataFieldBuilder();
-          getAudioDataFieldBuilder();
-          getRoundResultFieldBuilder();
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
@@ -3124,38 +3125,31 @@ public final class ServiceProto {
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.stateFlag_ = stateFlag_;
         }
-        int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000002) != 0)) {
           result.gameData_ = gameDataBuilder_ == null
               ? gameData_
               : gameDataBuilder_.build();
-          to_bitField0_ |= 0x00000001;
         }
         if (((from_bitField0_ & 0x00000004) != 0)) {
           result.frameData_ = frameDataBuilder_ == null
               ? frameData_
               : frameDataBuilder_.build();
-          to_bitField0_ |= 0x00000002;
         }
         if (((from_bitField0_ & 0x00000008) != 0)) {
           result.screenData_ = screenDataBuilder_ == null
               ? screenData_
               : screenDataBuilder_.build();
-          to_bitField0_ |= 0x00000004;
         }
         if (((from_bitField0_ & 0x00000010) != 0)) {
           result.audioData_ = audioDataBuilder_ == null
               ? audioData_
               : audioDataBuilder_.build();
-          to_bitField0_ |= 0x00000008;
         }
         if (((from_bitField0_ & 0x00000020) != 0)) {
           result.roundResult_ = roundResultBuilder_ == null
               ? roundResult_
               : roundResultBuilder_.build();
-          to_bitField0_ |= 0x00000010;
         }
-        result.bitField0_ |= to_bitField0_;
       }
 
       @java.lang.Override
@@ -3422,10 +3416,8 @@ public final class ServiceProto {
         } else {
           gameDataBuilder_.mergeFrom(value);
         }
-        if (gameData_ != null) {
-          bitField0_ |= 0x00000002;
-          onChanged();
-        }
+        bitField0_ |= 0x00000002;
+        onChanged();
         return this;
       }
       /**
@@ -3543,10 +3535,8 @@ public final class ServiceProto {
         } else {
           frameDataBuilder_.mergeFrom(value);
         }
-        if (frameData_ != null) {
-          bitField0_ |= 0x00000004;
-          onChanged();
-        }
+        bitField0_ |= 0x00000004;
+        onChanged();
         return this;
       }
       /**
@@ -3664,10 +3654,8 @@ public final class ServiceProto {
         } else {
           screenDataBuilder_.mergeFrom(value);
         }
-        if (screenData_ != null) {
-          bitField0_ |= 0x00000008;
-          onChanged();
-        }
+        bitField0_ |= 0x00000008;
+        onChanged();
         return this;
       }
       /**
@@ -3785,10 +3773,8 @@ public final class ServiceProto {
         } else {
           audioDataBuilder_.mergeFrom(value);
         }
-        if (audioData_ != null) {
-          bitField0_ |= 0x00000010;
-          onChanged();
-        }
+        bitField0_ |= 0x00000010;
+        onChanged();
         return this;
       }
       /**
@@ -3906,10 +3892,8 @@ public final class ServiceProto {
         } else {
           roundResultBuilder_.mergeFrom(value);
         }
-        if (roundResult_ != null) {
-          bitField0_ |= 0x00000020;
-          onChanged();
-        }
+        bitField0_ |= 0x00000020;
+        onChanged();
         return this;
       }
       /**
@@ -4075,6 +4059,11 @@ public final class ServiceProto {
       return new InitializeRequest();
     }
 
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return protoc.ServiceProto.internal_static_service_InitializeRequest_descriptor;
@@ -4281,13 +4270,11 @@ public final class ServiceProto {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
     public static protoc.ServiceProto.InitializeRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-
     public static protoc.ServiceProto.InitializeRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -4538,7 +4525,7 @@ public final class ServiceProto {
        * @return This builder for chaining.
        */
       public Builder setPlayerNumber(boolean value) {
-
+        
         playerNumber_ = value;
         bitField0_ |= 0x00000001;
         onChanged();
@@ -4642,7 +4629,7 @@ public final class ServiceProto {
        * @return This builder for chaining.
        */
       public Builder setIsBlind(boolean value) {
-
+        
         isBlind_ = value;
         bitField0_ |= 0x00000004;
         onChanged();
@@ -4761,6 +4748,11 @@ public final class ServiceProto {
       return new InitializeResponse();
     }
 
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return protoc.ServiceProto.internal_static_service_InitializeResponse_descriptor;
@@ -4921,13 +4913,11 @@ public final class ServiceProto {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
     public static protoc.ServiceProto.InitializeResponse parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-
     public static protoc.ServiceProto.InitializeResponse parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -5313,6 +5303,11 @@ public final class ServiceProto {
       return new ParticipateRequest();
     }
 
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return protoc.ServiceProto.internal_static_service_ParticipateRequest_descriptor;
@@ -5473,13 +5468,11 @@ public final class ServiceProto {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
     public static protoc.ServiceProto.ParticipateRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-
     public static protoc.ServiceProto.ParticipateRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -5960,6 +5953,11 @@ public final class ServiceProto {
       return new PlayerGameState();
     }
 
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return protoc.ServiceProto.internal_static_service_PlayerGameState_descriptor;
@@ -5973,7 +5971,6 @@ public final class ServiceProto {
               protoc.ServiceProto.PlayerGameState.class, protoc.ServiceProto.PlayerGameState.Builder.class);
     }
 
-    private int bitField0_;
     public static final int STATE_FLAG_FIELD_NUMBER = 1;
     private int stateFlag_ = 0;
     /**
@@ -6011,7 +6008,7 @@ public final class ServiceProto {
      */
     @java.lang.Override
     public boolean hasFrameData() {
-      return ((bitField0_ & 0x00000001) != 0);
+      return frameData_ != null;
     }
     /**
      * <code>.service.GrpcFrameData frame_data = 3;</code>
@@ -6037,7 +6034,7 @@ public final class ServiceProto {
      */
     @java.lang.Override
     public boolean hasNonDelayFrameData() {
-      return ((bitField0_ & 0x00000002) != 0);
+      return nonDelayFrameData_ != null;
     }
     /**
      * <code>.service.GrpcFrameData non_delay_frame_data = 4;</code>
@@ -6063,7 +6060,7 @@ public final class ServiceProto {
      */
     @java.lang.Override
     public boolean hasScreenData() {
-      return ((bitField0_ & 0x00000004) != 0);
+      return screenData_ != null;
     }
     /**
      * <code>.service.GrpcScreenData screen_data = 5;</code>
@@ -6089,7 +6086,7 @@ public final class ServiceProto {
      */
     @java.lang.Override
     public boolean hasAudioData() {
-      return ((bitField0_ & 0x00000008) != 0);
+      return audioData_ != null;
     }
     /**
      * <code>.service.GrpcAudioData audio_data = 6;</code>
@@ -6115,7 +6112,7 @@ public final class ServiceProto {
      */
     @java.lang.Override
     public boolean hasGameData() {
-      return ((bitField0_ & 0x00000010) != 0);
+      return gameData_ != null;
     }
     /**
      * <code>.service.GrpcGameData game_data = 7;</code>
@@ -6141,7 +6138,7 @@ public final class ServiceProto {
      */
     @java.lang.Override
     public boolean hasRoundResult() {
-      return ((bitField0_ & 0x00000020) != 0);
+      return roundResult_ != null;
     }
     /**
      * <code>.service.GrpcRoundResult round_result = 8;</code>
@@ -6179,22 +6176,22 @@ public final class ServiceProto {
       if (isControl_ != false) {
         output.writeBool(2, isControl_);
       }
-      if (((bitField0_ & 0x00000001) != 0)) {
+      if (frameData_ != null) {
         output.writeMessage(3, getFrameData());
       }
-      if (((bitField0_ & 0x00000002) != 0)) {
+      if (nonDelayFrameData_ != null) {
         output.writeMessage(4, getNonDelayFrameData());
       }
-      if (((bitField0_ & 0x00000004) != 0)) {
+      if (screenData_ != null) {
         output.writeMessage(5, getScreenData());
       }
-      if (((bitField0_ & 0x00000008) != 0)) {
+      if (audioData_ != null) {
         output.writeMessage(6, getAudioData());
       }
-      if (((bitField0_ & 0x00000010) != 0)) {
+      if (gameData_ != null) {
         output.writeMessage(7, getGameData());
       }
-      if (((bitField0_ & 0x00000020) != 0)) {
+      if (roundResult_ != null) {
         output.writeMessage(8, getRoundResult());
       }
       getUnknownFields().writeTo(output);
@@ -6214,27 +6211,27 @@ public final class ServiceProto {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(2, isControl_);
       }
-      if (((bitField0_ & 0x00000001) != 0)) {
+      if (frameData_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(3, getFrameData());
       }
-      if (((bitField0_ & 0x00000002) != 0)) {
+      if (nonDelayFrameData_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(4, getNonDelayFrameData());
       }
-      if (((bitField0_ & 0x00000004) != 0)) {
+      if (screenData_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(5, getScreenData());
       }
-      if (((bitField0_ & 0x00000008) != 0)) {
+      if (audioData_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(6, getAudioData());
       }
-      if (((bitField0_ & 0x00000010) != 0)) {
+      if (gameData_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(7, getGameData());
       }
-      if (((bitField0_ & 0x00000020) != 0)) {
+      if (roundResult_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(8, getRoundResult());
       }
@@ -6375,13 +6372,11 @@ public final class ServiceProto {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
     public static protoc.ServiceProto.PlayerGameState parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-
     public static protoc.ServiceProto.PlayerGameState parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -6445,24 +6440,13 @@ public final class ServiceProto {
 
       // Construct using protoc.ServiceProto.PlayerGameState.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getFrameDataFieldBuilder();
-          getNonDelayFrameDataFieldBuilder();
-          getScreenDataFieldBuilder();
-          getAudioDataFieldBuilder();
-          getGameDataFieldBuilder();
-          getRoundResultFieldBuilder();
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
@@ -6539,44 +6523,36 @@ public final class ServiceProto {
         if (((from_bitField0_ & 0x00000002) != 0)) {
           result.isControl_ = isControl_;
         }
-        int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000004) != 0)) {
           result.frameData_ = frameDataBuilder_ == null
               ? frameData_
               : frameDataBuilder_.build();
-          to_bitField0_ |= 0x00000001;
         }
         if (((from_bitField0_ & 0x00000008) != 0)) {
           result.nonDelayFrameData_ = nonDelayFrameDataBuilder_ == null
               ? nonDelayFrameData_
               : nonDelayFrameDataBuilder_.build();
-          to_bitField0_ |= 0x00000002;
         }
         if (((from_bitField0_ & 0x00000010) != 0)) {
           result.screenData_ = screenDataBuilder_ == null
               ? screenData_
               : screenDataBuilder_.build();
-          to_bitField0_ |= 0x00000004;
         }
         if (((from_bitField0_ & 0x00000020) != 0)) {
           result.audioData_ = audioDataBuilder_ == null
               ? audioData_
               : audioDataBuilder_.build();
-          to_bitField0_ |= 0x00000008;
         }
         if (((from_bitField0_ & 0x00000040) != 0)) {
           result.gameData_ = gameDataBuilder_ == null
               ? gameData_
               : gameDataBuilder_.build();
-          to_bitField0_ |= 0x00000010;
         }
         if (((from_bitField0_ & 0x00000080) != 0)) {
           result.roundResult_ = roundResultBuilder_ == null
               ? roundResult_
               : roundResultBuilder_.build();
-          to_bitField0_ |= 0x00000020;
         }
-        result.bitField0_ |= to_bitField0_;
       }
 
       @java.lang.Override
@@ -6810,7 +6786,7 @@ public final class ServiceProto {
        * @return This builder for chaining.
        */
       public Builder setIsControl(boolean value) {
-
+        
         isControl_ = value;
         bitField0_ |= 0x00000002;
         onChanged();
@@ -6893,10 +6869,8 @@ public final class ServiceProto {
         } else {
           frameDataBuilder_.mergeFrom(value);
         }
-        if (frameData_ != null) {
-          bitField0_ |= 0x00000004;
-          onChanged();
-        }
+        bitField0_ |= 0x00000004;
+        onChanged();
         return this;
       }
       /**
@@ -7014,10 +6988,8 @@ public final class ServiceProto {
         } else {
           nonDelayFrameDataBuilder_.mergeFrom(value);
         }
-        if (nonDelayFrameData_ != null) {
-          bitField0_ |= 0x00000008;
-          onChanged();
-        }
+        bitField0_ |= 0x00000008;
+        onChanged();
         return this;
       }
       /**
@@ -7135,10 +7107,8 @@ public final class ServiceProto {
         } else {
           screenDataBuilder_.mergeFrom(value);
         }
-        if (screenData_ != null) {
-          bitField0_ |= 0x00000010;
-          onChanged();
-        }
+        bitField0_ |= 0x00000010;
+        onChanged();
         return this;
       }
       /**
@@ -7256,10 +7226,8 @@ public final class ServiceProto {
         } else {
           audioDataBuilder_.mergeFrom(value);
         }
-        if (audioData_ != null) {
-          bitField0_ |= 0x00000020;
-          onChanged();
-        }
+        bitField0_ |= 0x00000020;
+        onChanged();
         return this;
       }
       /**
@@ -7377,10 +7345,8 @@ public final class ServiceProto {
         } else {
           gameDataBuilder_.mergeFrom(value);
         }
-        if (gameData_ != null) {
-          bitField0_ |= 0x00000040;
-          onChanged();
-        }
+        bitField0_ |= 0x00000040;
+        onChanged();
         return this;
       }
       /**
@@ -7498,10 +7464,8 @@ public final class ServiceProto {
         } else {
           roundResultBuilder_.mergeFrom(value);
         }
-        if (roundResult_ != null) {
-          bitField0_ |= 0x00000080;
-          onChanged();
-        }
+        bitField0_ |= 0x00000080;
+        onChanged();
         return this;
       }
       /**
@@ -7670,6 +7634,11 @@ public final class ServiceProto {
       return new PlayerInput();
     }
 
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return protoc.ServiceProto.internal_static_service_PlayerInput_descriptor;
@@ -7683,7 +7652,6 @@ public final class ServiceProto {
               protoc.ServiceProto.PlayerInput.class, protoc.ServiceProto.PlayerInput.Builder.class);
     }
 
-    private int bitField0_;
     public static final int PLAYER_UUID_FIELD_NUMBER = 1;
     @SuppressWarnings("serial")
     private volatile java.lang.Object playerUuid_ = "";
@@ -7731,7 +7699,7 @@ public final class ServiceProto {
      */
     @java.lang.Override
     public boolean hasInputKey() {
-      return ((bitField0_ & 0x00000001) != 0);
+      return inputKey_ != null;
     }
     /**
      * <code>.service.GrpcKey input_key = 2;</code>
@@ -7766,7 +7734,7 @@ public final class ServiceProto {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(playerUuid_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, playerUuid_);
       }
-      if (((bitField0_ & 0x00000001) != 0)) {
+      if (inputKey_ != null) {
         output.writeMessage(2, getInputKey());
       }
       getUnknownFields().writeTo(output);
@@ -7781,7 +7749,7 @@ public final class ServiceProto {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(playerUuid_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, playerUuid_);
       }
-      if (((bitField0_ & 0x00000001) != 0)) {
+      if (inputKey_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(2, getInputKey());
       }
@@ -7873,13 +7841,11 @@ public final class ServiceProto {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
     public static protoc.ServiceProto.PlayerInput parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-
     public static protoc.ServiceProto.PlayerInput parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -7943,19 +7909,13 @@ public final class ServiceProto {
 
       // Construct using protoc.ServiceProto.PlayerInput.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getInputKeyFieldBuilder();
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
@@ -8003,14 +7963,11 @@ public final class ServiceProto {
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.playerUuid_ = playerUuid_;
         }
-        int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000002) != 0)) {
           result.inputKey_ = inputKeyBuilder_ == null
               ? inputKey_
               : inputKeyBuilder_.build();
-          to_bitField0_ |= 0x00000001;
         }
-        result.bitField0_ |= to_bitField0_;
       }
 
       @java.lang.Override
@@ -8258,10 +8215,8 @@ public final class ServiceProto {
         } else {
           inputKeyBuilder_.mergeFrom(value);
         }
-        if (inputKey_ != null) {
-          bitField0_ |= 0x00000002;
-          onChanged();
-        }
+        bitField0_ |= 0x00000002;
+        onChanged();
         return this;
       }
       /**

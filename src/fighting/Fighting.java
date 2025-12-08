@@ -17,6 +17,9 @@ import struct.CharacterData;
 import struct.FrameData;
 import struct.Key;
 
+import protoc.MessageProto.GrpcGameEvent;
+import service.GameService;
+
 /**
  * 対戦処理及びそれに伴う攻撃やキャラクターのパラメータの更新処理を扱うクラス．
  */
@@ -36,6 +39,8 @@ public class Fighting {
 	 * @see LoopEffect
 	 */
 	protected Deque<LoopEffect> projectileDeque;
+
+	protected Deque<Event> eventDeque;
 
 	/**
 	 * The list of the input information of both characters.
@@ -66,6 +71,7 @@ public class Fighting {
 	public Fighting() {
 		this.playerCharacters = new Character[2];
 		this.projectileDeque = new LinkedList<LoopEffect>();
+		this.eventDeque = new LinkedList<Event>();
 		this.inputCommands = new LinkedList<KeyData>();
 		this.commandTable = new CommandTable();
 		this.hitEffects = new LinkedList<LinkedList<HitEffect>>();
@@ -108,6 +114,8 @@ public class Fighting {
 	 *            P1, P2のキー入力． Index 0 is P1, index 1 is P2.
 	 */
 	public void processingFight(int currentFrame, KeyData keyData) {
+			// 0. Process External Events
+		processingEvents(currentFrame);
 		// 1. 入力されたキーを基に, アクションを実行
 		processingCommands(keyData);
 		// 2. 当たり判定の処理
@@ -117,6 +125,56 @@ public class Fighting {
 		// 4. キャラクターの状態の更新
 		updateCharacter();
 
+	}
+
+	protected void processingEvents(int currentFrame) {
+		GrpcGameEvent event = GameService.getInstance().getEvent();
+		while (event != null) {
+			System.out.println("Received Event: ID=" + event.getEventId() + " Type=" + event.getEventType() + " Term=" + event.getTerminate() + " X=" + event.getX() + " Y=" + event.getY());
+	
+			int eventId = event.getEventId();
+			int eventType = event.getEventType();
+			Event targetEvent = null;
+			
+			for (Event e : this.eventDeque) {
+				if (e.getEventId() == eventId) {
+					targetEvent = e;
+					break;
+				}
+			}
+			if (targetEvent == null) {
+				System.out.println("Creating new event: ID=" + eventId + " Type=" + eventType);
+				Event newEvent = new Event(eventId, eventType);
+				newEvent.initialize(event.getX(), event.getY(), event.getVx(), event.getVy(),
+						event.getTime(), event.getHx(), event.getHy());
+				this.eventDeque.addLast(newEvent);
+			}
+			else{
+				if (!event.getTerminate()) {
+					targetEvent.initialize(event.getX(), event.getY(), event.getVx(), event.getVy(),
+						event.getTime(), event.getHx(), event.getHy());
+				}
+				else {
+					System.out.println("Replacing event: ID=" + eventId + " NewType=" + eventType);
+					this.eventDeque.remove(targetEvent);
+					Event newEvent = new Event(eventId, eventType);
+				    newEvent.initialize(event.getX(), event.getY(), event.getVx(), event.getVy(),
+						event.getTime(), event.getHx(), event.getHy());
+				    this.eventDeque.addLast(newEvent);
+				}
+				
+			}
+			
+			
+			event = GameService.getInstance().getEvent();
+		}
+		java.util.Iterator<Event> iterator = this.eventDeque.iterator();
+		while (iterator.hasNext()) {
+			Event e = iterator.next();
+			if (!e.update()) {
+				iterator.remove();
+			}
+		}
 	}
 
 	/**
@@ -291,26 +349,39 @@ public class Fighting {
 		decisionEndStage();
 	}
 
+	private void debugMoveX(String trigger, int playerIndex, int moveAmount, String details) {
+    String player = (playerIndex == 0) ? "P1" : "P2";
+    System.out.println("[DEBUG] " + trigger + " - " + player + " moving by: " + moveAmount + " (" + details + ")");
+	}
+
 	/**
 	 * P1とP2のキャラクターの水平方向のスピードに応じて, 相手を押す処理を行う．
 	 */
 	protected void detectionPush() {
-		if (isCollision()) {
-			int p1SpeedX = Math.abs(this.playerCharacters[0].getSpeedX());
-			int p2SpeedX = Math.abs(this.playerCharacters[1].getSpeedX());
+    int displace0, displace1;
 
-			if (p1SpeedX > p2SpeedX) {
-				this.playerCharacters[1]
-						.moveX(this.playerCharacters[0].getSpeedX() - this.playerCharacters[1].getSpeedX());
-			} else if (p1SpeedX < p2SpeedX) {
-				this.playerCharacters[0]
-						.moveX(this.playerCharacters[1].getSpeedX() - this.playerCharacters[0].getSpeedX());
-			} else {
-				this.playerCharacters[0].moveX(this.playerCharacters[1].getSpeedX());
-				this.playerCharacters[1].moveX(this.playerCharacters[0].getSpeedX());
-			}
-		}
-	}
+    if (isCollision()) {
+        int p1SpeedX = Math.abs(this.playerCharacters[0].getSpeedX());
+        int p2SpeedX = Math.abs(this.playerCharacters[1].getSpeedX());
+        
+        if (p1SpeedX > p2SpeedX) {
+            displace0 = this.playerCharacters[0].getSpeedX() - this.playerCharacters[1].getSpeedX();
+            this.playerCharacters[1].moveX(displace0);
+            debugMoveX("Push1", 1, displace0, "P1 pushing P2"); // Should be player 1 moving player 2
+        } else if (p1SpeedX < p2SpeedX) {    
+            displace1 = this.playerCharacters[1].getSpeedX() - this.playerCharacters[0].getSpeedX();
+            this.playerCharacters[0].moveX(displace1);
+            debugMoveX("Push2", 0, displace1, "P2 pushing P1"); // Should be player 2 moving player 1
+        } else {
+            displace0 = this.playerCharacters[1].getSpeedX();
+            displace1 = this.playerCharacters[0].getSpeedX();
+            this.playerCharacters[0].moveX(displace0);
+            this.playerCharacters[1].moveX(displace1);
+            debugMoveX("Push3", 0, displace0, "Equal speed");
+            debugMoveX("Push3", 1, displace1, "Equal speed");
+        }
+    }
+}
 
 	/**
 	 * P1とP2のキャラクター位置が重なってしまった場合, 重ならないように各キャラクターの座標の更新処理を行う．
@@ -334,6 +405,8 @@ public class Fighting {
 			}
 			this.playerCharacters[0].moveX(-direction * 2);
 			this.playerCharacters[1].moveX(direction * 2);
+			debugMoveX("Fusion", 0 , -direction * 2 ," ");
+			debugMoveX("Fusion", 1 , direction * 2," ");
 		}
 	}
 
@@ -386,6 +459,27 @@ public class Fighting {
 	protected boolean ableAction(Character character, Action nextAction) {
 		Motion nextMotion = character.getMotionList().get(nextAction.ordinal());
 		Motion nowMotion = character.getMotionList().get(character.getAction().ordinal());
+
+
+		//  if (nextAction == Action.THROW_A) {
+        // System.out.printf("[THROW_A_CHECK] Energy: %d, Required: %d, EnergyOK: %s%n",
+        //     character.getEnergy(), -nextMotion.getAttackStartAddEnergy(),
+        //     character.getEnergy() >= -nextMotion.getAttackStartAddEnergy() ? "T" : "F");
+        // System.out.printf("[THROW_A_CHECK] Control: %s, HitConfirm: %s%n",
+        //     character.isControl() ? "T" : "F", character.isHitConfirm() ? "T" : "F");
+        // System.out.printf("[THROW_A_CHECK] CancelFrame: %d <= %d (FrameOK: %s)%n",
+        //     nowMotion.getCancelAbleFrame(), nowMotion.getFrameNumber() - character.getRemainingFrame(),
+        //     nowMotion.getCancelAbleFrame() <= (nowMotion.getFrameNumber() - character.getRemainingFrame()) ? "T" : "F");
+        // System.out.printf("[THROW_A_CHECK] CancelLevel: %d >= %d (LevelOK: %s)%n",
+        //     nowMotion.getCancelAbleMotionLevel(), nextMotion.getMotionLevel(),
+        //     nowMotion.getCancelAbleMotionLevel() >= nextMotion.getMotionLevel() ? "T" : "F");
+        // System.out.printf("[THROW_A_CHECK] Final: %s%n",
+        //     (character.isControl() || 
+        //      (character.isHitConfirm() && 
+        //       nowMotion.getCancelAbleFrame() <= (nowMotion.getFrameNumber() - character.getRemainingFrame()) &&
+        //       nowMotion.getCancelAbleMotionLevel() >= nextMotion.getMotionLevel())) ? "T" : "F");
+    	// }
+
 
 		if (character.getEnergy() < -nextMotion.getAttackStartAddEnergy()) {
 			return false;
@@ -489,6 +583,10 @@ public class Fighting {
 	 */
 	public Deque<LoopEffect> getProjectileDeque() {
 		return new LinkedList<LoopEffect>(this.projectileDeque);
+	}
+
+	public Deque<Event> getEventDeque() {
+		return new LinkedList<Event>(this.eventDeque);
 	}
 
 	public void close(){

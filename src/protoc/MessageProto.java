@@ -64,6 +64,11 @@ public final class MessageProto {
       return new GrpcHitArea();
     }
 
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return protoc.MessageProto.internal_static_service_GrpcHitArea_descriptor;
@@ -263,13 +268,11 @@ public final class MessageProto {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
     public static protoc.MessageProto.GrpcHitArea parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-
     public static protoc.MessageProto.GrpcHitArea parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -530,7 +533,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setLeft(int value) {
-
+        
         left_ = value;
         bitField0_ |= 0x00000001;
         onChanged();
@@ -562,7 +565,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setRight(int value) {
-
+        
         right_ = value;
         bitField0_ |= 0x00000002;
         onChanged();
@@ -594,7 +597,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setTop(int value) {
-
+        
         top_ = value;
         bitField0_ |= 0x00000004;
         onChanged();
@@ -626,7 +629,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setBottom(int value) {
-
+        
         bottom_ = value;
         bitField0_ |= 0x00000008;
         onChanged();
@@ -907,6 +910,11 @@ public final class MessageProto {
       return new GrpcAttackData();
     }
 
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return protoc.MessageProto.internal_static_service_GrpcAttackData_descriptor;
@@ -920,7 +928,6 @@ public final class MessageProto {
               protoc.MessageProto.GrpcAttackData.class, protoc.MessageProto.GrpcAttackData.Builder.class);
     }
 
-    private int bitField0_;
     public static final int SETTING_HIT_AREA_FIELD_NUMBER = 1;
     private protoc.MessageProto.GrpcHitArea settingHitArea_;
     /**
@@ -929,7 +936,7 @@ public final class MessageProto {
      */
     @java.lang.Override
     public boolean hasSettingHitArea() {
-      return ((bitField0_ & 0x00000001) != 0);
+      return settingHitArea_ != null;
     }
     /**
      * <code>.service.GrpcHitArea setting_hit_area = 1;</code>
@@ -977,7 +984,7 @@ public final class MessageProto {
      */
     @java.lang.Override
     public boolean hasCurrentHitArea() {
-      return ((bitField0_ & 0x00000002) != 0);
+      return currentHitArea_ != null;
     }
     /**
      * <code>.service.GrpcHitArea current_hit_area = 4;</code>
@@ -1268,7 +1275,7 @@ public final class MessageProto {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (((bitField0_ & 0x00000001) != 0)) {
+      if (settingHitArea_ != null) {
         output.writeMessage(1, getSettingHitArea());
       }
       if (settingSpeedX_ != 0) {
@@ -1277,7 +1284,7 @@ public final class MessageProto {
       if (settingSpeedY_ != 0) {
         output.writeInt32(3, settingSpeedY_);
       }
-      if (((bitField0_ & 0x00000002) != 0)) {
+      if (currentHitArea_ != null) {
         output.writeMessage(4, getCurrentHitArea());
       }
       if (currentFrame_ != 0) {
@@ -1352,7 +1359,7 @@ public final class MessageProto {
       if (size != -1) return size;
 
       size = 0;
-      if (((bitField0_ & 0x00000001) != 0)) {
+      if (settingHitArea_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(1, getSettingHitArea());
       }
@@ -1364,7 +1371,7 @@ public final class MessageProto {
         size += com.google.protobuf.CodedOutputStream
           .computeInt32Size(3, settingSpeedY_);
       }
-      if (((bitField0_ & 0x00000002) != 0)) {
+      if (currentHitArea_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(4, getCurrentHitArea());
       }
@@ -1641,13 +1648,11 @@ public final class MessageProto {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
     public static protoc.MessageProto.GrpcAttackData parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-
     public static protoc.MessageProto.GrpcAttackData parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -1711,20 +1716,13 @@ public final class MessageProto {
 
       // Construct using protoc.MessageProto.GrpcAttackData.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getSettingHitAreaFieldBuilder();
-          getCurrentHitAreaFieldBuilder();
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
@@ -1796,12 +1794,10 @@ public final class MessageProto {
 
       private void buildPartial0(protoc.MessageProto.GrpcAttackData result) {
         int from_bitField0_ = bitField0_;
-        int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.settingHitArea_ = settingHitAreaBuilder_ == null
               ? settingHitArea_
               : settingHitAreaBuilder_.build();
-          to_bitField0_ |= 0x00000001;
         }
         if (((from_bitField0_ & 0x00000002) != 0)) {
           result.settingSpeedX_ = settingSpeedX_;
@@ -1813,7 +1809,6 @@ public final class MessageProto {
           result.currentHitArea_ = currentHitAreaBuilder_ == null
               ? currentHitArea_
               : currentHitAreaBuilder_.build();
-          to_bitField0_ |= 0x00000002;
         }
         if (((from_bitField0_ & 0x00000010) != 0)) {
           result.currentFrame_ = currentFrame_;
@@ -1878,7 +1873,6 @@ public final class MessageProto {
         if (((from_bitField0_ & 0x01000000) != 0)) {
           result.identifier_ = identifier_;
         }
-        result.bitField0_ |= to_bitField0_;
       }
 
       @java.lang.Override
@@ -2240,10 +2234,8 @@ public final class MessageProto {
         } else {
           settingHitAreaBuilder_.mergeFrom(value);
         }
-        if (settingHitArea_ != null) {
-          bitField0_ |= 0x00000001;
-          onChanged();
-        }
+        bitField0_ |= 0x00000001;
+        onChanged();
         return this;
       }
       /**
@@ -2310,7 +2302,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setSettingSpeedX(int value) {
-
+        
         settingSpeedX_ = value;
         bitField0_ |= 0x00000002;
         onChanged();
@@ -2342,7 +2334,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setSettingSpeedY(int value) {
-
+        
         settingSpeedY_ = value;
         bitField0_ |= 0x00000004;
         onChanged();
@@ -2425,10 +2417,8 @@ public final class MessageProto {
         } else {
           currentHitAreaBuilder_.mergeFrom(value);
         }
-        if (currentHitArea_ != null) {
-          bitField0_ |= 0x00000008;
-          onChanged();
-        }
+        bitField0_ |= 0x00000008;
+        onChanged();
         return this;
       }
       /**
@@ -2495,7 +2485,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setCurrentFrame(int value) {
-
+        
         currentFrame_ = value;
         bitField0_ |= 0x00000010;
         onChanged();
@@ -2527,7 +2517,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setPlayerNumber(boolean value) {
-
+        
         playerNumber_ = value;
         bitField0_ |= 0x00000020;
         onChanged();
@@ -2559,7 +2549,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setSpeedX(int value) {
-
+        
         speedX_ = value;
         bitField0_ |= 0x00000040;
         onChanged();
@@ -2591,7 +2581,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setSpeedY(int value) {
-
+        
         speedY_ = value;
         bitField0_ |= 0x00000080;
         onChanged();
@@ -2623,7 +2613,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setStartUp(int value) {
-
+        
         startUp_ = value;
         bitField0_ |= 0x00000100;
         onChanged();
@@ -2655,7 +2645,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setActive(int value) {
-
+        
         active_ = value;
         bitField0_ |= 0x00000200;
         onChanged();
@@ -2687,7 +2677,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setHitDamage(int value) {
-
+        
         hitDamage_ = value;
         bitField0_ |= 0x00000400;
         onChanged();
@@ -2719,7 +2709,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setGuardDamage(int value) {
-
+        
         guardDamage_ = value;
         bitField0_ |= 0x00000800;
         onChanged();
@@ -2751,7 +2741,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setStartAddEnergy(int value) {
-
+        
         startAddEnergy_ = value;
         bitField0_ |= 0x00001000;
         onChanged();
@@ -2783,7 +2773,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setHitAddEnergy(int value) {
-
+        
         hitAddEnergy_ = value;
         bitField0_ |= 0x00002000;
         onChanged();
@@ -2815,7 +2805,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setGuardAddEnergy(int value) {
-
+        
         guardAddEnergy_ = value;
         bitField0_ |= 0x00004000;
         onChanged();
@@ -2847,7 +2837,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setGiveEnergy(int value) {
-
+        
         giveEnergy_ = value;
         bitField0_ |= 0x00008000;
         onChanged();
@@ -2879,7 +2869,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setImpactX(int value) {
-
+        
         impactX_ = value;
         bitField0_ |= 0x00010000;
         onChanged();
@@ -2911,7 +2901,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setImpactY(int value) {
-
+        
         impactY_ = value;
         bitField0_ |= 0x00020000;
         onChanged();
@@ -2943,7 +2933,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setGiveGuardRecov(int value) {
-
+        
         giveGuardRecov_ = value;
         bitField0_ |= 0x00040000;
         onChanged();
@@ -2975,7 +2965,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setAttackType(int value) {
-
+        
         attackType_ = value;
         bitField0_ |= 0x00080000;
         onChanged();
@@ -3007,7 +2997,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setDownProp(boolean value) {
-
+        
         downProp_ = value;
         bitField0_ |= 0x00100000;
         onChanged();
@@ -3039,7 +3029,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setIsProjectile(boolean value) {
-
+        
         isProjectile_ = value;
         bitField0_ |= 0x00200000;
         onChanged();
@@ -3071,7 +3061,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setIsLive(boolean value) {
-
+        
         isLive_ = value;
         bitField0_ |= 0x00400000;
         onChanged();
@@ -3103,7 +3093,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setEmptyFlag(boolean value) {
-
+        
         emptyFlag_ = value;
         bitField0_ |= 0x00800000;
         onChanged();
@@ -3465,6 +3455,11 @@ public final class MessageProto {
       return new GrpcCharacterData();
     }
 
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return protoc.MessageProto.internal_static_service_GrpcCharacterData_descriptor;
@@ -3478,7 +3473,6 @@ public final class MessageProto {
               protoc.MessageProto.GrpcCharacterData.class, protoc.MessageProto.GrpcCharacterData.Builder.class);
     }
 
-    private int bitField0_;
     public static final int PLAYER_NUMBER_FIELD_NUMBER = 1;
     private boolean playerNumber_ = false;
     /**
@@ -3666,7 +3660,7 @@ public final class MessageProto {
      */
     @java.lang.Override
     public boolean hasAttackData() {
-      return ((bitField0_ & 0x00000001) != 0);
+      return attackData_ != null;
     }
     /**
      * <code>.service.GrpcAttackData attack_data = 16;</code>
@@ -3861,7 +3855,7 @@ public final class MessageProto {
       if (control_ != false) {
         output.writeBool(15, control_);
       }
-      if (((bitField0_ & 0x00000001) != 0)) {
+      if (attackData_ != null) {
         output.writeMessage(16, getAttackData());
       }
       if (remainingFrame_ != 0) {
@@ -3957,7 +3951,7 @@ public final class MessageProto {
         size += com.google.protobuf.CodedOutputStream
           .computeBoolSize(15, control_);
       }
-      if (((bitField0_ & 0x00000001) != 0)) {
+      if (attackData_ != null) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(16, getAttackData());
       }
@@ -4173,13 +4167,11 @@ public final class MessageProto {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
     public static protoc.MessageProto.GrpcCharacterData parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-
     public static protoc.MessageProto.GrpcCharacterData parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -4243,20 +4235,13 @@ public final class MessageProto {
 
       // Construct using protoc.MessageProto.GrpcCharacterData.newBuilder()
       private Builder() {
-        maybeForceBuilderInitialization();
+
       }
 
       private Builder(
           com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
         super(parent);
-        maybeForceBuilderInitialization();
-      }
-      private void maybeForceBuilderInitialization() {
-        if (com.google.protobuf.GeneratedMessageV3
-                .alwaysUseFieldBuilders) {
-          getAttackDataFieldBuilder();
-          getProjectileAttackFieldBuilder();
-        }
+
       }
       @java.lang.Override
       public Builder clear() {
@@ -4387,12 +4372,10 @@ public final class MessageProto {
         if (((from_bitField0_ & 0x00004000) != 0)) {
           result.control_ = control_;
         }
-        int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00008000) != 0)) {
           result.attackData_ = attackDataBuilder_ == null
               ? attackData_
               : attackDataBuilder_.build();
-          to_bitField0_ |= 0x00000001;
         }
         if (((from_bitField0_ & 0x00010000) != 0)) {
           result.remainingFrame_ = remainingFrame_;
@@ -4415,7 +4398,6 @@ public final class MessageProto {
         if (((from_bitField0_ & 0x00400000) != 0)) {
           result.lastHitFrame_ = lastHitFrame_;
         }
-        result.bitField0_ |= to_bitField0_;
       }
 
       @java.lang.Override
@@ -4745,7 +4727,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setPlayerNumber(boolean value) {
-
+        
         playerNumber_ = value;
         bitField0_ |= 0x00000001;
         onChanged();
@@ -4777,7 +4759,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setHp(int value) {
-
+        
         hp_ = value;
         bitField0_ |= 0x00000002;
         onChanged();
@@ -4809,7 +4791,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setEnergy(int value) {
-
+        
         energy_ = value;
         bitField0_ |= 0x00000004;
         onChanged();
@@ -4841,7 +4823,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setX(int value) {
-
+        
         x_ = value;
         bitField0_ |= 0x00000008;
         onChanged();
@@ -4873,7 +4855,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setY(int value) {
-
+        
         y_ = value;
         bitField0_ |= 0x00000010;
         onChanged();
@@ -4905,7 +4887,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setLeft(int value) {
-
+        
         left_ = value;
         bitField0_ |= 0x00000020;
         onChanged();
@@ -4937,7 +4919,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setRight(int value) {
-
+        
         right_ = value;
         bitField0_ |= 0x00000040;
         onChanged();
@@ -4969,7 +4951,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setTop(int value) {
-
+        
         top_ = value;
         bitField0_ |= 0x00000080;
         onChanged();
@@ -5001,7 +4983,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setBottom(int value) {
-
+        
         bottom_ = value;
         bitField0_ |= 0x00000100;
         onChanged();
@@ -5033,7 +5015,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setSpeedX(int value) {
-
+        
         speedX_ = value;
         bitField0_ |= 0x00000200;
         onChanged();
@@ -5065,7 +5047,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setSpeedY(int value) {
-
+        
         speedY_ = value;
         bitField0_ |= 0x00000400;
         onChanged();
@@ -5203,7 +5185,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setFront(boolean value) {
-
+        
         front_ = value;
         bitField0_ |= 0x00002000;
         onChanged();
@@ -5235,7 +5217,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setControl(boolean value) {
-
+        
         control_ = value;
         bitField0_ |= 0x00004000;
         onChanged();
@@ -5318,10 +5300,8 @@ public final class MessageProto {
         } else {
           attackDataBuilder_.mergeFrom(value);
         }
-        if (attackData_ != null) {
-          bitField0_ |= 0x00008000;
-          onChanged();
-        }
+        bitField0_ |= 0x00008000;
+        onChanged();
         return this;
       }
       /**
@@ -5388,7 +5368,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setRemainingFrame(int value) {
-
+        
         remainingFrame_ = value;
         bitField0_ |= 0x00010000;
         onChanged();
@@ -5420,7 +5400,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setHitConfirm(boolean value) {
-
+        
         hitConfirm_ = value;
         bitField0_ |= 0x00020000;
         onChanged();
@@ -5452,7 +5432,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setGraphicSizeX(int value) {
-
+        
         graphicSizeX_ = value;
         bitField0_ |= 0x00040000;
         onChanged();
@@ -5484,7 +5464,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setGraphicSizeY(int value) {
-
+        
         graphicSizeY_ = value;
         bitField0_ |= 0x00080000;
         onChanged();
@@ -5516,7 +5496,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setGraphicAdjustX(int value) {
-
+        
         graphicAdjustX_ = value;
         bitField0_ |= 0x00100000;
         onChanged();
@@ -5548,7 +5528,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setHitCount(int value) {
-
+        
         hitCount_ = value;
         bitField0_ |= 0x00200000;
         onChanged();
@@ -5580,7 +5560,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setLastHitFrame(int value) {
-
+        
         lastHitFrame_ = value;
         bitField0_ |= 0x00400000;
         onChanged();
@@ -6012,6 +5992,11 @@ public final class MessageProto {
       return new GrpcFrameData();
     }
 
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return protoc.MessageProto.internal_static_service_GrpcFrameData_descriptor;
@@ -6142,8 +6127,7 @@ public final class MessageProto {
 
     public static final int FRONT_FIELD_NUMBER = 6;
     @SuppressWarnings("serial")
-    private com.google.protobuf.Internal.BooleanList front_ =
-        emptyBooleanList();
+    private com.google.protobuf.Internal.BooleanList front_;
     /**
      * <code>repeated bool front = 6;</code>
      * @return A list containing the front.
@@ -6353,13 +6337,11 @@ public final class MessageProto {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
     public static protoc.MessageProto.GrpcFrameData parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-
     public static protoc.MessageProto.GrpcFrameData parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -6504,6 +6486,11 @@ public final class MessageProto {
         } else {
           result.projectileData_ = projectileDataBuilder_.build();
         }
+        if (((bitField0_ & 0x00000020) != 0)) {
+          front_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000020);
+        }
+        result.front_ = front_;
       }
 
       private void buildPartial0(protoc.MessageProto.GrpcFrameData result) {
@@ -6516,10 +6503,6 @@ public final class MessageProto {
         }
         if (((from_bitField0_ & 0x00000010) != 0)) {
           result.emptyFlag_ = emptyFlag_;
-        }
-        if (((from_bitField0_ & 0x00000020) != 0)) {
-          front_.makeImmutable();
-          result.front_ = front_;
         }
       }
 
@@ -6631,8 +6614,7 @@ public final class MessageProto {
         if (!other.front_.isEmpty()) {
           if (front_.isEmpty()) {
             front_ = other.front_;
-            front_.makeImmutable();
-            bitField0_ |= 0x00000020;
+            bitField0_ = (bitField0_ & ~0x00000020);
           } else {
             ensureFrontIsMutable();
             front_.addAll(other.front_);
@@ -6715,8 +6697,7 @@ public final class MessageProto {
               case 50: {
                 int length = input.readRawVarint32();
                 int limit = input.pushLimit(length);
-                int alloc = length > 4096 ? 4096 : length;
-                ensureFrontIsMutable(alloc / 1);
+                ensureFrontIsMutable();
                 while (input.getBytesUntilLimit() > 0) {
                   front_.addBoolean(input.readBool());
                 }
@@ -6995,7 +6976,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setCurrentFrameNumber(int value) {
-
+        
         currentFrameNumber_ = value;
         bitField0_ |= 0x00000002;
         onChanged();
@@ -7027,7 +7008,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setCurrentRound(int value) {
-
+        
         currentRound_ = value;
         bitField0_ |= 0x00000004;
         onChanged();
@@ -7299,7 +7280,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setEmptyFlag(boolean value) {
-
+        
         emptyFlag_ = value;
         bitField0_ |= 0x00000010;
         onChanged();
@@ -7318,16 +7299,10 @@ public final class MessageProto {
 
       private com.google.protobuf.Internal.BooleanList front_ = emptyBooleanList();
       private void ensureFrontIsMutable() {
-        if (!front_.isModifiable()) {
-          front_ = makeMutableCopy(front_);
+        if (!((bitField0_ & 0x00000020) != 0)) {
+          front_ = mutableCopy(front_);
+          bitField0_ |= 0x00000020;
         }
-        bitField0_ |= 0x00000020;
-      }
-      private void ensureFrontIsMutable(int capacity) {
-        if (!front_.isModifiable()) {
-          front_ = makeMutableCopy(front_, capacity);
-        }
-        bitField0_ |= 0x00000020;
       }
       /**
        * <code>repeated bool front = 6;</code>
@@ -7335,8 +7310,8 @@ public final class MessageProto {
        */
       public java.util.List<java.lang.Boolean>
           getFrontList() {
-        front_.makeImmutable();
-        return front_;
+        return ((bitField0_ & 0x00000020) != 0) ?
+                 java.util.Collections.unmodifiableList(front_) : front_;
       }
       /**
        * <code>repeated bool front = 6;</code>
@@ -7361,10 +7336,9 @@ public final class MessageProto {
        */
       public Builder setFront(
           int index, boolean value) {
-
+        
         ensureFrontIsMutable();
         front_.setBoolean(index, value);
-        bitField0_ |= 0x00000020;
         onChanged();
         return this;
       }
@@ -7374,10 +7348,9 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder addFront(boolean value) {
-
+        
         ensureFrontIsMutable();
         front_.addBoolean(value);
-        bitField0_ |= 0x00000020;
         onChanged();
         return this;
       }
@@ -7391,7 +7364,6 @@ public final class MessageProto {
         ensureFrontIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
             values, front_);
-        bitField0_ |= 0x00000020;
         onChanged();
         return this;
       }
@@ -7509,6 +7481,11 @@ public final class MessageProto {
       return new GrpcFftData();
     }
 
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return protoc.MessageProto.internal_static_service_GrpcFftData_descriptor;
@@ -7664,13 +7641,11 @@ public final class MessageProto {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
     public static protoc.MessageProto.GrpcFftData parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-
     public static protoc.MessageProto.GrpcFftData parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -8052,6 +8027,11 @@ public final class MessageProto {
       return new GrpcScreenData();
     }
 
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return protoc.MessageProto.internal_static_service_GrpcScreenData_descriptor;
@@ -8185,13 +8165,11 @@ public final class MessageProto {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
     public static protoc.MessageProto.GrpcScreenData parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-
     public static protoc.MessageProto.GrpcScreenData parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -8561,6 +8539,11 @@ public final class MessageProto {
       return new GrpcAudioData();
     }
 
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return protoc.MessageProto.internal_static_service_GrpcAudioData_descriptor;
@@ -8770,13 +8753,11 @@ public final class MessageProto {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
     public static protoc.MessageProto.GrpcAudioData parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-
     public static protoc.MessageProto.GrpcAudioData parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -9527,10 +9508,8 @@ public final class MessageProto {
     private GrpcGameData() {
       maxHps_ = emptyIntList();
       maxEnergies_ = emptyIntList();
-      characterNames_ =
-          com.google.protobuf.LazyStringArrayList.emptyList();
-      aiNames_ =
-          com.google.protobuf.LazyStringArrayList.emptyList();
+      characterNames_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+      aiNames_ = com.google.protobuf.LazyStringArrayList.EMPTY;
     }
 
     @java.lang.Override
@@ -9540,6 +9519,11 @@ public final class MessageProto {
       return new GrpcGameData();
     }
 
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return protoc.MessageProto.internal_static_service_GrpcGameData_descriptor;
@@ -9555,8 +9539,7 @@ public final class MessageProto {
 
     public static final int MAX_HPS_FIELD_NUMBER = 1;
     @SuppressWarnings("serial")
-    private com.google.protobuf.Internal.IntList maxHps_ =
-        emptyIntList();
+    private com.google.protobuf.Internal.IntList maxHps_;
     /**
      * <code>repeated int32 max_hps = 1;</code>
      * @return A list containing the maxHps.
@@ -9585,8 +9568,7 @@ public final class MessageProto {
 
     public static final int MAX_ENERGIES_FIELD_NUMBER = 2;
     @SuppressWarnings("serial")
-    private com.google.protobuf.Internal.IntList maxEnergies_ =
-        emptyIntList();
+    private com.google.protobuf.Internal.IntList maxEnergies_;
     /**
      * <code>repeated int32 max_energies = 2;</code>
      * @return A list containing the maxEnergies.
@@ -9615,8 +9597,7 @@ public final class MessageProto {
 
     public static final int CHARACTER_NAMES_FIELD_NUMBER = 3;
     @SuppressWarnings("serial")
-    private com.google.protobuf.LazyStringArrayList characterNames_ =
-        com.google.protobuf.LazyStringArrayList.emptyList();
+    private com.google.protobuf.LazyStringList characterNames_;
     /**
      * <code>repeated string character_names = 3;</code>
      * @return A list containing the characterNames.
@@ -9652,8 +9633,7 @@ public final class MessageProto {
 
     public static final int AI_NAMES_FIELD_NUMBER = 4;
     @SuppressWarnings("serial")
-    private com.google.protobuf.LazyStringArrayList aiNames_ =
-        com.google.protobuf.LazyStringArrayList.emptyList();
+    private com.google.protobuf.LazyStringList aiNames_;
     /**
      * <code>repeated string ai_names = 4;</code>
      * @return A list containing the aiNames.
@@ -9874,13 +9854,11 @@ public final class MessageProto {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
     public static protoc.MessageProto.GrpcGameData parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-
     public static protoc.MessageProto.GrpcGameData parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -9958,10 +9936,10 @@ public final class MessageProto {
         bitField0_ = 0;
         maxHps_ = emptyIntList();
         maxEnergies_ = emptyIntList();
-        characterNames_ =
-            com.google.protobuf.LazyStringArrayList.emptyList();
-        aiNames_ =
-            com.google.protobuf.LazyStringArrayList.emptyList();
+        characterNames_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        aiNames_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000008);
         return this;
       }
 
@@ -9988,29 +9966,37 @@ public final class MessageProto {
       @java.lang.Override
       public protoc.MessageProto.GrpcGameData buildPartial() {
         protoc.MessageProto.GrpcGameData result = new protoc.MessageProto.GrpcGameData(this);
+        buildPartialRepeatedFields(result);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
+      private void buildPartialRepeatedFields(protoc.MessageProto.GrpcGameData result) {
+        if (((bitField0_ & 0x00000001) != 0)) {
+          maxHps_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        }
+        result.maxHps_ = maxHps_;
+        if (((bitField0_ & 0x00000002) != 0)) {
+          maxEnergies_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        }
+        result.maxEnergies_ = maxEnergies_;
+        if (((bitField0_ & 0x00000004) != 0)) {
+          characterNames_ = characterNames_.getUnmodifiableView();
+          bitField0_ = (bitField0_ & ~0x00000004);
+        }
+        result.characterNames_ = characterNames_;
+        if (((bitField0_ & 0x00000008) != 0)) {
+          aiNames_ = aiNames_.getUnmodifiableView();
+          bitField0_ = (bitField0_ & ~0x00000008);
+        }
+        result.aiNames_ = aiNames_;
+      }
+
       private void buildPartial0(protoc.MessageProto.GrpcGameData result) {
         int from_bitField0_ = bitField0_;
-        if (((from_bitField0_ & 0x00000001) != 0)) {
-          maxHps_.makeImmutable();
-          result.maxHps_ = maxHps_;
-        }
-        if (((from_bitField0_ & 0x00000002) != 0)) {
-          maxEnergies_.makeImmutable();
-          result.maxEnergies_ = maxEnergies_;
-        }
-        if (((from_bitField0_ & 0x00000004) != 0)) {
-          characterNames_.makeImmutable();
-          result.characterNames_ = characterNames_;
-        }
-        if (((from_bitField0_ & 0x00000008) != 0)) {
-          aiNames_.makeImmutable();
-          result.aiNames_ = aiNames_;
-        }
       }
 
       @java.lang.Override
@@ -10060,8 +10046,7 @@ public final class MessageProto {
         if (!other.maxHps_.isEmpty()) {
           if (maxHps_.isEmpty()) {
             maxHps_ = other.maxHps_;
-            maxHps_.makeImmutable();
-            bitField0_ |= 0x00000001;
+            bitField0_ = (bitField0_ & ~0x00000001);
           } else {
             ensureMaxHpsIsMutable();
             maxHps_.addAll(other.maxHps_);
@@ -10071,8 +10056,7 @@ public final class MessageProto {
         if (!other.maxEnergies_.isEmpty()) {
           if (maxEnergies_.isEmpty()) {
             maxEnergies_ = other.maxEnergies_;
-            maxEnergies_.makeImmutable();
-            bitField0_ |= 0x00000002;
+            bitField0_ = (bitField0_ & ~0x00000002);
           } else {
             ensureMaxEnergiesIsMutable();
             maxEnergies_.addAll(other.maxEnergies_);
@@ -10082,7 +10066,7 @@ public final class MessageProto {
         if (!other.characterNames_.isEmpty()) {
           if (characterNames_.isEmpty()) {
             characterNames_ = other.characterNames_;
-            bitField0_ |= 0x00000004;
+            bitField0_ = (bitField0_ & ~0x00000004);
           } else {
             ensureCharacterNamesIsMutable();
             characterNames_.addAll(other.characterNames_);
@@ -10092,7 +10076,7 @@ public final class MessageProto {
         if (!other.aiNames_.isEmpty()) {
           if (aiNames_.isEmpty()) {
             aiNames_ = other.aiNames_;
-            bitField0_ |= 0x00000008;
+            bitField0_ = (bitField0_ & ~0x00000008);
           } else {
             ensureAiNamesIsMutable();
             aiNames_.addAll(other.aiNames_);
@@ -10188,10 +10172,10 @@ public final class MessageProto {
 
       private com.google.protobuf.Internal.IntList maxHps_ = emptyIntList();
       private void ensureMaxHpsIsMutable() {
-        if (!maxHps_.isModifiable()) {
-          maxHps_ = makeMutableCopy(maxHps_);
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          maxHps_ = mutableCopy(maxHps_);
+          bitField0_ |= 0x00000001;
         }
-        bitField0_ |= 0x00000001;
       }
       /**
        * <code>repeated int32 max_hps = 1;</code>
@@ -10199,8 +10183,8 @@ public final class MessageProto {
        */
       public java.util.List<java.lang.Integer>
           getMaxHpsList() {
-        maxHps_.makeImmutable();
-        return maxHps_;
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(maxHps_) : maxHps_;
       }
       /**
        * <code>repeated int32 max_hps = 1;</code>
@@ -10225,10 +10209,9 @@ public final class MessageProto {
        */
       public Builder setMaxHps(
           int index, int value) {
-
+        
         ensureMaxHpsIsMutable();
         maxHps_.setInt(index, value);
-        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -10238,10 +10221,9 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder addMaxHps(int value) {
-
+        
         ensureMaxHpsIsMutable();
         maxHps_.addInt(value);
-        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -10255,7 +10237,6 @@ public final class MessageProto {
         ensureMaxHpsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
             values, maxHps_);
-        bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
@@ -10272,10 +10253,10 @@ public final class MessageProto {
 
       private com.google.protobuf.Internal.IntList maxEnergies_ = emptyIntList();
       private void ensureMaxEnergiesIsMutable() {
-        if (!maxEnergies_.isModifiable()) {
-          maxEnergies_ = makeMutableCopy(maxEnergies_);
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          maxEnergies_ = mutableCopy(maxEnergies_);
+          bitField0_ |= 0x00000002;
         }
-        bitField0_ |= 0x00000002;
       }
       /**
        * <code>repeated int32 max_energies = 2;</code>
@@ -10283,8 +10264,8 @@ public final class MessageProto {
        */
       public java.util.List<java.lang.Integer>
           getMaxEnergiesList() {
-        maxEnergies_.makeImmutable();
-        return maxEnergies_;
+        return ((bitField0_ & 0x00000002) != 0) ?
+                 java.util.Collections.unmodifiableList(maxEnergies_) : maxEnergies_;
       }
       /**
        * <code>repeated int32 max_energies = 2;</code>
@@ -10309,10 +10290,9 @@ public final class MessageProto {
        */
       public Builder setMaxEnergies(
           int index, int value) {
-
+        
         ensureMaxEnergiesIsMutable();
         maxEnergies_.setInt(index, value);
-        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -10322,10 +10302,9 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder addMaxEnergies(int value) {
-
+        
         ensureMaxEnergiesIsMutable();
         maxEnergies_.addInt(value);
-        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -10339,7 +10318,6 @@ public final class MessageProto {
         ensureMaxEnergiesIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
             values, maxEnergies_);
-        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -10354,13 +10332,12 @@ public final class MessageProto {
         return this;
       }
 
-      private com.google.protobuf.LazyStringArrayList characterNames_ =
-          com.google.protobuf.LazyStringArrayList.emptyList();
+      private com.google.protobuf.LazyStringList characterNames_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       private void ensureCharacterNamesIsMutable() {
-        if (!characterNames_.isModifiable()) {
+        if (!((bitField0_ & 0x00000004) != 0)) {
           characterNames_ = new com.google.protobuf.LazyStringArrayList(characterNames_);
-        }
-        bitField0_ |= 0x00000004;
+          bitField0_ |= 0x00000004;
+         }
       }
       /**
        * <code>repeated string character_names = 3;</code>
@@ -10368,8 +10345,7 @@ public final class MessageProto {
        */
       public com.google.protobuf.ProtocolStringList
           getCharacterNamesList() {
-        characterNames_.makeImmutable();
-        return characterNames_;
+        return characterNames_.getUnmodifiableView();
       }
       /**
        * <code>repeated string character_names = 3;</code>
@@ -10406,7 +10382,6 @@ public final class MessageProto {
         if (value == null) { throw new NullPointerException(); }
         ensureCharacterNamesIsMutable();
         characterNames_.set(index, value);
-        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
@@ -10420,7 +10395,6 @@ public final class MessageProto {
         if (value == null) { throw new NullPointerException(); }
         ensureCharacterNamesIsMutable();
         characterNames_.add(value);
-        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
@@ -10434,7 +10408,6 @@ public final class MessageProto {
         ensureCharacterNamesIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
             values, characterNames_);
-        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
@@ -10443,9 +10416,8 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder clearCharacterNames() {
-        characterNames_ =
-          com.google.protobuf.LazyStringArrayList.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000004);;
+        characterNames_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000004);
         onChanged();
         return this;
       }
@@ -10460,18 +10432,16 @@ public final class MessageProto {
         checkByteStringIsUtf8(value);
         ensureCharacterNamesIsMutable();
         characterNames_.add(value);
-        bitField0_ |= 0x00000004;
         onChanged();
         return this;
       }
 
-      private com.google.protobuf.LazyStringArrayList aiNames_ =
-          com.google.protobuf.LazyStringArrayList.emptyList();
+      private com.google.protobuf.LazyStringList aiNames_ = com.google.protobuf.LazyStringArrayList.EMPTY;
       private void ensureAiNamesIsMutable() {
-        if (!aiNames_.isModifiable()) {
+        if (!((bitField0_ & 0x00000008) != 0)) {
           aiNames_ = new com.google.protobuf.LazyStringArrayList(aiNames_);
-        }
-        bitField0_ |= 0x00000008;
+          bitField0_ |= 0x00000008;
+         }
       }
       /**
        * <code>repeated string ai_names = 4;</code>
@@ -10479,8 +10449,7 @@ public final class MessageProto {
        */
       public com.google.protobuf.ProtocolStringList
           getAiNamesList() {
-        aiNames_.makeImmutable();
-        return aiNames_;
+        return aiNames_.getUnmodifiableView();
       }
       /**
        * <code>repeated string ai_names = 4;</code>
@@ -10517,7 +10486,6 @@ public final class MessageProto {
         if (value == null) { throw new NullPointerException(); }
         ensureAiNamesIsMutable();
         aiNames_.set(index, value);
-        bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
@@ -10531,7 +10499,6 @@ public final class MessageProto {
         if (value == null) { throw new NullPointerException(); }
         ensureAiNamesIsMutable();
         aiNames_.add(value);
-        bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
@@ -10545,7 +10512,6 @@ public final class MessageProto {
         ensureAiNamesIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
             values, aiNames_);
-        bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
@@ -10554,9 +10520,8 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder clearAiNames() {
-        aiNames_ =
-          com.google.protobuf.LazyStringArrayList.emptyList();
-        bitField0_ = (bitField0_ & ~0x00000008);;
+        aiNames_ = com.google.protobuf.LazyStringArrayList.EMPTY;
+        bitField0_ = (bitField0_ & ~0x00000008);
         onChanged();
         return this;
       }
@@ -10571,7 +10536,6 @@ public final class MessageProto {
         checkByteStringIsUtf8(value);
         ensureAiNamesIsMutable();
         aiNames_.add(value);
-        bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
@@ -10695,6 +10659,11 @@ public final class MessageProto {
       return new GrpcRoundResult();
     }
 
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return protoc.MessageProto.internal_static_service_GrpcRoundResult_descriptor;
@@ -10721,8 +10690,7 @@ public final class MessageProto {
 
     public static final int REMAINING_HPS_FIELD_NUMBER = 2;
     @SuppressWarnings("serial")
-    private com.google.protobuf.Internal.IntList remainingHps_ =
-        emptyIntList();
+    private com.google.protobuf.Internal.IntList remainingHps_;
     /**
      * <code>repeated int32 remaining_hps = 2;</code>
      * @return A list containing the remainingHps.
@@ -10908,13 +10876,11 @@ public final class MessageProto {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
     public static protoc.MessageProto.GrpcRoundResult parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-
     public static protoc.MessageProto.GrpcRoundResult parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -11019,19 +10985,24 @@ public final class MessageProto {
       @java.lang.Override
       public protoc.MessageProto.GrpcRoundResult buildPartial() {
         protoc.MessageProto.GrpcRoundResult result = new protoc.MessageProto.GrpcRoundResult(this);
+        buildPartialRepeatedFields(result);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
+      }
+
+      private void buildPartialRepeatedFields(protoc.MessageProto.GrpcRoundResult result) {
+        if (((bitField0_ & 0x00000002) != 0)) {
+          remainingHps_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000002);
+        }
+        result.remainingHps_ = remainingHps_;
       }
 
       private void buildPartial0(protoc.MessageProto.GrpcRoundResult result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.currentRound_ = currentRound_;
-        }
-        if (((from_bitField0_ & 0x00000002) != 0)) {
-          remainingHps_.makeImmutable();
-          result.remainingHps_ = remainingHps_;
         }
         if (((from_bitField0_ & 0x00000004) != 0)) {
           result.elapsedFrame_ = elapsedFrame_;
@@ -11088,8 +11059,7 @@ public final class MessageProto {
         if (!other.remainingHps_.isEmpty()) {
           if (remainingHps_.isEmpty()) {
             remainingHps_ = other.remainingHps_;
-            remainingHps_.makeImmutable();
-            bitField0_ |= 0x00000002;
+            bitField0_ = (bitField0_ & ~0x00000002);
           } else {
             ensureRemainingHpsIsMutable();
             remainingHps_.addAll(other.remainingHps_);
@@ -11183,7 +11153,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setCurrentRound(int value) {
-
+        
         currentRound_ = value;
         bitField0_ |= 0x00000001;
         onChanged();
@@ -11202,10 +11172,10 @@ public final class MessageProto {
 
       private com.google.protobuf.Internal.IntList remainingHps_ = emptyIntList();
       private void ensureRemainingHpsIsMutable() {
-        if (!remainingHps_.isModifiable()) {
-          remainingHps_ = makeMutableCopy(remainingHps_);
+        if (!((bitField0_ & 0x00000002) != 0)) {
+          remainingHps_ = mutableCopy(remainingHps_);
+          bitField0_ |= 0x00000002;
         }
-        bitField0_ |= 0x00000002;
       }
       /**
        * <code>repeated int32 remaining_hps = 2;</code>
@@ -11213,8 +11183,8 @@ public final class MessageProto {
        */
       public java.util.List<java.lang.Integer>
           getRemainingHpsList() {
-        remainingHps_.makeImmutable();
-        return remainingHps_;
+        return ((bitField0_ & 0x00000002) != 0) ?
+                 java.util.Collections.unmodifiableList(remainingHps_) : remainingHps_;
       }
       /**
        * <code>repeated int32 remaining_hps = 2;</code>
@@ -11239,10 +11209,9 @@ public final class MessageProto {
        */
       public Builder setRemainingHps(
           int index, int value) {
-
+        
         ensureRemainingHpsIsMutable();
         remainingHps_.setInt(index, value);
-        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -11252,10 +11221,9 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder addRemainingHps(int value) {
-
+        
         ensureRemainingHpsIsMutable();
         remainingHps_.addInt(value);
-        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -11269,7 +11237,6 @@ public final class MessageProto {
         ensureRemainingHpsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
             values, remainingHps_);
-        bitField0_ |= 0x00000002;
         onChanged();
         return this;
       }
@@ -11299,7 +11266,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setElapsedFrame(int value) {
-
+        
         elapsedFrame_ = value;
         bitField0_ |= 0x00000004;
         onChanged();
@@ -11447,6 +11414,11 @@ public final class MessageProto {
       return new GrpcKey();
     }
 
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
       return protoc.MessageProto.internal_static_service_GrpcKey_descriptor;
@@ -11719,13 +11691,11 @@ public final class MessageProto {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-
     public static protoc.MessageProto.GrpcKey parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-
     public static protoc.MessageProto.GrpcKey parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
@@ -12022,7 +11992,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setA(boolean value) {
-
+        
         a_ = value;
         bitField0_ |= 0x00000001;
         onChanged();
@@ -12054,7 +12024,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setB(boolean value) {
-
+        
         b_ = value;
         bitField0_ |= 0x00000002;
         onChanged();
@@ -12086,7 +12056,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setC(boolean value) {
-
+        
         c_ = value;
         bitField0_ |= 0x00000004;
         onChanged();
@@ -12118,7 +12088,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setU(boolean value) {
-
+        
         u_ = value;
         bitField0_ |= 0x00000008;
         onChanged();
@@ -12150,7 +12120,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setR(boolean value) {
-
+        
         r_ = value;
         bitField0_ |= 0x00000010;
         onChanged();
@@ -12182,7 +12152,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setD(boolean value) {
-
+        
         d_ = value;
         bitField0_ |= 0x00000020;
         onChanged();
@@ -12214,7 +12184,7 @@ public final class MessageProto {
        * @return This builder for chaining.
        */
       public Builder setL(boolean value) {
-
+        
         l_ = value;
         bitField0_ |= 0x00000040;
         onChanged();
@@ -12294,6 +12264,1134 @@ public final class MessageProto {
 
   }
 
+  public interface GrpcGameEventOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:service.GrpcGameEvent)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>int32 event_id = 1;</code>
+     * @return The eventId.
+     */
+    int getEventId();
+
+    /**
+     * <code>int32 event_type = 2;</code>
+     * @return The eventType.
+     */
+    int getEventType();
+
+    /**
+     * <code>int32 x = 3;</code>
+     * @return The x.
+     */
+    int getX();
+
+    /**
+     * <code>int32 y = 4;</code>
+     * @return The y.
+     */
+    int getY();
+
+    /**
+     * <code>int32 vx = 5;</code>
+     * @return The vx.
+     */
+    int getVx();
+
+    /**
+     * <code>int32 vy = 6;</code>
+     * @return The vy.
+     */
+    int getVy();
+
+    /**
+     * <code>int32 time = 7;</code>
+     * @return The time.
+     */
+    int getTime();
+
+    /**
+     * <code>int32 hx = 8;</code>
+     * @return The hx.
+     */
+    int getHx();
+
+    /**
+     * <code>int32 hy = 9;</code>
+     * @return The hy.
+     */
+    int getHy();
+
+    /**
+     * <code>bool terminate = 10;</code>
+     * @return The terminate.
+     */
+    boolean getTerminate();
+  }
+  /**
+   * Protobuf type {@code service.GrpcGameEvent}
+   */
+  public static final class GrpcGameEvent extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:service.GrpcGameEvent)
+      GrpcGameEventOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use GrpcGameEvent.newBuilder() to construct.
+    private GrpcGameEvent(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private GrpcGameEvent() {
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new GrpcGameEvent();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return protoc.MessageProto.internal_static_service_GrpcGameEvent_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return protoc.MessageProto.internal_static_service_GrpcGameEvent_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              protoc.MessageProto.GrpcGameEvent.class, protoc.MessageProto.GrpcGameEvent.Builder.class);
+    }
+
+    public static final int EVENT_ID_FIELD_NUMBER = 1;
+    private int eventId_ = 0;
+    /**
+     * <code>int32 event_id = 1;</code>
+     * @return The eventId.
+     */
+    @java.lang.Override
+    public int getEventId() {
+      return eventId_;
+    }
+
+    public static final int EVENT_TYPE_FIELD_NUMBER = 2;
+    private int eventType_ = 0;
+    /**
+     * <code>int32 event_type = 2;</code>
+     * @return The eventType.
+     */
+    @java.lang.Override
+    public int getEventType() {
+      return eventType_;
+    }
+
+    public static final int X_FIELD_NUMBER = 3;
+    private int x_ = 0;
+    /**
+     * <code>int32 x = 3;</code>
+     * @return The x.
+     */
+    @java.lang.Override
+    public int getX() {
+      return x_;
+    }
+
+    public static final int Y_FIELD_NUMBER = 4;
+    private int y_ = 0;
+    /**
+     * <code>int32 y = 4;</code>
+     * @return The y.
+     */
+    @java.lang.Override
+    public int getY() {
+      return y_;
+    }
+
+    public static final int VX_FIELD_NUMBER = 5;
+    private int vx_ = 0;
+    /**
+     * <code>int32 vx = 5;</code>
+     * @return The vx.
+     */
+    @java.lang.Override
+    public int getVx() {
+      return vx_;
+    }
+
+    public static final int VY_FIELD_NUMBER = 6;
+    private int vy_ = 0;
+    /**
+     * <code>int32 vy = 6;</code>
+     * @return The vy.
+     */
+    @java.lang.Override
+    public int getVy() {
+      return vy_;
+    }
+
+    public static final int TIME_FIELD_NUMBER = 7;
+    private int time_ = 0;
+    /**
+     * <code>int32 time = 7;</code>
+     * @return The time.
+     */
+    @java.lang.Override
+    public int getTime() {
+      return time_;
+    }
+
+    public static final int HX_FIELD_NUMBER = 8;
+    private int hx_ = 0;
+    /**
+     * <code>int32 hx = 8;</code>
+     * @return The hx.
+     */
+    @java.lang.Override
+    public int getHx() {
+      return hx_;
+    }
+
+    public static final int HY_FIELD_NUMBER = 9;
+    private int hy_ = 0;
+    /**
+     * <code>int32 hy = 9;</code>
+     * @return The hy.
+     */
+    @java.lang.Override
+    public int getHy() {
+      return hy_;
+    }
+
+    public static final int TERMINATE_FIELD_NUMBER = 10;
+    private boolean terminate_ = false;
+    /**
+     * <code>bool terminate = 10;</code>
+     * @return The terminate.
+     */
+    @java.lang.Override
+    public boolean getTerminate() {
+      return terminate_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (eventId_ != 0) {
+        output.writeInt32(1, eventId_);
+      }
+      if (eventType_ != 0) {
+        output.writeInt32(2, eventType_);
+      }
+      if (x_ != 0) {
+        output.writeInt32(3, x_);
+      }
+      if (y_ != 0) {
+        output.writeInt32(4, y_);
+      }
+      if (vx_ != 0) {
+        output.writeInt32(5, vx_);
+      }
+      if (vy_ != 0) {
+        output.writeInt32(6, vy_);
+      }
+      if (time_ != 0) {
+        output.writeInt32(7, time_);
+      }
+      if (hx_ != 0) {
+        output.writeInt32(8, hx_);
+      }
+      if (hy_ != 0) {
+        output.writeInt32(9, hy_);
+      }
+      if (terminate_ != false) {
+        output.writeBool(10, terminate_);
+      }
+      getUnknownFields().writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (eventId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, eventId_);
+      }
+      if (eventType_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(2, eventType_);
+      }
+      if (x_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, x_);
+      }
+      if (y_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(4, y_);
+      }
+      if (vx_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(5, vx_);
+      }
+      if (vy_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(6, vy_);
+      }
+      if (time_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(7, time_);
+      }
+      if (hx_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(8, hx_);
+      }
+      if (hy_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(9, hy_);
+      }
+      if (terminate_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(10, terminate_);
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof protoc.MessageProto.GrpcGameEvent)) {
+        return super.equals(obj);
+      }
+      protoc.MessageProto.GrpcGameEvent other = (protoc.MessageProto.GrpcGameEvent) obj;
+
+      if (getEventId()
+          != other.getEventId()) return false;
+      if (getEventType()
+          != other.getEventType()) return false;
+      if (getX()
+          != other.getX()) return false;
+      if (getY()
+          != other.getY()) return false;
+      if (getVx()
+          != other.getVx()) return false;
+      if (getVy()
+          != other.getVy()) return false;
+      if (getTime()
+          != other.getTime()) return false;
+      if (getHx()
+          != other.getHx()) return false;
+      if (getHy()
+          != other.getHy()) return false;
+      if (getTerminate()
+          != other.getTerminate()) return false;
+      if (!getUnknownFields().equals(other.getUnknownFields())) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + EVENT_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getEventId();
+      hash = (37 * hash) + EVENT_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getEventType();
+      hash = (37 * hash) + X_FIELD_NUMBER;
+      hash = (53 * hash) + getX();
+      hash = (37 * hash) + Y_FIELD_NUMBER;
+      hash = (53 * hash) + getY();
+      hash = (37 * hash) + VX_FIELD_NUMBER;
+      hash = (53 * hash) + getVx();
+      hash = (37 * hash) + VY_FIELD_NUMBER;
+      hash = (53 * hash) + getVy();
+      hash = (37 * hash) + TIME_FIELD_NUMBER;
+      hash = (53 * hash) + getTime();
+      hash = (37 * hash) + HX_FIELD_NUMBER;
+      hash = (53 * hash) + getHx();
+      hash = (37 * hash) + HY_FIELD_NUMBER;
+      hash = (53 * hash) + getHy();
+      hash = (37 * hash) + TERMINATE_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getTerminate());
+      hash = (29 * hash) + getUnknownFields().hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static protoc.MessageProto.GrpcGameEvent parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static protoc.MessageProto.GrpcGameEvent parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static protoc.MessageProto.GrpcGameEvent parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static protoc.MessageProto.GrpcGameEvent parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static protoc.MessageProto.GrpcGameEvent parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static protoc.MessageProto.GrpcGameEvent parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static protoc.MessageProto.GrpcGameEvent parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static protoc.MessageProto.GrpcGameEvent parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static protoc.MessageProto.GrpcGameEvent parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static protoc.MessageProto.GrpcGameEvent parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static protoc.MessageProto.GrpcGameEvent parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static protoc.MessageProto.GrpcGameEvent parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(protoc.MessageProto.GrpcGameEvent prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code service.GrpcGameEvent}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:service.GrpcGameEvent)
+        protoc.MessageProto.GrpcGameEventOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return protoc.MessageProto.internal_static_service_GrpcGameEvent_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return protoc.MessageProto.internal_static_service_GrpcGameEvent_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                protoc.MessageProto.GrpcGameEvent.class, protoc.MessageProto.GrpcGameEvent.Builder.class);
+      }
+
+      // Construct using protoc.MessageProto.GrpcGameEvent.newBuilder()
+      private Builder() {
+
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        bitField0_ = 0;
+        eventId_ = 0;
+        eventType_ = 0;
+        x_ = 0;
+        y_ = 0;
+        vx_ = 0;
+        vy_ = 0;
+        time_ = 0;
+        hx_ = 0;
+        hy_ = 0;
+        terminate_ = false;
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return protoc.MessageProto.internal_static_service_GrpcGameEvent_descriptor;
+      }
+
+      @java.lang.Override
+      public protoc.MessageProto.GrpcGameEvent getDefaultInstanceForType() {
+        return protoc.MessageProto.GrpcGameEvent.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public protoc.MessageProto.GrpcGameEvent build() {
+        protoc.MessageProto.GrpcGameEvent result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public protoc.MessageProto.GrpcGameEvent buildPartial() {
+        protoc.MessageProto.GrpcGameEvent result = new protoc.MessageProto.GrpcGameEvent(this);
+        if (bitField0_ != 0) { buildPartial0(result); }
+        onBuilt();
+        return result;
+      }
+
+      private void buildPartial0(protoc.MessageProto.GrpcGameEvent result) {
+        int from_bitField0_ = bitField0_;
+        if (((from_bitField0_ & 0x00000001) != 0)) {
+          result.eventId_ = eventId_;
+        }
+        if (((from_bitField0_ & 0x00000002) != 0)) {
+          result.eventType_ = eventType_;
+        }
+        if (((from_bitField0_ & 0x00000004) != 0)) {
+          result.x_ = x_;
+        }
+        if (((from_bitField0_ & 0x00000008) != 0)) {
+          result.y_ = y_;
+        }
+        if (((from_bitField0_ & 0x00000010) != 0)) {
+          result.vx_ = vx_;
+        }
+        if (((from_bitField0_ & 0x00000020) != 0)) {
+          result.vy_ = vy_;
+        }
+        if (((from_bitField0_ & 0x00000040) != 0)) {
+          result.time_ = time_;
+        }
+        if (((from_bitField0_ & 0x00000080) != 0)) {
+          result.hx_ = hx_;
+        }
+        if (((from_bitField0_ & 0x00000100) != 0)) {
+          result.hy_ = hy_;
+        }
+        if (((from_bitField0_ & 0x00000200) != 0)) {
+          result.terminate_ = terminate_;
+        }
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof protoc.MessageProto.GrpcGameEvent) {
+          return mergeFrom((protoc.MessageProto.GrpcGameEvent)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(protoc.MessageProto.GrpcGameEvent other) {
+        if (other == protoc.MessageProto.GrpcGameEvent.getDefaultInstance()) return this;
+        if (other.getEventId() != 0) {
+          setEventId(other.getEventId());
+        }
+        if (other.getEventType() != 0) {
+          setEventType(other.getEventType());
+        }
+        if (other.getX() != 0) {
+          setX(other.getX());
+        }
+        if (other.getY() != 0) {
+          setY(other.getY());
+        }
+        if (other.getVx() != 0) {
+          setVx(other.getVx());
+        }
+        if (other.getVy() != 0) {
+          setVy(other.getVy());
+        }
+        if (other.getTime() != 0) {
+          setTime(other.getTime());
+        }
+        if (other.getHx() != 0) {
+          setHx(other.getHx());
+        }
+        if (other.getHy() != 0) {
+          setHy(other.getHy());
+        }
+        if (other.getTerminate() != false) {
+          setTerminate(other.getTerminate());
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        if (extensionRegistry == null) {
+          throw new java.lang.NullPointerException();
+        }
+        try {
+          boolean done = false;
+          while (!done) {
+            int tag = input.readTag();
+            switch (tag) {
+              case 0:
+                done = true;
+                break;
+              case 8: {
+                eventId_ = input.readInt32();
+                bitField0_ |= 0x00000001;
+                break;
+              } // case 8
+              case 16: {
+                eventType_ = input.readInt32();
+                bitField0_ |= 0x00000002;
+                break;
+              } // case 16
+              case 24: {
+                x_ = input.readInt32();
+                bitField0_ |= 0x00000004;
+                break;
+              } // case 24
+              case 32: {
+                y_ = input.readInt32();
+                bitField0_ |= 0x00000008;
+                break;
+              } // case 32
+              case 40: {
+                vx_ = input.readInt32();
+                bitField0_ |= 0x00000010;
+                break;
+              } // case 40
+              case 48: {
+                vy_ = input.readInt32();
+                bitField0_ |= 0x00000020;
+                break;
+              } // case 48
+              case 56: {
+                time_ = input.readInt32();
+                bitField0_ |= 0x00000040;
+                break;
+              } // case 56
+              case 64: {
+                hx_ = input.readInt32();
+                bitField0_ |= 0x00000080;
+                break;
+              } // case 64
+              case 72: {
+                hy_ = input.readInt32();
+                bitField0_ |= 0x00000100;
+                break;
+              } // case 72
+              case 80: {
+                terminate_ = input.readBool();
+                bitField0_ |= 0x00000200;
+                break;
+              } // case 80
+              default: {
+                if (!super.parseUnknownField(input, extensionRegistry, tag)) {
+                  done = true; // was an endgroup tag
+                }
+                break;
+              } // default:
+            } // switch (tag)
+          } // while (!done)
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.unwrapIOException();
+        } finally {
+          onChanged();
+        } // finally
+        return this;
+      }
+      private int bitField0_;
+
+      private int eventId_ ;
+      /**
+       * <code>int32 event_id = 1;</code>
+       * @return The eventId.
+       */
+      @java.lang.Override
+      public int getEventId() {
+        return eventId_;
+      }
+      /**
+       * <code>int32 event_id = 1;</code>
+       * @param value The eventId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEventId(int value) {
+        
+        eventId_ = value;
+        bitField0_ |= 0x00000001;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 event_id = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEventId() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        eventId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int eventType_ ;
+      /**
+       * <code>int32 event_type = 2;</code>
+       * @return The eventType.
+       */
+      @java.lang.Override
+      public int getEventType() {
+        return eventType_;
+      }
+      /**
+       * <code>int32 event_type = 2;</code>
+       * @param value The eventType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setEventType(int value) {
+        
+        eventType_ = value;
+        bitField0_ |= 0x00000002;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 event_type = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearEventType() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        eventType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int x_ ;
+      /**
+       * <code>int32 x = 3;</code>
+       * @return The x.
+       */
+      @java.lang.Override
+      public int getX() {
+        return x_;
+      }
+      /**
+       * <code>int32 x = 3;</code>
+       * @param value The x to set.
+       * @return This builder for chaining.
+       */
+      public Builder setX(int value) {
+        
+        x_ = value;
+        bitField0_ |= 0x00000004;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 x = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearX() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        x_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int y_ ;
+      /**
+       * <code>int32 y = 4;</code>
+       * @return The y.
+       */
+      @java.lang.Override
+      public int getY() {
+        return y_;
+      }
+      /**
+       * <code>int32 y = 4;</code>
+       * @param value The y to set.
+       * @return This builder for chaining.
+       */
+      public Builder setY(int value) {
+        
+        y_ = value;
+        bitField0_ |= 0x00000008;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 y = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearY() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        y_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int vx_ ;
+      /**
+       * <code>int32 vx = 5;</code>
+       * @return The vx.
+       */
+      @java.lang.Override
+      public int getVx() {
+        return vx_;
+      }
+      /**
+       * <code>int32 vx = 5;</code>
+       * @param value The vx to set.
+       * @return This builder for chaining.
+       */
+      public Builder setVx(int value) {
+        
+        vx_ = value;
+        bitField0_ |= 0x00000010;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 vx = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearVx() {
+        bitField0_ = (bitField0_ & ~0x00000010);
+        vx_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int vy_ ;
+      /**
+       * <code>int32 vy = 6;</code>
+       * @return The vy.
+       */
+      @java.lang.Override
+      public int getVy() {
+        return vy_;
+      }
+      /**
+       * <code>int32 vy = 6;</code>
+       * @param value The vy to set.
+       * @return This builder for chaining.
+       */
+      public Builder setVy(int value) {
+        
+        vy_ = value;
+        bitField0_ |= 0x00000020;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 vy = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearVy() {
+        bitField0_ = (bitField0_ & ~0x00000020);
+        vy_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int time_ ;
+      /**
+       * <code>int32 time = 7;</code>
+       * @return The time.
+       */
+      @java.lang.Override
+      public int getTime() {
+        return time_;
+      }
+      /**
+       * <code>int32 time = 7;</code>
+       * @param value The time to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTime(int value) {
+        
+        time_ = value;
+        bitField0_ |= 0x00000040;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 time = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTime() {
+        bitField0_ = (bitField0_ & ~0x00000040);
+        time_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int hx_ ;
+      /**
+       * <code>int32 hx = 8;</code>
+       * @return The hx.
+       */
+      @java.lang.Override
+      public int getHx() {
+        return hx_;
+      }
+      /**
+       * <code>int32 hx = 8;</code>
+       * @param value The hx to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHx(int value) {
+        
+        hx_ = value;
+        bitField0_ |= 0x00000080;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 hx = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHx() {
+        bitField0_ = (bitField0_ & ~0x00000080);
+        hx_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int hy_ ;
+      /**
+       * <code>int32 hy = 9;</code>
+       * @return The hy.
+       */
+      @java.lang.Override
+      public int getHy() {
+        return hy_;
+      }
+      /**
+       * <code>int32 hy = 9;</code>
+       * @param value The hy to set.
+       * @return This builder for chaining.
+       */
+      public Builder setHy(int value) {
+        
+        hy_ = value;
+        bitField0_ |= 0x00000100;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 hy = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearHy() {
+        bitField0_ = (bitField0_ & ~0x00000100);
+        hy_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private boolean terminate_ ;
+      /**
+       * <code>bool terminate = 10;</code>
+       * @return The terminate.
+       */
+      @java.lang.Override
+      public boolean getTerminate() {
+        return terminate_;
+      }
+      /**
+       * <code>bool terminate = 10;</code>
+       * @param value The terminate to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTerminate(boolean value) {
+        
+        terminate_ = value;
+        bitField0_ |= 0x00000200;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool terminate = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTerminate() {
+        bitField0_ = (bitField0_ & ~0x00000200);
+        terminate_ = false;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:service.GrpcGameEvent)
+    }
+
+    // @@protoc_insertion_point(class_scope:service.GrpcGameEvent)
+    private static final protoc.MessageProto.GrpcGameEvent DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new protoc.MessageProto.GrpcGameEvent();
+    }
+
+    public static protoc.MessageProto.GrpcGameEvent getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<GrpcGameEvent>
+        PARSER = new com.google.protobuf.AbstractParser<GrpcGameEvent>() {
+      @java.lang.Override
+      public GrpcGameEvent parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        Builder builder = newBuilder();
+        try {
+          builder.mergeFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          throw e.setUnfinishedMessage(builder.buildPartial());
+        } catch (com.google.protobuf.UninitializedMessageException e) {
+          throw e.asInvalidProtocolBufferException().setUnfinishedMessage(builder.buildPartial());
+        } catch (java.io.IOException e) {
+          throw new com.google.protobuf.InvalidProtocolBufferException(e)
+              .setUnfinishedMessage(builder.buildPartial());
+        }
+        return builder.buildPartial();
+      }
+    };
+
+    public static com.google.protobuf.Parser<GrpcGameEvent> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<GrpcGameEvent> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public protoc.MessageProto.GrpcGameEvent getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_service_GrpcHitArea_descriptor;
   private static final 
@@ -12344,6 +13442,11 @@ public final class MessageProto {
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_service_GrpcKey_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_service_GrpcGameEvent_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_service_GrpcGameEvent_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -12402,9 +13505,13 @@ public final class MessageProto {
       "\001 \001(\005\022\025\n\rremaining_hps\030\002 \003(\005\022\025\n\relapsed_" +
       "frame\030\003 \001(\005\"V\n\007GrpcKey\022\t\n\001A\030\001 \001(\010\022\t\n\001B\030\002" +
       " \001(\010\022\t\n\001C\030\003 \001(\010\022\t\n\001U\030\004 \001(\010\022\t\n\001R\030\005 \001(\010\022\t\n" +
-      "\001D\030\006 \001(\010\022\t\n\001L\030\007 \001(\010B5\n\006protocB\014MessagePr" +
-      "otoP\000\252\002\032DareFightingICE.Grpc.Protob\006prot" +
-      "o3"
+      "\001D\030\006 \001(\010\022\t\n\001L\030\007 \001(\010\"\234\001\n\rGrpcGameEvent\022\020\n" +
+      "\010event_id\030\001 \001(\005\022\022\n\nevent_type\030\002 \001(\005\022\t\n\001x" +
+      "\030\003 \001(\005\022\t\n\001y\030\004 \001(\005\022\n\n\002vx\030\005 \001(\005\022\n\n\002vy\030\006 \001(" +
+      "\005\022\014\n\004time\030\007 \001(\005\022\n\n\002hx\030\010 \001(\005\022\n\n\002hy\030\t \001(\005\022" +
+      "\021\n\tterminate\030\n \001(\010B5\n\006protocB\014MessagePro" +
+      "toP\000\252\002\032DareFightingICE.Grpc.Protob\006proto" +
+      "3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -12471,6 +13578,12 @@ public final class MessageProto {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_service_GrpcKey_descriptor,
         new java.lang.String[] { "A", "B", "C", "U", "R", "D", "L", });
+    internal_static_service_GrpcGameEvent_descriptor =
+      getDescriptor().getMessageTypes().get(10);
+    internal_static_service_GrpcGameEvent_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_service_GrpcGameEvent_descriptor,
+        new java.lang.String[] { "EventId", "EventType", "X", "Y", "Vx", "Vy", "Time", "Hx", "Hy", "Terminate", });
     protoc.EnumProto.getDescriptor();
   }
 

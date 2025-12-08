@@ -495,6 +495,18 @@ public class Character {
      * Updates character's information.
      */
     public void update() {
+
+            // SIMPLE: No formatting needed
+   
+        // if (this.playerNumber) { // Only print for Player 1
+    // System.out.printf("[P1] F:%d Pos(%3d,%3d) Vel(%3d,%3d) %-12s %-6s Hit[L:%3d R:%3d T:%3d B:%3d]%n",
+    //     this.getRemainingFrame(),
+    //     (int)this.x, 335-(int)this.y,
+    //     (int)this.speedX, (int)this.speedY,  // Added velocity
+    //     this.action.toString(),
+    //     this.state.toString(),
+    //     getHitAreaLeft(), getHitAreaRight(), getHitAreaTop(), getHitAreaBottom());
+// }
         moveX(this.speedX);
         moveY(this.speedY);
         frictionEffect();

@@ -82,6 +82,12 @@ public class GraphicManager {
 	private ArrayList<Image> backGroundImage;
 
 	/**
+	 * Event images container.
+	 * Index 0: event0, Index 1: event1, etc.
+	 */
+	private ArrayList<ArrayList<Image>> eventImageContainer;
+
+	/**
 	 * 描画情報
 	 */
 	private BufferedImage screen;
@@ -109,6 +115,7 @@ public class GraphicManager {
 		this.upperImageContainer = new Image[2][3];
 		this.hitEffectImageContainer = new Image[4][4];
 		this.backGroundImage = new ArrayList<Image>();
+		this.eventImageContainer = new ArrayList<ArrayList<Image>>();
 
 		screen = new BufferedImage(GameSetting.STAGE_WIDTH, GameSetting.STAGE_HEIGHT, BufferedImage.TYPE_INT_RGB);
 		screenGraphic = screen.createGraphics();
@@ -269,6 +276,17 @@ public class GraphicManager {
 			ImageTask task = new ImageTask(img.getTextureId(), x, y, sizeX, sizeY, direction);
 			this.renderTaskList.add(task);
 		}
+	}
+	
+	public void drawImageScaled(Image img, int x, int y, float scale, boolean direction, boolean shouldRender) {
+		int sizeX = (int)(img.getWidth() * scale);
+		int sizeY = (int)(img.getHeight() * scale);
+		
+		// Adjust position to center the scaled image
+		int drawX = x - (sizeX / 2);
+		int drawY = y - (sizeY / 2);
+		
+		this.drawImage(img, drawX, drawY, sizeX, sizeY, direction, -sizeX, 0, shouldRender);
 	}
 
 	public void drawImageInScreenData(Image img, int x, int y, int sizeX, int sizeY, boolean direction, double tx, double ty) {
@@ -438,6 +456,14 @@ public class GraphicManager {
 	}
 
 	/**
+	 * Returns the event image container.
+	 * @return the event image container
+	 */
+	public ArrayList<ArrayList<Image>> getEventImageContainer() {
+		return eventImageContainer;
+	}
+
+	/**
 	 * GraphicManagerのフィールド変数をクリアする．
 	 */
 	public void close() {
@@ -451,6 +477,7 @@ public class GraphicManager {
 		this.upperImageContainer = null;
 		this.hitEffectImageContainer = null;
 		this.backGroundImage.clear();
+		this.eventImageContainer.clear();
 	}
 
 }

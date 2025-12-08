@@ -48,3 +48,19 @@ log/out/*
 !DareFightingICE/**
 **/__pycache__
 **/.DS_Store
+
+### Python ###
+venv/
+*.pyc
+.env
+*_pb2.py
+*_pb2_grpc.py
+
+### Build Artifacts ###
+sources.txt
+
+### IDE Files ###
+DareFightingICE/.project
+
+
+

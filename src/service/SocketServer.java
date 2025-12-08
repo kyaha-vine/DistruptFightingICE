@@ -173,6 +173,11 @@ public class SocketServer {
 						// Close Game
 						GameService.getInstance().setCloseFlag(true);
 						Logger.getAnonymousLogger().log(Level.INFO, "Received close game request");
+					} else if (data[0] == 6) {
+						// Game Event
+						SocketGameEvent eventClient = new SocketGameEvent(client);
+						new Thread(eventClient).start();
+						Logger.getAnonymousLogger().log(Level.INFO, "Client connected as Game Event Injector");
 					}
 				} catch (IOException e) {
 					if (!Thread.currentThread().isInterrupted()) Logger.getAnonymousLogger().log(Level.SEVERE, e.getMessage());

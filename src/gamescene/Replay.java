@@ -191,7 +191,7 @@ public class Replay extends GameScene {
 				if (!this.isFinished) {
 					// 画面をDrawerクラスで描画
 					ResourceDrawer.getInstance().drawResource(this.fighting.getCharacters(),
-							this.fighting.getProjectileDeque(), this.fighting.getHitEffectList(),
+							this.fighting.getProjectileDeque(), this.fighting.getEventDeque(), this.fighting.getHitEffectList(),
 							this.frameData.getRemainingTimeMilliseconds(), this.currentRound);
 
 					GraphicManager.getInstance().drawString("PlaySpeed:" + this.playSpeedArray[this.playSpeedIndex], 50, 550);

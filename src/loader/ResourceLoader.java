@@ -148,6 +148,32 @@ public class ResourceLoader {
 		loadUpperImages(graphicPath + ResourceSetting.UPPER_DIRECTORY);
 		Logger.getAnonymousLogger().log(Level.INFO, "Upper attack images have been loaded.");
 
+		// Event images loading
+		if (!isLoaded("eventImages")) {
+			ArrayList<ArrayList<Image>> eventContainer = GraphicManager.getInstance().getEventImageContainer();
+			
+			String eventPath = graphicPath + "event/";				
+			File eventDir = new File(eventPath);
+			
+			if (eventDir.exists() && eventDir.isDirectory()) {
+				File[] files = eventDir.listFiles();
+				if (files != null) {
+					sortByFileName(files);
+					
+					for (int i = 0; i < files.length; i++) {
+						if (files[i].isFile() && !files[i].isHidden()) {
+							ArrayList<Image> images = new ArrayList<Image>();
+							loadImage6x6(images, files[i]);
+							eventContainer.add(images);
+							Logger.getAnonymousLogger().log(Level.INFO, "Event" + i + " images have been loaded from " + files[i].getName());
+						}
+					}
+				}
+			}
+			
+			addLoadedResource("eventImages");
+		}
+
 		// キャラクター画像読み込み
 		loadCharacterImages(characterGraphicPath);
 		Logger.getAnonymousLogger().log(Level.INFO, "Character images have been loaded.");
@@ -496,6 +522,34 @@ public class ResourceLoader {
 
 		for (File file : files) {
 			container.add(loadImage(file.getPath()));
+		}
+	}
+
+	/**
+	 * 指定したファイルから画像を読み込み、6x6のグリッドとして分割してリストに格納する．
+	 *
+	 * @param container
+	 *            画像を格納するリスト
+	 * @param file
+	 *            読み込むファイル
+	 */
+	private void loadImage6x6(ArrayList<Image> container, File file) {
+		try {
+			BufferedImage bimg = ImageIO.read(new FileInputStream(file));
+			if (bimg == null) return;
+
+			int chunkWidth = bimg.getWidth() / 6;
+			int chunkHeight = bimg.getHeight() / 6;
+
+			for (int i = 0; i < 36; i++) {
+				int row = i / 6;
+				int col = i % 6;
+				
+				BufferedImage subImg = bimg.getSubimage(col * chunkWidth, row * chunkHeight, chunkWidth, chunkHeight);
+				container.add(loadTextureFromBufferedImage(subImg));
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
 	}
 

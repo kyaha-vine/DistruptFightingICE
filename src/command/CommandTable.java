@@ -75,8 +75,24 @@ public class CommandTable {
 			}
 		}
 
-		return convertKeyToAction(pushA, pushB, pushC, nowKeyData, commandList, character.getState(),
+		Action result = convertKeyToAction(pushA, pushB, pushC, nowKeyData, commandList, character.getState(),
 				character.isFront());
+
+		boolean isIdleCmd = 
+    commandList[0] == 5 && 
+    commandList[1] == 5 && 
+    commandList[2] == 5 && 
+    commandList[3] == 5;
+
+// if (!isIdleCmd) {
+//     System.out.printf("[IN] L:%d B:%c%c%c P:%c%c%c Cmd:%d%d%d%d → %s%n",
+//         nowKeyData.getLever(character.isFront()),
+//         nowKeyData.A ? 'A' : '-', nowKeyData.B ? 'B' : '-', nowKeyData.C ? 'C' : '-',
+//         pushA ? 'A' : '-', pushB ? 'B' : '-', pushC ? 'C' : '-',
+//         commandList[0], commandList[1], commandList[2], commandList[3],
+//         result.toString());
+// }
+		return result;
 	}
 
 	/**
@@ -111,6 +127,7 @@ public class CommandTable {
 			pushB = nowKey.B;
 			pushC = nowKey.C;
 		}
+		
 
 		input.addLast(nowKey);
 
@@ -127,7 +144,16 @@ public class CommandTable {
 			}
 		}
 
-		return convertKeyToAction(pushA, pushB, pushC, nowKey, commandList, character.getState(), character.isFront());
+		Action result = convertKeyToAction(pushA, pushB, pushC, nowKey, commandList, character.getState(), character.isFront());
+
+		// System.out.printf("[IN] L:%d B:%c%c%c P:%c%c%c Cmd:%d%d%d%d → %s%n",
+        // nowKey.getLever(character.isFront()),
+        // nowKey.A ? 'A' : '-', nowKey.B ? 'B' : '-', nowKey.C ? 'C' : '-',
+        // pushA ? 'A' : '-', pushB ? 'B' : '-', pushC ? 'C' : '-',
+        // commandList[0], commandList[1], commandList[2], commandList[3],
+        // result.toString());
+
+		return result;
 	}
 
 	/**
@@ -221,6 +247,7 @@ public class CommandTable {
 
 			// Ground Action
 		} else {
+			// System.out.printf("Push: A=%s B=%s C=%s%n", pushA ? "T" : "F", pushB ? "T" : "F", pushC ? "T" : "F");
 			// Super special move
 			if (pushC) {
 				if ((commandList[0] == 6 && commandList[1] == 3 && commandList[2] == 2)) {
@@ -257,6 +284,7 @@ public class CommandTable {
 				}
 
 			} else if (pushA) {
+				// System.out.printf("Lever: %d%n", nowKeyData.getLever(isFront));
 				// special move
 				if ((commandList[0] == 6 && commandList[1] == 3 && commandList[2] == 2)) {
 					return Action.STAND_D_DF_FA;// STAND236A
@@ -276,7 +304,7 @@ public class CommandTable {
 					return Action.CROUCH_A;// CROUCH2A
 
 				} else if (nowKeyData.getLever(isFront) == 4) {
-					return Action.THROW_A;// THROW4A
+					return Action.THROW_A;// st
 
 				} else if (nowKeyData.getLever(isFront) == 6) {
 					return Action.STAND_FA;// STAND6A

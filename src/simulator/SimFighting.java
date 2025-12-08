@@ -243,6 +243,7 @@ public class SimFighting extends Fighting {
 		}
 		// run pushing effect
 		detectionPush();
+		// System.out.println("sim");
 		// run collision of first and second character.
 		detectionFusion();
 		// run effect when character's are in the end of stage.

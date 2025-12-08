@@ -9,6 +9,7 @@ import fighting.Attack;
 import fighting.Character;
 import fighting.HitEffect;
 import fighting.LoopEffect;
+import fighting.Event;
 import image.Image;
 import manager.GraphicManager;
 import setting.FlagSetting;
@@ -58,16 +59,17 @@ public class ResourceDrawer {
 	 * @param round
 	 *            ラウンド
 	 */
-	public void drawResource(Character[] characters, Deque<LoopEffect> projectiles,
+	public void drawResource(Character[] characters, Deque<LoopEffect> projectiles, Deque<Event> events,
 			LinkedList<LinkedList<HitEffect>> hitEffects, int remainingTime, int round) {
-		this.drawResource(characters, projectiles, hitEffects, remainingTime, round, true);
+		this.drawResource(characters, projectiles, events, hitEffects, remainingTime, round, true);
 	}
 	
-	public void drawResource(Character[] characters, Deque<LoopEffect> projectiles,
+	public void drawResource(Character[] characters, Deque<LoopEffect> projectiles, Deque<Event> events,
 			LinkedList<LinkedList<HitEffect>> hitEffects, int remainingTime, int round, boolean shouldRender) {
 		drawBackGroundImage(shouldRender);
 		drawCharacterImage(characters, shouldRender);
 		drawAttackImage(projectiles, characters, shouldRender);
+		drawEventImage(events, shouldRender);
 		drawHPGaugeImage(characters, shouldRender);
 		drawEnergyGaugeImage(characters, shouldRender);
 		drawTimeImage(remainingTime, shouldRender);
@@ -141,6 +143,17 @@ public class ResourceDrawer {
 
 				GraphicManager.getInstance().drawImage(image, positionX, positionY, attack.getSpeedX() >= 0, shouldRender);
 			}
+		}
+	}
+
+	private void drawEventImage(Deque<Event> events, boolean shouldRender) {
+		// Is displayed according to the orientation image attack.
+		for (Event event : events) {
+			Image image = event.getImage();
+			int velocityX = event.getVx();
+			float scale = event.getScale();
+			
+			GraphicManager.getInstance().drawImageScaled(image, event.getX(), event.getY(), scale, velocityX >= 0, shouldRender);
 		}
 	}
 

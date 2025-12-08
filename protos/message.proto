@@ -115,3 +115,16 @@ message GrpcKey {
 	bool D = 6;
 	bool L = 7;
 }
+
+message GrpcGameEvent {
+	int32 event_id = 1;
+	int32 event_type = 2;
+	int32 x = 3;
+	int32 y = 4;
+	int32 vx = 5;
+	int32 vy = 6;
+	int32 time = 7;
+	int32 hx = 8;
+	int32 hy = 9;
+	bool terminate = 10;
+}

@@ -1,9 +1,12 @@
 package service;
 
 import java.util.List;
+import java.util.Queue;
+import java.util.concurrent.ConcurrentLinkedQueue;
 
 import loader.ResourceLoader;
 import manager.InputManager;
+import protoc.MessageProto.GrpcGameEvent;
 import setting.FlagSetting;
 import setting.LaunchSetting;
 
@@ -13,6 +16,7 @@ public class GameService {
 	private boolean closeFlag;
 	
 	private List<String> allAiNames;
+	private Queue<GrpcGameEvent> eventQueue;
 	
 	public static GameService getInstance() {
         return GameServiceHolder.instance;
@@ -27,6 +31,15 @@ public class GameService {
 		this.closeFlag = false;
 		
 		this.allAiNames = ResourceLoader.getInstance().loadFileNames("./data/ai", ".jar");
+		this.eventQueue = new ConcurrentLinkedQueue<>();
+	}
+	
+	public void addEvent(GrpcGameEvent event) {
+		this.eventQueue.add(event);
+	}
+	
+	public GrpcGameEvent getEvent() {
+		return this.eventQueue.poll();
 	}
 	
 	public void setCharacterName(boolean player, String characterName) {
