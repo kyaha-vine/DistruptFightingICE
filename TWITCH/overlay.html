@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Twitch Vote Overlay</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: rgba(0, 0, 0, 0);
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    #root {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 10px 20px;
+      border-radius: 20px;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      min-width: 600px;
+    }
+
+    #title {
+      font-size: 22px;
+      margin-bottom: 6px;
+      text-shadow: 0 0 8px rgba(221, 214, 214, 0.8);
+    }
+
+    #timer {
+      font-size: 16px;
+      margin-bottom: 10px;
+      opacity: 0.9;
+    }
+
+    #items {
+      display: flex;
+      gap: 16px;
+    }
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 12px;
+      background: rgba(0, 0, 0, 0.4);
+      min-width: 80px;
+    }
+
+    .item.winner {
+      background: rgba(255, 215, 0, 0.4);
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+    }
+
+    .emoji {
+      font-size: 40px;
+      margin-bottom: 4px;
+      text-shadow: 0 0 10px rgba(114, 114, 114, 0.7);
+    }
+
+    .label {
+      font-size: 13px;
+      margin-bottom: 2px;
+      text-align: center;
+    }
+
+    .votes {
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    #winner-banner {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 72px;
+      text-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s ease-out;
+      text-align: center;
+    }
+
+    #winner-banner.show {
+      opacity: 1;
+    }
+
+    #winner-text {
+      display: block;
+      font-size: 24px;
+      margin-top: 8px;
+    }
+
+    #placement-info {
+      font-size: 18px;
+      margin-top: 8px;
+    }
+
+    #game-rect {
+      position: absolute;
+      right: 50%;
+      top: 50%;
+      transform: translate(50%, -50%);
+      width: 960px;
+      height: 640px;
+      border: 3px solid red;
+      pointer-events: all;
+      cursor: crosshair;
+    }
+
+    #coords-display {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      color: white;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 14px;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <!-- Game interaction rectangle -->
+  <div id="game-rect"></div>
+  <div id="coords-display">Coords: --, --</div>
+
+  <div id="winner-banner">
+    <span id="winner-emoji">🎉</span>
+    <span id="winner-text">Winner: ...</span>
+    <div id="placement-info"></div>
+  </div>
+
+  <div id="root">
+    <div id="title">Vote for the next item!</div>
+    <div id="timer">Waiting for round…</div>
+    <div id="items"></div>
+  </div>
+
+  <script>
+    const WS_URL = "ws://localhost:8765";
+
+    let ws = null;
+    let currentRoundId = null;
+    let roundEndTime = null;
+    let roundDuration = 0;
+    let roundActive = false;
+
+    // itemsState: key -> { emoji, label, votes }
+    let itemsState = {};
+
+    // Game rectangle dimensions
+    const GAME_WIDTH = 960;
+    const GAME_HEIGHT = 640;
+
+    function connectWS() {
+      ws = new WebSocket(WS_URL);
+
+      ws.onopen = () => {
+        console.log("[Overlay] Connected to WebSocket");
+      };
+
+      ws.onclose = () => {
+        console.log("[Overlay] Disconnected, retrying in 3s...");
+        setTimeout(connectWS, 3000);
+      };
+
+      ws.onerror = (e) => {
+        console.error("[Overlay] WebSocket error", e);
+      };
+
+      ws.onmessage = (event) => {
+        try {
+          const data = JSON.parse(event.data);
+          handleMessage(data);
+        } catch (err) {
+          console.error("[Overlay] Invalid message:", event.data);
+        }
+      };
+    }
+
+    function handleMessage(data) {
+      if (data.type === "round_start") {
+        handleRoundStart(data);
+      } else if (data.type === "vote") {
+        handleVote(data);
+      } else if (data.type === "round_result") {
+        handleRoundResult(data);
+      } else if (data.type === "placement_request") {
+        handlePlacementRequest(data);
+      } else if (data.type === "spawn_item") {
+        // Côté overlay on ne fait rien, c’est pour le mini-jeu
+        console.log("[Overlay] spawn_item for game:", data);
+      }
+    }
+
+    function handleRoundStart(data) {
+      console.log("[Overlay] Round start:", data);
+      currentRoundId = data.round_id;
+      roundDuration = data.duration;
+      roundEndTime = Date.now() + roundDuration * 1000;
+      roundActive = true;
+
+      itemsState = {};
+      for (const opt of data.options) {
+        itemsState[opt.key] = {
+          emoji: opt.emoji,
+          label: opt.label,
+          votes: 0,
+        };
+      }
+
+      const winnerBanner = document.getElementById("winner-banner");
+      const placementInfo = document.getElementById("placement-info");
+      winnerBanner.classList.remove("show");
+      placementInfo.textContent = "";
+
+      renderItems();
+    }
+
+    function handleVote(data) {
+      if (!roundActive) return;
+      if (!itemsState[data.item]) return;
+
+      itemsState[data.item].votes = data.count;
+      renderItems();
+    }
+
+    function handleRoundResult(data) {
+      console.log("[Overlay] Round result:", data);
+      roundActive = false;
+
+      if (data.votes) {
+        for (const [key, value] of Object.entries(data.votes)) {
+          if (itemsState[key]) {
+            itemsState[key].votes = value;
+          }
+        }
+      }
+
+      renderItems(data.winner);
+
+      const winnerBanner = document.getElementById("winner-banner");
+      const winnerEmojiSpan = document.getElementById("winner-emoji");
+      const winnerTextSpan = document.getElementById("winner-text");
+      const placementInfo = document.getElementById("placement-info");
+
+      if (data.winner) {
+        winnerEmojiSpan.textContent = data.winner.emoji;
+        winnerTextSpan.textContent = `Winner: ${data.winner.label} (${data.winner.votes} votes)`;
+        placementInfo.textContent = ""; // on attend le placement_request
+      } else {
+        winnerEmojiSpan.textContent = "😴";
+        winnerTextSpan.textContent = "No votes this round";
+        placementInfo.textContent = "";
+      }
+
+      winnerBanner.classList.add("show");
+    }
+
+    function handlePlacementRequest(data) {
+      console.log("[Overlay] Placement request:", data);
+
+      const winnerBanner = document.getElementById("winner-banner");
+      const placementInfo = document.getElementById("placement-info");
+
+      winnerBanner.classList.add("show");
+      placementInfo.textContent =
+        `@${data.chosen_user} place ${data.emoji} ${data.label} with !place left | middle | right`;
+    }
+
+    function renderItems(winner = null) {
+      const itemsDiv = document.getElementById("items");
+      itemsDiv.innerHTML = "";
+
+      const winnerKey = winner ? winner.key : null;
+
+      for (const [key, item] of Object.entries(itemsState)) {
+        const div = document.createElement("div");
+        div.className = "item";
+        if (winnerKey && key === winnerKey) {
+          div.classList.add("winner");
+        }
+
+        const emojiSpan = document.createElement("div");
+        emojiSpan.className = "emoji";
+        emojiSpan.textContent = item.emoji;
+
+        const labelDiv = document.createElement("div");
+        labelDiv.className = "label";
+        labelDiv.textContent = item.label;
+
+        const votesDiv = document.createElement("div");
+        votesDiv.className = "votes";
+        votesDiv.textContent = `${item.votes} vote${item.votes === 1 ? "" : "s"}`;
+
+        div.appendChild(emojiSpan);
+        div.appendChild(labelDiv);
+        div.appendChild(votesDiv);
+
+        itemsDiv.appendChild(div);
+      }
+    }
+
+    function updateTimer() {
+      const timerDiv = document.getElementById("timer");
+
+      if (!roundActive || !roundEndTime) {
+        timerDiv.textContent = "Waiting for next round…";
+        requestAnimationFrame(updateTimer);
+        return;
+      }
+
+      const now = Date.now();
+      const remainingMs = roundEndTime - now;
+      const remainingSec = Math.max(0, Math.ceil(remainingMs / 1000));
+
+      timerDiv.textContent = `Time left: ${remainingSec}s`;
+
+      requestAnimationFrame(updateTimer);
+    }
+
+    // Mouse tracking handler for game rectangle
+    const gameRect = document.getElementById('game-rect');
+    const coordsDisplay = document.getElementById('coords-display');
+
+    let isDragging = false;
+    let lastX = 0;
+    let lastY = 0;
+    let currentVX = 0;
+    let currentVY = 0;
+    let sendLoopRunning = false;
+
+    gameRect.addEventListener('mousedown', (event) => {
+      isDragging = true;
+      const rect = gameRect.getBoundingClientRect();
+      lastX = Math.floor(event.clientX - rect.left);
+      lastY = Math.floor(event.clientY - rect.top);
+      currentVX = 0;
+      currentVY = 0;
+      
+      // Start continuous send loop (30 Hz like demo_event.py)
+      if (!sendLoopRunning) {
+        sendLoopRunning = true;
+        sendContinuousLoop();
+      }
+    });
+
+    gameRect.addEventListener('mousemove', (event) => {
+      const rect = gameRect.getBoundingClientRect();
+      const x = Math.floor(event.clientX - rect.left);
+      const y = Math.floor(event.clientY - rect.top);
+      
+      // Clamp coordinates to game bounds
+      const clampedX = Math.max(0, Math.min(GAME_WIDTH, x));
+      const clampedY = Math.max(0, Math.min(GAME_HEIGHT, y));
+      
+      // Always show coordinates
+      coordsDisplay.textContent = `Coords: ${clampedX}, ${clampedY} | V: (${currentVX}, ${currentVY})`;
+      
+      // Calculate velocity (difference from last position)
+      if (isDragging) {
+        let dx = clampedX - lastX;
+        let dy = clampedY - lastY;
+        
+        // Clamp velocity between -3 and 3 (like demo_event.py)
+        currentVX = Math.max(-3, Math.min(3, dx));
+        currentVY = Math.max(-3, Math.min(3, dy));
+        
+        lastX = clampedX;
+        lastY = clampedY;
+      }
+    });
+
+    gameRect.addEventListener('mouseleave', () => {
+      coordsDisplay.textContent = 'Coords: --, --';
+      if (isDragging) {
+        isDragging = false;
+        // Send final terminate message
+        sendMouseData(true);
+      }
+    });
+
+    gameRect.addEventListener('mouseup', (event) => {
+      const rect = gameRect.getBoundingClientRect();
+      const x = Math.floor(event.clientX - rect.left);
+      const y = Math.floor(event.clientY - rect.top);
+      
+      const clampedX = Math.max(0, Math.min(GAME_WIDTH, x));
+      const clampedY = Math.max(0, Math.min(GAME_HEIGHT, y));
+      
+      isDragging = false;
+      sendLoopRunning = false;
+      
+      console.log(`[Mouse Release] Game coords: (${clampedX}, ${clampedY}), Velocity: (${currentVX}, ${currentVY})`);
+      
+      // Send final message with terminate flag
+      sendMouseData(true);
+      
+      // Visual feedback
+      gameRect.style.borderColor = 'lime';
+      setTimeout(() => {
+        gameRect.style.borderColor = 'red';
+      }, 100);
+    });
+
+    function sendMouseData(terminate = false) {
+      if (ws && ws.readyState === WebSocket.OPEN) {
+        const data = {
+          type: 'mouse_event',
+          x: lastX,
+          y: lastY,
+          vx: currentVX,
+          vy: currentVY,
+          terminate: terminate,
+          timestamp: Date.now()
+        };
+        
+        ws.send(JSON.stringify(data));
+        if (terminate) {
+          console.log('[Sent to bot] Final:', data);
+        }
+      }
+    }
+
+    function sendContinuousLoop() {
+      if (isDragging) {
+        sendMouseData(false);
+        // ~30 Hz like demo_event.py (33ms)
+        setTimeout(sendContinuousLoop, 33);
+      } else {
+        sendLoopRunning = false;
+      }
+    }
+
+    connectWS();
+    requestAnimationFrame(updateTimer);
+  </script>
+</body>
+</html>

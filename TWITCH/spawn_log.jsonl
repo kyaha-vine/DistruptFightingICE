@@ -1,0 +1,831 @@
+{"type": "spawn_item", "round_id": 2, "item_key": "fire", "emoji": "🔥", "label": "Power Core", "chosen_user": "whoiyourcarly", "slot": "left", "ts": 1764994190.9345212}
+{"type": "spawn_item", "round_id": 2, "item_key": "freeze", "emoji": "🧊", "label": "Freeze Orb", "chosen_user": "whoiyourcarly", "slot": "middle", "ts": 1764995971.5655801}
+{"type": "spawn_item", "round_id": 6, "item_key": "freeze", "emoji": "🧊", "label": "Freeze Orb", "chosen_user": "whoiyourcarly", "slot": "right", "ts": 1765006815.9908617}
+{"type": "spawn_item", "round_id": 8, "item_key": "chaos", "emoji": "🎭", "label": "Chaos Mask", "chosen_user": "leader_0000_00", "slot": "right", "ts": 1765006889.6744356}
+{"type": "spawn_item", "round_id": 9, "item_key": "shield", "emoji": "🧱", "label": "Shield Stone", "chosen_user": "whoiyourcarly", "slot": "right", "ts": 1765006924.6053672}
+{"type": "spawn_item", "round_id": 11, "item_key": "wind", "emoji": "💨", "label": "Wind Boots", "chosen_user": "whoiyourcarly", "slot": "middle", "ts": 1765006991.2795186}
+{"type": "spawn_item", "round_id": 12, "item_key": "fire", "emoji": "🔥", "label": "Power Core", "chosen_user": "leader_0000_00", "slot": "middle", "ts": 1765007027.376698}
+{"type": "spawn_item", "round_id": 1, "item_key": "freeze", "emoji": "🧊", "label": "Freeze Orb", "chosen_user": "thienduongkhacbot", "slot": "right", "ts": 1765188837.0413344}
+{"type": "spawn_item", "round_id": 1, "item_key": "freeze", "emoji": "🧊", "label": "Freeze Orb", "chosen_user": "thienduongkhacbot", "slot": "right", "ts": 1765189552.7841237}
+{"type": "mouse_click", "x": 220, "y": 259, "button": "LEFT", "timestamp": 1765190351129, "ts": 1765190351.1303113}
+{"type": "mouse_click", "x": 111, "y": 119, "button": "LEFT", "timestamp": 1765190356439, "ts": 1765190356.4394395}
+{"type": "mouse_click", "x": 188, "y": 167, "button": "LEFT", "timestamp": 1765190358236, "ts": 1765190358.2364125}
+{"type": "mouse_click", "x": 393, "y": 221, "button": "LEFT", "timestamp": 1765190359812, "ts": 1765190359.8130534}
+{"type": "mouse_click", "x": 475, "y": 243, "button": "LEFT", "timestamp": 1765190361341, "ts": 1765190361.3416512}
+{"type": "mouse_click", "x": 428, "y": 232, "button": "LEFT", "timestamp": 1765190362938, "ts": 1765190362.939007}
+{"type": "mouse_click", "x": 448, "y": 265, "button": "LEFT", "timestamp": 1765190364487, "ts": 1765190364.4887116}
+{"type": "mouse_click", "x": 446, "y": 259, "button": "LEFT", "timestamp": 1765190366071, "ts": 1765190366.072322}
+{"type": "mouse_click", "x": 408, "y": 297, "button": "LEFT", "timestamp": 1765190367641, "ts": 1765190367.6423342}
+{"type": "mouse_click", "x": 625, "y": 329, "button": "LEFT", "timestamp": 1765190369444, "ts": 1765190369.4449549}
+{"type": "mouse_click", "x": 715, "y": 256, "button": "LEFT", "timestamp": 1765190370953, "ts": 1765190370.9540446}
+{"type": "mouse_click", "x": 423, "y": 202, "button": "LEFT", "timestamp": 1765190372433, "ts": 1765190372.4341524}
+{"type": "mouse_click", "x": 348, "y": 229, "button": "LEFT", "timestamp": 1765190373983, "ts": 1765190373.984869}
+{"type": "mouse_click", "x": 395, "y": 244, "button": "LEFT", "timestamp": 1765190375490, "ts": 1765190375.4913917}
+{"type": "mouse_click", "x": 748, "y": 229, "button": "LEFT", "timestamp": 1765190377005, "ts": 1765190377.006163}
+{"type": "mouse_click", "x": 316, "y": 321, "button": "LEFT", "timestamp": 1765190412750, "ts": 1765190412.7512481}
+{"type": "mouse_click", "x": 354, "y": 321, "button": "LEFT", "timestamp": 1765190413687, "ts": 1765190413.6875691}
+{"type": "mouse_click", "x": 327, "y": 327, "button": "LEFT", "timestamp": 1765190414713, "ts": 1765190414.7142496}
+{"type": "mouse_click", "x": 305, "y": 344, "button": "LEFT", "timestamp": 1765190415745, "ts": 1765190415.7465315}
+{"type": "mouse_click", "x": 354, "y": 292, "button": "LEFT", "timestamp": 1765190545860, "ts": 1765190545.8605118}
+{"type": "mouse_click", "x": 358, "y": 285, "button": "LEFT", "timestamp": 1765190547286, "ts": 1765190547.2865877}
+{"type": "mouse_click", "x": 383, "y": 249, "button": "LEFT", "timestamp": 1765190548469, "ts": 1765190548.47064}
+{"type": "mouse_click", "x": 517, "y": 219, "button": "LEFT", "timestamp": 1765190549751, "ts": 1765190549.7522895}
+{"type": "mouse_click", "x": 439, "y": 229, "button": "LEFT", "timestamp": 1765190550797, "ts": 1765190550.7981071}
+{"type": "mouse_click", "x": 441, "y": 222, "button": "LEFT", "timestamp": 1765190551843, "ts": 1765190551.843819}
+{"type": "mouse_click", "x": 450, "y": 206, "button": "LEFT", "timestamp": 1765190552580, "ts": 1765190552.5809736}
+{"type": "mouse_click", "x": 680, "y": 296, "button": "LEFT", "timestamp": 1765190559863, "ts": 1765190559.8640115}
+{"type": "mouse_event", "x": 675, "y": 160, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191684.3751428}
+{"type": "mouse_event", "x": 675, "y": 160, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191684.407817}
+{"type": "mouse_event", "x": 676, "y": 160, "vx": 1, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191684.4411988}
+{"type": "mouse_event", "x": 676, "y": 160, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191684.4743695}
+{"type": "mouse_event", "x": 676, "y": 160, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191684.5076196}
+{"type": "mouse_event", "x": 663, "y": 163, "vx": -3, "vy": 1, "terminate": false, "sent_to_game": false, "ts": 1765191684.5410664}
+{"type": "mouse_event", "x": 634, "y": 173, "vx": -3, "vy": 2, "terminate": false, "sent_to_game": false, "ts": 1765191684.5743515}
+{"type": "mouse_event", "x": 598, "y": 189, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191684.6072295}
+{"type": "mouse_event", "x": 536, "y": 220, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191684.6404715}
+{"type": "mouse_event", "x": 484, "y": 247, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191684.6742985}
+{"type": "mouse_event", "x": 442, "y": 271, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191684.708872}
+{"type": "mouse_event", "x": 414, "y": 287, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191684.7419815}
+{"type": "mouse_event", "x": 403, "y": 293, "vx": -3, "vy": 3, "terminate": true, "sent_to_game": false, "ts": 1765191684.7564542}
+{"type": "mouse_event", "x": 608, "y": 144, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191685.5623767}
+{"type": "mouse_event", "x": 608, "y": 144, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191685.5949833}
+{"type": "mouse_event", "x": 608, "y": 144, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191685.6282256}
+{"type": "mouse_event", "x": 608, "y": 144, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191685.6613336}
+{"type": "mouse_event", "x": 608, "y": 144, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191685.695276}
+{"type": "mouse_event", "x": 598, "y": 147, "vx": -3, "vy": 1, "terminate": false, "sent_to_game": false, "ts": 1765191685.7296717}
+{"type": "mouse_event", "x": 562, "y": 161, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191685.7647388}
+{"type": "mouse_event", "x": 527, "y": 176, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191685.7978802}
+{"type": "mouse_event", "x": 482, "y": 199, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191685.830716}
+{"type": "mouse_event", "x": 439, "y": 222, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191685.8637764}
+{"type": "mouse_event", "x": 404, "y": 243, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191685.8971262}
+{"type": "mouse_event", "x": 373, "y": 260, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191685.9307833}
+{"type": "mouse_event", "x": 354, "y": 272, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191685.9640758}
+{"type": "mouse_event", "x": 336, "y": 283, "vx": -3, "vy": 2, "terminate": false, "sent_to_game": false, "ts": 1765191685.9969387}
+{"type": "mouse_event", "x": 324, "y": 289, "vx": -2, "vy": 1, "terminate": false, "sent_to_game": false, "ts": 1765191686.0304165}
+{"type": "mouse_event", "x": 319, "y": 292, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191686.0635529}
+{"type": "mouse_event", "x": 318, "y": 293, "vx": 0, "vy": 1, "terminate": true, "sent_to_game": false, "ts": 1765191686.084748}
+{"type": "mouse_event", "x": 585, "y": 136, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191686.6903076}
+{"type": "mouse_event", "x": 585, "y": 136, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191686.7234466}
+{"type": "mouse_event", "x": 585, "y": 136, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191686.7567694}
+{"type": "mouse_event", "x": 585, "y": 136, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191686.7900107}
+{"type": "mouse_event", "x": 582, "y": 137, "vx": -3, "vy": 1, "terminate": false, "sent_to_game": false, "ts": 1765191686.823265}
+{"type": "mouse_event", "x": 559, "y": 146, "vx": -3, "vy": 2, "terminate": false, "sent_to_game": false, "ts": 1765191686.8564577}
+{"type": "mouse_event", "x": 527, "y": 161, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191686.8896608}
+{"type": "mouse_event", "x": 488, "y": 184, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191686.9246376}
+{"type": "mouse_event", "x": 448, "y": 211, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191686.958796}
+{"type": "mouse_event", "x": 418, "y": 233, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191686.991997}
+{"type": "mouse_event", "x": 387, "y": 256, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191687.0248759}
+{"type": "mouse_event", "x": 363, "y": 274, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191687.0581532}
+{"type": "mouse_event", "x": 344, "y": 288, "vx": -2, "vy": 1, "terminate": false, "sent_to_game": false, "ts": 1765191687.0913038}
+{"type": "mouse_event", "x": 338, "y": 293, "vx": -1, "vy": 1, "terminate": true, "sent_to_game": false, "ts": 1765191687.124453}
+{"type": "mouse_event", "x": 593, "y": 122, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191687.814336}
+{"type": "mouse_event", "x": 593, "y": 122, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191687.847417}
+{"type": "mouse_event", "x": 593, "y": 122, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191687.8808975}
+{"type": "mouse_event", "x": 593, "y": 122, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191687.9139514}
+{"type": "mouse_event", "x": 572, "y": 129, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191687.947017}
+{"type": "mouse_event", "x": 521, "y": 154, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191687.9806051}
+{"type": "mouse_event", "x": 476, "y": 180, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191688.0149498}
+{"type": "mouse_event", "x": 433, "y": 208, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191688.0485554}
+{"type": "mouse_event", "x": 388, "y": 237, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191688.081618}
+{"type": "mouse_event", "x": 352, "y": 260, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191688.114038}
+{"type": "mouse_event", "x": 327, "y": 277, "vx": -3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191688.1481333}
+{"type": "mouse_event", "x": 316, "y": 286, "vx": -2, "vy": 2, "terminate": true, "item": "fire", "sent_to_game": true, "ts": 1765191688.1775246}
+{"type": "mouse_event", "x": 556, "y": 142, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191689.3623543}
+{"type": "mouse_event", "x": 556, "y": 142, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191689.3949292}
+{"type": "mouse_event", "x": 556, "y": 142, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191689.42867}
+{"type": "mouse_event", "x": 556, "y": 142, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191689.4621851}
+{"type": "mouse_event", "x": 556, "y": 142, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191689.4953556}
+{"type": "mouse_event", "x": 535, "y": 150, "vx": -3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191689.5282948}
+{"type": "mouse_event", "x": 500, "y": 166, "vx": -3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191689.562256}
+{"type": "mouse_event", "x": 447, "y": 196, "vx": -3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191689.5947487}
+{"type": "mouse_event", "x": 400, "y": 228, "vx": -3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191689.6281433}
+{"type": "mouse_event", "x": 365, "y": 254, "vx": -3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191689.6610014}
+{"type": "mouse_event", "x": 354, "y": 263, "vx": -3, "vy": 3, "terminate": true, "item": "fire", "sent_to_game": true, "ts": 1765191689.6792293}
+{"type": "mouse_event", "x": 332, "y": 226, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191690.396404}
+{"type": "mouse_event", "x": 332, "y": 226, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191690.430679}
+{"type": "mouse_event", "x": 321, "y": 222, "vx": -3, "vy": -1, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191690.4629536}
+{"type": "mouse_event", "x": 320, "y": 221, "vx": -1, "vy": -1, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191690.4968853}
+{"type": "mouse_event", "x": 331, "y": 223, "vx": 3, "vy": 1, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191690.5303185}
+{"type": "mouse_event", "x": 362, "y": 232, "vx": 3, "vy": 2, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191690.5634284}
+{"type": "mouse_event", "x": 398, "y": 243, "vx": 3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191690.5984223}
+{"type": "mouse_event", "x": 451, "y": 260, "vx": 3, "vy": 3, "terminate": true, "item": "fire", "sent_to_game": true, "ts": 1765191690.6291578}
+{"type": "mouse_event", "x": 327, "y": 167, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191691.5581582}
+{"type": "mouse_event", "x": 327, "y": 167, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191691.5920737}
+{"type": "mouse_event", "x": 327, "y": 167, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191691.6250682}
+{"type": "mouse_event", "x": 327, "y": 167, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191691.659525}
+{"type": "mouse_event", "x": 327, "y": 167, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191691.6924946}
+{"type": "mouse_event", "x": 364, "y": 183, "vx": 3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191691.7252479}
+{"type": "mouse_event", "x": 413, "y": 208, "vx": 3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191691.760444}
+{"type": "mouse_event", "x": 424, "y": 213, "vx": 3, "vy": 3, "terminate": true, "item": "fire", "sent_to_game": true, "ts": 1765191691.7727435}
+{"type": "mouse_event", "x": 590, "y": 217, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191692.536335}
+{"type": "mouse_event", "x": 590, "y": 217, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191692.5698586}
+{"type": "mouse_event", "x": 590, "y": 217, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191692.6031206}
+{"type": "mouse_event", "x": 590, "y": 217, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191692.637136}
+{"type": "mouse_event", "x": 583, "y": 221, "vx": -3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191692.6696491}
+{"type": "mouse_event", "x": 553, "y": 236, "vx": -3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191692.7029004}
+{"type": "mouse_event", "x": 514, "y": 258, "vx": -3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191692.7363808}
+{"type": "mouse_event", "x": 485, "y": 275, "vx": -3, "vy": 3, "terminate": true, "item": "fire", "sent_to_game": true, "ts": 1765191692.7499568}
+{"type": "mouse_event", "x": 535, "y": 238, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191693.328061}
+{"type": "mouse_event", "x": 535, "y": 238, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191693.3612764}
+{"type": "mouse_event", "x": 543, "y": 234, "vx": 1, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191693.3947942}
+{"type": "mouse_event", "x": 543, "y": 234, "vx": 1, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191693.4274375}
+{"type": "mouse_event", "x": 527, "y": 238, "vx": -3, "vy": 1, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191693.4610085}
+{"type": "mouse_event", "x": 495, "y": 249, "vx": -3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191693.4942427}
+{"type": "mouse_event", "x": 422, "y": 277, "vx": -3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191693.52751}
+{"type": "mouse_event", "x": 383, "y": 292, "vx": -3, "vy": 3, "terminate": true, "item": "fire", "sent_to_game": true, "ts": 1765191693.5536559}
+{"type": "mouse_event", "x": 531, "y": 217, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191694.189115}
+{"type": "mouse_event", "x": 531, "y": 217, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191694.222237}
+{"type": "mouse_event", "x": 541, "y": 213, "vx": 3, "vy": -2, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191694.2553196}
+{"type": "mouse_event", "x": 544, "y": 212, "vx": 3, "vy": -1, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191694.2893012}
+{"type": "mouse_event", "x": 529, "y": 219, "vx": -3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191694.322779}
+{"type": "mouse_event", "x": 489, "y": 238, "vx": -3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191694.355689}
+{"type": "mouse_event", "x": 421, "y": 273, "vx": -3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191694.3888876}
+{"type": "mouse_event", "x": 390, "y": 291, "vx": -3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191694.4217927}
+{"type": "mouse_event", "x": 312, "y": 331, "vx": -3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191694.4550912}
+{"type": "mouse_event", "x": 282, "y": 347, "vx": -3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191694.4890828}
+{"type": "mouse_event", "x": 276, "y": 350, "vx": -3, "vy": 3, "terminate": true, "item": "fire", "sent_to_game": true, "ts": 1765191694.4937253}
+{"type": "mouse_event", "x": 243, "y": 259, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191695.1116757}
+{"type": "mouse_event", "x": 243, "y": 259, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191695.1463556}
+{"type": "mouse_event", "x": 243, "y": 259, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191695.1787376}
+{"type": "mouse_event", "x": 247, "y": 258, "vx": 3, "vy": -1, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191695.2120757}
+{"type": "mouse_event", "x": 283, "y": 267, "vx": 3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191695.245323}
+{"type": "mouse_event", "x": 328, "y": 282, "vx": 3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191695.278766}
+{"type": "mouse_event", "x": 376, "y": 298, "vx": 3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191695.3118138}
+{"type": "mouse_event", "x": 418, "y": 313, "vx": 3, "vy": 3, "terminate": true, "item": "fire", "sent_to_game": true, "ts": 1765191695.3377848}
+{"type": "mouse_event", "x": 230, "y": 239, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191696.1698997}
+{"type": "mouse_event", "x": 230, "y": 239, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191696.2045913}
+{"type": "mouse_event", "x": 230, "y": 239, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191696.2363484}
+{"type": "mouse_event", "x": 230, "y": 239, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191696.269992}
+{"type": "mouse_event", "x": 243, "y": 241, "vx": 3, "vy": 2, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191696.3037176}
+{"type": "mouse_event", "x": 297, "y": 249, "vx": 3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191696.3372686}
+{"type": "mouse_event", "x": 363, "y": 259, "vx": 3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191696.3711462}
+{"type": "mouse_event", "x": 418, "y": 267, "vx": 3, "vy": 3, "terminate": true, "item": "fire", "sent_to_game": true, "ts": 1765191696.3904214}
+{"type": "mouse_event", "x": 274, "y": 233, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191697.3202648}
+{"type": "mouse_event", "x": 274, "y": 233, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191697.3540316}
+{"type": "mouse_event", "x": 262, "y": 231, "vx": -2, "vy": -1, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191697.387291}
+{"type": "mouse_event", "x": 259, "y": 230, "vx": -1, "vy": -1, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191697.42182}
+{"type": "mouse_event", "x": 268, "y": 226, "vx": 3, "vy": -3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191697.454958}
+{"type": "mouse_event", "x": 319, "y": 217, "vx": 3, "vy": -3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191697.4880164}
+{"type": "mouse_event", "x": 381, "y": 209, "vx": 3, "vy": -3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191697.5219438}
+{"type": "mouse_event", "x": 478, "y": 207, "vx": 3, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191697.5557554}
+{"type": "mouse_event", "x": 545, "y": 213, "vx": 3, "vy": 2, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191697.5877998}
+{"type": "mouse_event", "x": 612, "y": 231, "vx": 3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191697.6248362}
+{"type": "mouse_event", "x": 646, "y": 244, "vx": 3, "vy": 2, "terminate": true, "item": "fire", "sent_to_game": true, "ts": 1765191697.6576407}
+{"type": "mouse_event", "x": 673, "y": 255, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191698.317308}
+{"type": "mouse_event", "x": 673, "y": 255, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191698.3512821}
+{"type": "mouse_event", "x": 673, "y": 255, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191698.3850565}
+{"type": "mouse_event", "x": 673, "y": 255, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191698.4188457}
+{"type": "mouse_event", "x": 644, "y": 264, "vx": -3, "vy": 2, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191698.4522555}
+{"type": "mouse_event", "x": 601, "y": 282, "vx": -3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191698.4845972}
+{"type": "mouse_event", "x": 544, "y": 311, "vx": -3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191698.5178576}
+{"type": "mouse_event", "x": 501, "y": 332, "vx": -3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191698.5510023}
+{"type": "mouse_event", "x": 448, "y": 354, "vx": -3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191698.584033}
+{"type": "mouse_event", "x": 415, "y": 365, "vx": -3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191698.6174655}
+{"type": "mouse_event", "x": 407, "y": 367, "vx": -3, "vy": 2, "terminate": true, "item": "fire", "sent_to_game": true, "ts": 1765191698.6206338}
+{"type": "mouse_event", "x": 422, "y": 334, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191699.2069273}
+{"type": "mouse_event", "x": 446, "y": 318, "vx": 3, "vy": -3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191699.243608}
+{"type": "mouse_event", "x": 475, "y": 300, "vx": 3, "vy": -3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191699.2778866}
+{"type": "mouse_event", "x": 514, "y": 276, "vx": 3, "vy": -3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191699.310239}
+{"type": "mouse_event", "x": 528, "y": 267, "vx": 3, "vy": -2, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191699.3440378}
+{"type": "mouse_event", "x": 539, "y": 260, "vx": 1, "vy": -1, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191699.3777242}
+{"type": "mouse_event", "x": 547, "y": 256, "vx": 1, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191699.4106176}
+{"type": "mouse_event", "x": 551, "y": 253, "vx": 1, "vy": -1, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191699.4441118}
+{"type": "mouse_event", "x": 555, "y": 251, "vx": 0, "vy": -1, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191699.4806428}
+{"type": "mouse_event", "x": 558, "y": 250, "vx": 1, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191699.5130033}
+{"type": "mouse_event", "x": 560, "y": 249, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191699.5457788}
+{"type": "mouse_event", "x": 563, "y": 247, "vx": 1, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191699.5833037}
+{"type": "mouse_event", "x": 564, "y": 246, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191699.6166115}
+{"type": "mouse_event", "x": 565, "y": 246, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191699.650023}
+{"type": "mouse_event", "x": 565, "y": 246, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191699.6830618}
+{"type": "mouse_event", "x": 566, "y": 246, "vx": 1, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191699.7160184}
+{"type": "mouse_event", "x": 566, "y": 246, "vx": 1, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191699.750741}
+{"type": "mouse_event", "x": 566, "y": 246, "vx": 1, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191699.784725}
+{"type": "mouse_event", "x": 566, "y": 246, "vx": 1, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191699.8185132}
+{"type": "mouse_event", "x": 566, "y": 246, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191699.851635}
+{"type": "mouse_event", "x": 566, "y": 245, "vx": 0, "vy": -1, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191699.885005}
+{"type": "mouse_event", "x": 566, "y": 245, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191699.9175725}
+{"type": "mouse_event", "x": 566, "y": 245, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191699.951165}
+{"type": "mouse_event", "x": 566, "y": 245, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191699.9839523}
+{"type": "mouse_event", "x": 566, "y": 245, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191700.0177708}
+{"type": "mouse_event", "x": 566, "y": 245, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191700.0506856}
+{"type": "mouse_event", "x": 566, "y": 245, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191700.0839348}
+{"type": "mouse_event", "x": 566, "y": 245, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191700.1175966}
+{"type": "mouse_event", "x": 566, "y": 245, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191700.1500888}
+{"type": "mouse_event", "x": 566, "y": 245, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191700.183445}
+{"type": "mouse_event", "x": 566, "y": 245, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191700.2175598}
+{"type": "mouse_event", "x": 566, "y": 245, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191700.251065}
+{"type": "mouse_event", "x": 566, "y": 245, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191700.2834194}
+{"type": "mouse_event", "x": 566, "y": 245, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191700.3170042}
+{"type": "mouse_event", "x": 566, "y": 245, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191700.3503668}
+{"type": "mouse_event", "x": 566, "y": 245, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191700.3847008}
+{"type": "mouse_event", "x": 566, "y": 245, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191700.4181588}
+{"type": "mouse_event", "x": 566, "y": 245, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191700.4514074}
+{"type": "mouse_event", "x": 566, "y": 245, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191700.483555}
+{"type": "mouse_event", "x": 566, "y": 245, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191700.5173488}
+{"type": "mouse_event", "x": 566, "y": 245, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191700.550655}
+{"type": "mouse_event", "x": 564, "y": 245, "vx": -2, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191700.5848198}
+{"type": "mouse_event", "x": 538, "y": 254, "vx": -3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191700.6186447}
+{"type": "mouse_event", "x": 471, "y": 280, "vx": -3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191700.652327}
+{"type": "mouse_event", "x": 397, "y": 308, "vx": -3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191700.6848228}
+{"type": "mouse_event", "x": 318, "y": 342, "vx": -3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191700.718526}
+{"type": "mouse_event", "x": 286, "y": 357, "vx": -3, "vy": 2, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191700.751779}
+{"type": "mouse_event", "x": 286, "y": 357, "vx": -3, "vy": 2, "terminate": true, "item": "fire", "sent_to_game": true, "ts": 1765191700.7548091}
+{"type": "mouse_event", "x": 318, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191701.7222116}
+{"type": "mouse_event", "x": 318, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191701.7551923}
+{"type": "mouse_event", "x": 316, "y": 242, "vx": -2, "vy": -1, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191701.7877371}
+{"type": "mouse_event", "x": 314, "y": 242, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191701.8211486}
+{"type": "mouse_event", "x": 312, "y": 242, "vx": -1, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191701.8556812}
+{"type": "mouse_event", "x": 312, "y": 242, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191701.8885307}
+{"type": "mouse_event", "x": 312, "y": 242, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191701.9211426}
+{"type": "mouse_event", "x": 312, "y": 242, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191701.954874}
+{"type": "mouse_event", "x": 312, "y": 242, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191701.990214}
+{"type": "mouse_event", "x": 312, "y": 242, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191702.0231361}
+{"type": "mouse_event", "x": 312, "y": 242, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191702.0568895}
+{"type": "mouse_event", "x": 312, "y": 242, "vx": 0, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191702.0901542}
+{"type": "mouse_event", "x": 311, "y": 242, "vx": -1, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191702.1233582}
+{"type": "mouse_event", "x": 311, "y": 242, "vx": -1, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191702.1565347}
+{"type": "mouse_event", "x": 311, "y": 242, "vx": -1, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191702.1898541}
+{"type": "mouse_event", "x": 311, "y": 242, "vx": -1, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191702.2234735}
+{"type": "mouse_event", "x": 311, "y": 242, "vx": -1, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191702.2562578}
+{"type": "mouse_event", "x": 311, "y": 242, "vx": -1, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191702.2895708}
+{"type": "mouse_event", "x": 311, "y": 242, "vx": -1, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191702.3231602}
+{"type": "mouse_event", "x": 311, "y": 242, "vx": -1, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191702.355981}
+{"type": "mouse_event", "x": 311, "y": 242, "vx": -1, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191702.3895948}
+{"type": "mouse_event", "x": 311, "y": 242, "vx": -1, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191702.4238138}
+{"type": "mouse_event", "x": 311, "y": 242, "vx": -1, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191702.4567173}
+{"type": "mouse_event", "x": 311, "y": 242, "vx": -1, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191702.489919}
+{"type": "mouse_event", "x": 311, "y": 242, "vx": -1, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191702.5238872}
+{"type": "mouse_event", "x": 311, "y": 242, "vx": -1, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191702.5563936}
+{"type": "mouse_event", "x": 311, "y": 242, "vx": -1, "vy": 0, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191702.5908384}
+{"type": "mouse_event", "x": 321, "y": 246, "vx": 3, "vy": 2, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191702.6226356}
+{"type": "mouse_event", "x": 363, "y": 262, "vx": 3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191702.6559842}
+{"type": "mouse_event", "x": 495, "y": 312, "vx": 3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191702.6888916}
+{"type": "mouse_event", "x": 599, "y": 353, "vx": 3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191702.7221494}
+{"type": "mouse_event", "x": 666, "y": 381, "vx": 3, "vy": 3, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191702.7571726}
+{"type": "mouse_event", "x": 690, "y": 394, "vx": 3, "vy": 2, "terminate": false, "item": "fire", "sent_to_game": true, "ts": 1765191702.7908714}
+{"type": "mouse_event", "x": 693, "y": 396, "vx": 3, "vy": 2, "terminate": true, "item": "fire", "sent_to_game": true, "ts": 1765191702.8202305}
+{"type": "mouse_event", "x": 346, "y": 272, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191704.7738197}
+{"type": "mouse_event", "x": 346, "y": 272, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191704.8072839}
+{"type": "mouse_event", "x": 343, "y": 271, "vx": -2, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191704.8419206}
+{"type": "mouse_event", "x": 337, "y": 267, "vx": -2, "vy": -1, "terminate": false, "sent_to_game": false, "ts": 1765191704.8760653}
+{"type": "mouse_event", "x": 334, "y": 264, "vx": -1, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191704.91026}
+{"type": "mouse_event", "x": 334, "y": 262, "vx": 0, "vy": -1, "terminate": false, "sent_to_game": false, "ts": 1765191704.9430294}
+{"type": "mouse_event", "x": 335, "y": 258, "vx": 2, "vy": -3, "terminate": false, "sent_to_game": false, "ts": 1765191704.9760199}
+{"type": "mouse_event", "x": 349, "y": 255, "vx": 3, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191705.0090525}
+{"type": "mouse_event", "x": 371, "y": 255, "vx": 3, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191705.0421314}
+{"type": "mouse_event", "x": 401, "y": 258, "vx": 3, "vy": 1, "terminate": false, "sent_to_game": false, "ts": 1765191705.0762036}
+{"type": "mouse_event", "x": 428, "y": 264, "vx": 3, "vy": 1, "terminate": false, "sent_to_game": false, "ts": 1765191705.1099129}
+{"type": "mouse_event", "x": 479, "y": 278, "vx": 3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191705.1428692}
+{"type": "mouse_event", "x": 535, "y": 296, "vx": 3, "vy": 3, "terminate": true, "sent_to_game": false, "ts": 1765191705.1687155}
+{"type": "mouse_event", "x": 124, "y": 222, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191706.2547104}
+{"type": "mouse_event", "x": 124, "y": 222, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191706.2877998}
+{"type": "mouse_event", "x": 124, "y": 222, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191706.3211143}
+{"type": "mouse_event", "x": 124, "y": 222, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191706.3543534}
+{"type": "mouse_event", "x": 124, "y": 222, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191706.3876672}
+{"type": "mouse_event", "x": 124, "y": 222, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191706.4208655}
+{"type": "mouse_event", "x": 137, "y": 225, "vx": 3, "vy": 2, "terminate": false, "sent_to_game": false, "ts": 1765191706.4540052}
+{"type": "mouse_event", "x": 194, "y": 239, "vx": 3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191706.4871154}
+{"type": "mouse_event", "x": 258, "y": 255, "vx": 3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191706.5206873}
+{"type": "mouse_event", "x": 308, "y": 272, "vx": 3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191706.5540037}
+{"type": "mouse_event", "x": 334, "y": 282, "vx": 3, "vy": 3, "terminate": true, "sent_to_game": false, "ts": 1765191706.5633342}
+{"type": "mouse_event", "x": 400, "y": 317, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191715.1699688}
+{"type": "mouse_event", "x": 400, "y": 317, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191715.2034552}
+{"type": "mouse_event", "x": 400, "y": 317, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191715.2373538}
+{"type": "mouse_event", "x": 400, "y": 317, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191715.2707894}
+{"type": "mouse_event", "x": 400, "y": 317, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191715.304018}
+{"type": "mouse_event", "x": 387, "y": 318, "vx": -3, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191715.3370442}
+{"type": "mouse_event", "x": 358, "y": 322, "vx": -3, "vy": 2, "terminate": false, "sent_to_game": false, "ts": 1765191715.3702993}
+{"type": "mouse_event", "x": 320, "y": 326, "vx": -3, "vy": 1, "terminate": false, "sent_to_game": false, "ts": 1765191715.4034326}
+{"type": "mouse_event", "x": 279, "y": 330, "vx": -3, "vy": 1, "terminate": false, "sent_to_game": false, "ts": 1765191715.436486}
+{"type": "mouse_event", "x": 250, "y": 333, "vx": -3, "vy": 1, "terminate": false, "sent_to_game": false, "ts": 1765191715.4699802}
+{"type": "mouse_event", "x": 242, "y": 334, "vx": -3, "vy": 1, "terminate": true, "sent_to_game": false, "ts": 1765191715.4728284}
+{"type": "mouse_event", "x": 472, "y": 273, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191715.9547584}
+{"type": "mouse_event", "x": 477, "y": 272, "vx": 3, "vy": -1, "terminate": false, "sent_to_game": false, "ts": 1765191715.9878972}
+{"type": "mouse_event", "x": 488, "y": 269, "vx": 2, "vy": -1, "terminate": false, "sent_to_game": false, "ts": 1765191716.021632}
+{"type": "mouse_event", "x": 489, "y": 269, "vx": 1, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191716.0548966}
+{"type": "mouse_event", "x": 479, "y": 268, "vx": -3, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191716.0884705}
+{"type": "mouse_event", "x": 444, "y": 268, "vx": -3, "vy": 1, "terminate": false, "sent_to_game": false, "ts": 1765191716.1211822}
+{"type": "mouse_event", "x": 387, "y": 277, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191716.1545587}
+{"type": "mouse_event", "x": 335, "y": 288, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191716.188134}
+{"type": "mouse_event", "x": 271, "y": 304, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191716.2216647}
+{"type": "mouse_event", "x": 240, "y": 312, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191716.255227}
+{"type": "mouse_event", "x": 209, "y": 321, "vx": -3, "vy": 2, "terminate": false, "sent_to_game": false, "ts": 1765191716.2880356}
+{"type": "mouse_event", "x": 192, "y": 326, "vx": -3, "vy": 1, "terminate": false, "sent_to_game": false, "ts": 1765191716.3221142}
+{"type": "mouse_event", "x": 187, "y": 328, "vx": -1, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191716.3552253}
+{"type": "mouse_event", "x": 185, "y": 328, "vx": -1, "vy": 0, "terminate": true, "sent_to_game": false, "ts": 1765191716.3882773}
+{"type": "mouse_event", "x": 448, "y": 272, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191716.9326806}
+{"type": "mouse_event", "x": 448, "y": 272, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191716.9663897}
+{"type": "mouse_event", "x": 448, "y": 272, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191716.9996438}
+{"type": "mouse_event", "x": 448, "y": 272, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191717.0332057}
+{"type": "mouse_event", "x": 442, "y": 273, "vx": -3, "vy": 1, "terminate": false, "sent_to_game": false, "ts": 1765191717.0661433}
+{"type": "mouse_event", "x": 405, "y": 278, "vx": -3, "vy": 2, "terminate": false, "sent_to_game": false, "ts": 1765191717.0993176}
+{"type": "mouse_event", "x": 351, "y": 289, "vx": -3, "vy": 2, "terminate": false, "sent_to_game": false, "ts": 1765191717.132876}
+{"type": "mouse_event", "x": 290, "y": 303, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191717.166669}
+{"type": "mouse_event", "x": 250, "y": 312, "vx": -3, "vy": 1, "terminate": false, "sent_to_game": false, "ts": 1765191717.2014387}
+{"type": "mouse_event", "x": 231, "y": 317, "vx": -3, "vy": 2, "terminate": true, "sent_to_game": false, "ts": 1765191717.2224154}
+{"type": "mouse_event", "x": 468, "y": 242, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191717.647952}
+{"type": "mouse_event", "x": 468, "y": 242, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191717.6812646}
+{"type": "mouse_event", "x": 468, "y": 242, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191717.7144911}
+{"type": "mouse_event", "x": 468, "y": 242, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191717.7475965}
+{"type": "mouse_event", "x": 462, "y": 242, "vx": -3, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191717.7805648}
+{"type": "mouse_event", "x": 428, "y": 249, "vx": -3, "vy": 2, "terminate": false, "sent_to_game": false, "ts": 1765191717.813717}
+{"type": "mouse_event", "x": 378, "y": 265, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191717.8468459}
+{"type": "mouse_event", "x": 370, "y": 268, "vx": -3, "vy": 3, "terminate": true, "sent_to_game": false, "ts": 1765191717.8544967}
+{"type": "mouse_event", "x": 450, "y": 222, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191718.322853}
+{"type": "mouse_event", "x": 450, "y": 222, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191718.3560236}
+{"type": "mouse_event", "x": 450, "y": 222, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191718.3892686}
+{"type": "mouse_event", "x": 431, "y": 229, "vx": -3, "vy": 2, "terminate": false, "sent_to_game": false, "ts": 1765191718.4227183}
+{"type": "mouse_event", "x": 371, "y": 255, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191718.455441}
+{"type": "mouse_event", "x": 302, "y": 291, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191718.4885964}
+{"type": "mouse_event", "x": 233, "y": 336, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191718.5219135}
+{"type": "mouse_event", "x": 203, "y": 359, "vx": -3, "vy": 3, "terminate": true, "sent_to_game": false, "ts": 1765191718.5429165}
+{"type": "mouse_event", "x": 631, "y": 141, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191757.6259985}
+{"type": "mouse_event", "x": 631, "y": 141, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191757.6587694}
+{"type": "mouse_event", "x": 631, "y": 141, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191757.6926413}
+{"type": "mouse_event", "x": 631, "y": 141, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191757.7263906}
+{"type": "mouse_event", "x": 631, "y": 141, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191757.7593935}
+{"type": "mouse_event", "x": 631, "y": 141, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191757.7924316}
+{"type": "mouse_event", "x": 590, "y": 167, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191757.8258238}
+{"type": "mouse_event", "x": 547, "y": 196, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191757.8595653}
+{"type": "mouse_event", "x": 516, "y": 217, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191757.8930318}
+{"type": "mouse_event", "x": 481, "y": 241, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191757.9260075}
+{"type": "mouse_event", "x": 445, "y": 266, "vx": -3, "vy": 2, "terminate": false, "sent_to_game": false, "ts": 1765191757.9591997}
+{"type": "mouse_event", "x": 428, "y": 279, "vx": -2, "vy": 2, "terminate": false, "sent_to_game": false, "ts": 1765191757.9923892}
+{"type": "mouse_event", "x": 419, "y": 286, "vx": -1, "vy": 1, "terminate": false, "sent_to_game": false, "ts": 1765191758.0258346}
+{"type": "mouse_event", "x": 418, "y": 287, "vx": -1, "vy": 1, "terminate": true, "sent_to_game": false, "ts": 1765191758.0371847}
+{"type": "mouse_event", "x": 586, "y": 148, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191758.8282926}
+{"type": "mouse_event", "x": 586, "y": 148, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191758.8623004}
+{"type": "mouse_event", "x": 586, "y": 148, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191758.8950987}
+{"type": "mouse_event", "x": 586, "y": 148, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191758.9281673}
+{"type": "mouse_event", "x": 567, "y": 158, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191758.961637}
+{"type": "mouse_event", "x": 524, "y": 183, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191758.9944532}
+{"type": "mouse_event", "x": 475, "y": 213, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191759.0278935}
+{"type": "mouse_event", "x": 433, "y": 241, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191759.0618327}
+{"type": "mouse_event", "x": 401, "y": 263, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191759.095879}
+{"type": "mouse_event", "x": 390, "y": 269, "vx": -3, "vy": 3, "terminate": true, "sent_to_game": false, "ts": 1765191759.112646}
+{"type": "mouse_event", "x": 602, "y": 120, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191759.7779257}
+{"type": "mouse_event", "x": 602, "y": 120, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191759.8115013}
+{"type": "mouse_event", "x": 602, "y": 120, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191759.8449678}
+{"type": "mouse_event", "x": 602, "y": 120, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191759.878816}
+{"type": "mouse_event", "x": 602, "y": 120, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191759.911031}
+{"type": "mouse_event", "x": 565, "y": 138, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191759.9447815}
+{"type": "mouse_event", "x": 519, "y": 164, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191759.9778519}
+{"type": "mouse_event", "x": 470, "y": 194, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191760.012147}
+{"type": "mouse_event", "x": 462, "y": 200, "vx": -3, "vy": 3, "terminate": true, "sent_to_game": false, "ts": 1765191760.0200748}
+{"type": "mouse_event", "x": 572, "y": 122, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191780.113525}
+{"type": "mouse_event", "x": 572, "y": 122, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191780.1467166}
+{"type": "mouse_event", "x": 572, "y": 122, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191780.1804168}
+{"type": "mouse_event", "x": 572, "y": 122, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191780.213287}
+{"type": "mouse_event", "x": 572, "y": 122, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191780.2466297}
+{"type": "mouse_event", "x": 572, "y": 122, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191780.2800567}
+{"type": "mouse_event", "x": 550, "y": 133, "vx": -3, "vy": 3, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191780.3129866}
+{"type": "mouse_event", "x": 512, "y": 153, "vx": -3, "vy": 3, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191780.3461545}
+{"type": "mouse_event", "x": 484, "y": 167, "vx": -3, "vy": 3, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191780.3797367}
+{"type": "mouse_event", "x": 448, "y": 186, "vx": -3, "vy": 3, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191780.4135935}
+{"type": "mouse_event", "x": 426, "y": 200, "vx": -3, "vy": 3, "terminate": true, "item": "freeze", "sent_to_game": true, "ts": 1765191780.4432602}
+{"type": "mouse_event", "x": 412, "y": 195, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191781.311011}
+{"type": "mouse_event", "x": 412, "y": 195, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191781.345627}
+{"type": "mouse_event", "x": 402, "y": 196, "vx": -1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191781.3795602}
+{"type": "mouse_event", "x": 398, "y": 196, "vx": -1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191781.4131527}
+{"type": "mouse_event", "x": 398, "y": 196, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191781.4464183}
+{"type": "mouse_event", "x": 414, "y": 195, "vx": 3, "vy": -1, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191781.4792836}
+{"type": "mouse_event", "x": 449, "y": 188, "vx": 3, "vy": -2, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191781.5124147}
+{"type": "mouse_event", "x": 488, "y": 178, "vx": 3, "vy": -3, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191781.547694}
+{"type": "mouse_event", "x": 522, "y": 169, "vx": 3, "vy": -1, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191781.5810206}
+{"type": "mouse_event", "x": 545, "y": 162, "vx": 3, "vy": -3, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191781.6142895}
+{"type": "mouse_event", "x": 556, "y": 159, "vx": 3, "vy": -2, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191781.6474397}
+{"type": "mouse_event", "x": 570, "y": 153, "vx": 1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191781.6806517}
+{"type": "mouse_event", "x": 576, "y": 150, "vx": 1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191781.7134554}
+{"type": "mouse_event", "x": 578, "y": 149, "vx": 1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191781.7471094}
+{"type": "mouse_event", "x": 578, "y": 149, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191781.780494}
+{"type": "mouse_event", "x": 578, "y": 149, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191781.8134391}
+{"type": "mouse_event", "x": 578, "y": 149, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191781.8466003}
+{"type": "mouse_event", "x": 578, "y": 149, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191781.8801384}
+{"type": "mouse_event", "x": 578, "y": 149, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191781.9128401}
+{"type": "mouse_event", "x": 578, "y": 149, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191781.947003}
+{"type": "mouse_event", "x": 568, "y": 153, "vx": -3, "vy": 1, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191781.9795377}
+{"type": "mouse_event", "x": 547, "y": 159, "vx": -3, "vy": 2, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191782.0127609}
+{"type": "mouse_event", "x": 528, "y": 163, "vx": -3, "vy": 1, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191782.0459795}
+{"type": "mouse_event", "x": 504, "y": 165, "vx": -3, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191782.079247}
+{"type": "mouse_event", "x": 481, "y": 166, "vx": -3, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191782.1121783}
+{"type": "mouse_event", "x": 461, "y": 166, "vx": -3, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191782.1453083}
+{"type": "mouse_event", "x": 443, "y": 165, "vx": -3, "vy": -1, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191782.1789079}
+{"type": "mouse_event", "x": 428, "y": 164, "vx": -3, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191782.2130933}
+{"type": "mouse_event", "x": 414, "y": 163, "vx": -3, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191782.2500367}
+{"type": "mouse_event", "x": 401, "y": 161, "vx": -3, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191782.282806}
+{"type": "mouse_event", "x": 387, "y": 159, "vx": -3, "vy": -1, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191782.3176954}
+{"type": "mouse_event", "x": 373, "y": 157, "vx": -3, "vy": -1, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191782.3526852}
+{"type": "mouse_event", "x": 358, "y": 156, "vx": -3, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191782.387412}
+{"type": "mouse_event", "x": 346, "y": 155, "vx": -1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191782.422733}
+{"type": "mouse_event", "x": 339, "y": 155, "vx": -1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191782.4563084}
+{"type": "mouse_event", "x": 337, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191782.492134}
+{"type": "mouse_event", "x": 336, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191782.524991}
+{"type": "mouse_event", "x": 339, "y": 157, "vx": 3, "vy": 2, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191782.558232}
+{"type": "mouse_event", "x": 379, "y": 176, "vx": 3, "vy": 3, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191782.5913997}
+{"type": "mouse_event", "x": 414, "y": 194, "vx": 3, "vy": 3, "terminate": true, "item": "freeze", "sent_to_game": true, "ts": 1765191782.611877}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191783.7416072}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191783.7761817}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191783.809935}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191783.8430262}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191783.876516}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191783.9093401}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191783.9424944}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191783.97557}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191784.0087168}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191784.0419595}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191784.075011}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191784.108355}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191784.1428542}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191784.1763315}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191784.209028}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191784.2425556}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191784.2760386}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191784.309238}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191784.342727}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191784.3755276}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191784.4090939}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191784.4421105}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191784.4751897}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191784.5086942}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191784.5421011}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191784.5752482}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191784.608847}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191784.6422021}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191784.674964}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191784.7082705}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191784.7413247}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191784.7746844}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191784.8076854}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191784.841138}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191784.874495}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191784.9078407}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191784.9418619}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191784.974758}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191785.008208}
+{"type": "mouse_event", "x": 319, "y": 155, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191785.0411835}
+{"type": "mouse_event", "x": 361, "y": 174, "vx": 3, "vy": 3, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191785.074266}
+{"type": "mouse_event", "x": 447, "y": 215, "vx": 3, "vy": 3, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191785.1090188}
+{"type": "mouse_event", "x": 447, "y": 215, "vx": 3, "vy": 3, "terminate": true, "item": "freeze", "sent_to_game": true, "ts": 1765191785.1105533}
+{"type": "mouse_event", "x": 200, "y": 235, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191786.92343}
+{"type": "mouse_event", "x": 200, "y": 235, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191786.9570243}
+{"type": "mouse_event", "x": 200, "y": 235, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191786.9901712}
+{"type": "mouse_event", "x": 200, "y": 235, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191787.0251403}
+{"type": "mouse_event", "x": 200, "y": 235, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191787.0586405}
+{"type": "mouse_event", "x": 200, "y": 235, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191787.0919676}
+{"type": "mouse_event", "x": 200, "y": 235, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191787.1247883}
+{"type": "mouse_event", "x": 203, "y": 235, "vx": 3, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191787.1608346}
+{"type": "mouse_event", "x": 217, "y": 238, "vx": 2, "vy": 1, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191787.2071207}
+{"type": "mouse_event", "x": 222, "y": 239, "vx": 1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191787.2394655}
+{"type": "mouse_event", "x": 225, "y": 239, "vx": 1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191787.2758303}
+{"type": "mouse_event", "x": 226, "y": 239, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191787.3058887}
+{"type": "mouse_event", "x": 227, "y": 239, "vx": 1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191787.3390312}
+{"type": "mouse_event", "x": 227, "y": 239, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191787.3720546}
+{"type": "mouse_event", "x": 227, "y": 239, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191787.405566}
+{"type": "mouse_event", "x": 227, "y": 239, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191787.4384727}
+{"type": "mouse_event", "x": 227, "y": 239, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191787.471954}
+{"type": "mouse_event", "x": 227, "y": 239, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191787.5049567}
+{"type": "mouse_event", "x": 228, "y": 240, "vx": 0, "vy": 1, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191787.5386589}
+{"type": "mouse_event", "x": 231, "y": 240, "vx": 2, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191787.5722322}
+{"type": "mouse_event", "x": 234, "y": 241, "vx": 1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191787.6051817}
+{"type": "mouse_event", "x": 236, "y": 242, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191787.6399488}
+{"type": "mouse_event", "x": 237, "y": 243, "vx": 0, "vy": 1, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191787.6737413}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191787.7061386}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191787.739534}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191787.772643}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191787.8054938}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191787.839424}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191787.8721375}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191787.906399}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191787.9399693}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191787.972888}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191788.0073364}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191788.0399346}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191788.0733492}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191788.1068568}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191788.140157}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191788.1731699}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191788.2065327}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191788.2402093}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191788.273887}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191788.3069868}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191788.3400018}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191788.3728955}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191788.405954}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191788.4392333}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191788.4723186}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191788.5056992}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191788.5391622}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191788.572174}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191788.6059825}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191788.6384523}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191788.6718795}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191788.7050426}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191788.73916}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191788.771298}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191788.8050191}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191788.838226}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191788.8717775}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191788.905594}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191788.938077}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191788.9714615}
+{"type": "mouse_event", "x": 238, "y": 243, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191789.0044906}
+{"type": "mouse_event", "x": 240, "y": 244, "vx": 1, "vy": 1, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191789.038706}
+{"type": "mouse_event", "x": 297, "y": 264, "vx": 3, "vy": 3, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191789.0722306}
+{"type": "mouse_event", "x": 400, "y": 292, "vx": 3, "vy": 3, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191789.1048858}
+{"type": "mouse_event", "x": 452, "y": 305, "vx": 3, "vy": 3, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191789.138078}
+{"type": "mouse_event", "x": 475, "y": 312, "vx": 3, "vy": 3, "terminate": true, "item": "freeze", "sent_to_game": true, "ts": 1765191789.1552744}
+{"type": "mouse_event", "x": 340, "y": 255, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191790.6139753}
+{"type": "mouse_event", "x": 340, "y": 255, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191790.6470845}
+{"type": "mouse_event", "x": 328, "y": 256, "vx": -2, "vy": 1, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191790.6803284}
+{"type": "mouse_event", "x": 324, "y": 256, "vx": -1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191790.7135296}
+{"type": "mouse_event", "x": 324, "y": 256, "vx": -1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191790.7479892}
+{"type": "mouse_event", "x": 335, "y": 256, "vx": 3, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191790.7824008}
+{"type": "mouse_event", "x": 358, "y": 258, "vx": 3, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191790.8177588}
+{"type": "mouse_event", "x": 381, "y": 261, "vx": 3, "vy": 2, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191790.853405}
+{"type": "mouse_event", "x": 399, "y": 263, "vx": 2, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191790.8883772}
+{"type": "mouse_event", "x": 406, "y": 264, "vx": 1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191790.921144}
+{"type": "mouse_event", "x": 409, "y": 265, "vx": 1, "vy": 1, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191790.9558938}
+{"type": "mouse_event", "x": 410, "y": 265, "vx": 1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191790.9894142}
+{"type": "mouse_event", "x": 410, "y": 265, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191791.0226219}
+{"type": "mouse_event", "x": 410, "y": 265, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191791.0558722}
+{"type": "mouse_event", "x": 410, "y": 265, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191791.0889227}
+{"type": "mouse_event", "x": 410, "y": 265, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191791.1224298}
+{"type": "mouse_event", "x": 409, "y": 265, "vx": -1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191791.1571999}
+{"type": "mouse_event", "x": 404, "y": 265, "vx": -2, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191791.190329}
+{"type": "mouse_event", "x": 398, "y": 265, "vx": -1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191791.2236989}
+{"type": "mouse_event", "x": 391, "y": 265, "vx": -1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191791.256861}
+{"type": "mouse_event", "x": 384, "y": 265, "vx": -2, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191791.289976}
+{"type": "mouse_event", "x": 379, "y": 264, "vx": -1, "vy": -1, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191791.323263}
+{"type": "mouse_event", "x": 376, "y": 264, "vx": -1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191791.3562362}
+{"type": "mouse_event", "x": 375, "y": 264, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191791.38961}
+{"type": "mouse_event", "x": 374, "y": 264, "vx": -1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191791.4229214}
+{"type": "mouse_event", "x": 374, "y": 264, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191791.456318}
+{"type": "mouse_event", "x": 374, "y": 264, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191791.4893944}
+{"type": "mouse_event", "x": 373, "y": 264, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191791.5233696}
+{"type": "mouse_event", "x": 373, "y": 264, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191791.5556765}
+{"type": "mouse_event", "x": 373, "y": 264, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191791.589639}
+{"type": "mouse_event", "x": 373, "y": 264, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191791.625066}
+{"type": "mouse_event", "x": 373, "y": 264, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191791.658474}
+{"type": "mouse_event", "x": 372, "y": 264, "vx": -1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191791.691956}
+{"type": "mouse_event", "x": 372, "y": 264, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191791.7256808}
+{"type": "mouse_event", "x": 372, "y": 264, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191791.7594612}
+{"type": "mouse_event", "x": 372, "y": 264, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191791.7925916}
+{"type": "mouse_event", "x": 372, "y": 264, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191791.825915}
+{"type": "mouse_event", "x": 372, "y": 264, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191791.8591683}
+{"type": "mouse_event", "x": 371, "y": 264, "vx": -1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191791.8920832}
+{"type": "mouse_event", "x": 371, "y": 264, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191791.9257932}
+{"type": "mouse_event", "x": 371, "y": 264, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191791.9586747}
+{"type": "mouse_event", "x": 371, "y": 264, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191791.9918857}
+{"type": "mouse_event", "x": 371, "y": 264, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191792.0250764}
+{"type": "mouse_event", "x": 371, "y": 264, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191792.0580945}
+{"type": "mouse_event", "x": 370, "y": 264, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191792.0912013}
+{"type": "mouse_event", "x": 370, "y": 264, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191792.1247861}
+{"type": "mouse_event", "x": 370, "y": 264, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191792.158041}
+{"type": "mouse_event", "x": 370, "y": 264, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191792.1914155}
+{"type": "mouse_event", "x": 370, "y": 264, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191792.2243583}
+{"type": "mouse_event", "x": 370, "y": 264, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191792.2578707}
+{"type": "mouse_event", "x": 370, "y": 264, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191792.291157}
+{"type": "mouse_event", "x": 370, "y": 264, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191792.3239088}
+{"type": "mouse_event", "x": 370, "y": 264, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191792.3578913}
+{"type": "mouse_event", "x": 370, "y": 264, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191792.391049}
+{"type": "mouse_event", "x": 370, "y": 264, "vx": 0, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191792.4239895}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191792.4572372}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191792.490864}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191792.5243516}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191792.5573375}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191792.5904162}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191792.6236475}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191792.656871}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191792.6903262}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191792.7235758}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191792.7564652}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191792.7903557}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191792.8232875}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191792.8566504}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191792.8896005}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191792.9226444}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191792.9559486}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191792.989676}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191793.0222983}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191793.0556712}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191793.088778}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191793.12205}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "item": "freeze", "sent_to_game": true, "ts": 1765191793.1551187}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191793.1878195}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191793.2213564}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191793.2547994}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191793.2890146}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191793.3222806}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191793.3564258}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191793.3907037}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191793.42366}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191793.4569795}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191793.4901326}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191793.5243301}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191793.5580676}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191793.5907674}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191793.623747}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191793.6569915}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191793.6907165}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191793.7241204}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191793.757196}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191793.790447}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191793.8236647}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191793.8575344}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191793.8911178}
+{"type": "mouse_event", "x": 369, "y": 264, "vx": -1, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191793.9252539}
+{"type": "mouse_event", "x": 382, "y": 261, "vx": 3, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191793.957499}
+{"type": "mouse_event", "x": 406, "y": 260, "vx": 3, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191793.990456}
+{"type": "mouse_event", "x": 424, "y": 260, "vx": 3, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191794.023492}
+{"type": "mouse_event", "x": 438, "y": 260, "vx": 2, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191794.0569046}
+{"type": "mouse_event", "x": 446, "y": 260, "vx": 1, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191794.0900083}
+{"type": "mouse_event", "x": 451, "y": 261, "vx": 1, "vy": 1, "terminate": false, "sent_to_game": false, "ts": 1765191794.122986}
+{"type": "mouse_event", "x": 453, "y": 261, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191794.1566722}
+{"type": "mouse_event", "x": 454, "y": 261, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191794.189792}
+{"type": "mouse_event", "x": 455, "y": 261, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191794.2233295}
+{"type": "mouse_event", "x": 455, "y": 261, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191794.2562494}
+{"type": "mouse_event", "x": 455, "y": 261, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191794.2893596}
+{"type": "mouse_event", "x": 455, "y": 261, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191794.322501}
+{"type": "mouse_event", "x": 455, "y": 261, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191794.355585}
+{"type": "mouse_event", "x": 455, "y": 261, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191794.3886282}
+{"type": "mouse_event", "x": 455, "y": 261, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191794.4218013}
+{"type": "mouse_event", "x": 456, "y": 261, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191794.4558945}
+{"type": "mouse_event", "x": 460, "y": 261, "vx": 1, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191794.4906743}
+{"type": "mouse_event", "x": 468, "y": 262, "vx": 2, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191794.5250776}
+{"type": "mouse_event", "x": 482, "y": 264, "vx": 3, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191794.559284}
+{"type": "mouse_event", "x": 493, "y": 265, "vx": 3, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191794.5926292}
+{"type": "mouse_event", "x": 501, "y": 267, "vx": 1, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191794.625747}
+{"type": "mouse_event", "x": 505, "y": 267, "vx": 1, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191794.6588454}
+{"type": "mouse_event", "x": 508, "y": 267, "vx": 1, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191794.6921756}
+{"type": "mouse_event", "x": 509, "y": 268, "vx": 1, "vy": 1, "terminate": true, "sent_to_game": false, "ts": 1765191794.708964}
+{"type": "mouse_event", "x": 385, "y": 278, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191794.998605}
+{"type": "mouse_event", "x": 385, "y": 278, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191795.0314822}
+{"type": "mouse_event", "x": 385, "y": 278, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191795.06639}
+{"type": "mouse_event", "x": 385, "y": 278, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191795.1006515}
+{"type": "mouse_event", "x": 385, "y": 278, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191795.133673}
+{"type": "mouse_event", "x": 385, "y": 278, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191795.166452}
+{"type": "mouse_event", "x": 385, "y": 278, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191795.1997507}
+{"type": "mouse_event", "x": 385, "y": 278, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191795.2333417}
+{"type": "mouse_event", "x": 402, "y": 278, "vx": 3, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191795.267929}
+{"type": "mouse_event", "x": 439, "y": 278, "vx": 3, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191795.301022}
+{"type": "mouse_event", "x": 463, "y": 279, "vx": 3, "vy": 1, "terminate": false, "sent_to_game": false, "ts": 1765191795.3349698}
+{"type": "mouse_event", "x": 483, "y": 281, "vx": 3, "vy": 1, "terminate": false, "sent_to_game": false, "ts": 1765191795.3680108}
+{"type": "mouse_event", "x": 501, "y": 284, "vx": 3, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191795.4013245}
+{"type": "mouse_event", "x": 511, "y": 286, "vx": 3, "vy": 1, "terminate": false, "sent_to_game": false, "ts": 1765191795.4340906}
+{"type": "mouse_event", "x": 531, "y": 292, "vx": 3, "vy": 2, "terminate": false, "sent_to_game": false, "ts": 1765191795.4676027}
+{"type": "mouse_event", "x": 547, "y": 297, "vx": 3, "vy": 2, "terminate": false, "sent_to_game": false, "ts": 1765191795.5023315}
+{"type": "mouse_event", "x": 559, "y": 302, "vx": 2, "vy": 1, "terminate": false, "sent_to_game": false, "ts": 1765191795.5360584}
+{"type": "mouse_event", "x": 565, "y": 303, "vx": 1, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191795.569252}
+{"type": "mouse_event", "x": 566, "y": 303, "vx": 1, "vy": 0, "terminate": true, "sent_to_game": false, "ts": 1765191795.57736}
+{"type": "mouse_event", "x": 428, "y": 293, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191797.0284655}
+{"type": "mouse_event", "x": 418, "y": 290, "vx": -3, "vy": -1, "terminate": false, "sent_to_game": false, "ts": 1765191797.0616455}
+{"type": "mouse_event", "x": 400, "y": 285, "vx": -3, "vy": -1, "terminate": false, "sent_to_game": false, "ts": 1765191797.0950327}
+{"type": "mouse_event", "x": 389, "y": 281, "vx": -1, "vy": -1, "terminate": false, "sent_to_game": false, "ts": 1765191797.128049}
+{"type": "mouse_event", "x": 386, "y": 279, "vx": 0, "vy": -1, "terminate": false, "sent_to_game": false, "ts": 1765191797.1612535}
+{"type": "mouse_event", "x": 386, "y": 279, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191797.1942954}
+{"type": "mouse_event", "x": 394, "y": 279, "vx": 3, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191797.2274587}
+{"type": "mouse_event", "x": 419, "y": 285, "vx": 3, "vy": 2, "terminate": false, "sent_to_game": false, "ts": 1765191797.2608113}
+{"type": "mouse_event", "x": 457, "y": 296, "vx": 3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191797.2942438}
+{"type": "mouse_event", "x": 491, "y": 310, "vx": 3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191797.327644}
+{"type": "mouse_event", "x": 531, "y": 329, "vx": 3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191797.360469}
+{"type": "mouse_event", "x": 566, "y": 348, "vx": 3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191797.3936925}
+{"type": "mouse_event", "x": 592, "y": 363, "vx": 3, "vy": 2, "terminate": false, "sent_to_game": false, "ts": 1765191797.4269915}
+{"type": "mouse_event", "x": 607, "y": 373, "vx": 3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191797.4600694}
+{"type": "mouse_event", "x": 619, "y": 380, "vx": 2, "vy": 1, "terminate": true, "sent_to_game": false, "ts": 1765191797.491248}
+{"type": "mouse_event", "x": 615, "y": 180, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191821.1915843}
+{"type": "mouse_event", "x": 615, "y": 180, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191821.2245054}
+{"type": "mouse_event", "x": 615, "y": 180, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191821.2579448}
+{"type": "mouse_event", "x": 615, "y": 180, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191821.2910695}
+{"type": "mouse_event", "x": 615, "y": 180, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191821.324113}
+{"type": "mouse_event", "x": 605, "y": 183, "vx": -3, "vy": 2, "terminate": false, "sent_to_game": false, "ts": 1765191821.3577724}
+{"type": "mouse_event", "x": 571, "y": 196, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191821.391448}
+{"type": "mouse_event", "x": 554, "y": 205, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191821.424971}
+{"type": "mouse_event", "x": 515, "y": 233, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191821.4576411}
+{"type": "mouse_event", "x": 485, "y": 255, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191821.4909902}
+{"type": "mouse_event", "x": 463, "y": 272, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191821.5241544}
+{"type": "mouse_event", "x": 451, "y": 282, "vx": -2, "vy": 2, "terminate": false, "sent_to_game": false, "ts": 1765191821.557598}
+{"type": "mouse_event", "x": 451, "y": 282, "vx": -2, "vy": 2, "terminate": true, "sent_to_game": false, "ts": 1765191821.5622334}
+{"type": "mouse_event", "x": 547, "y": 205, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191821.9481258}
+{"type": "mouse_event", "x": 547, "y": 205, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191821.9822433}
+{"type": "mouse_event", "x": 547, "y": 205, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191822.015213}
+{"type": "mouse_event", "x": 547, "y": 205, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191822.048263}
+{"type": "mouse_event", "x": 547, "y": 205, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191822.0813625}
+{"type": "mouse_event", "x": 543, "y": 206, "vx": -3, "vy": 1, "terminate": true, "sent_to_game": false, "ts": 1765191822.1133869}
+{"type": "mouse_event", "x": 521, "y": 221, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191822.3897448}
+{"type": "mouse_event", "x": 521, "y": 221, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191822.4228435}
+{"type": "mouse_event", "x": 521, "y": 221, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191822.4560044}
+{"type": "mouse_event", "x": 521, "y": 221, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191822.4891646}
+{"type": "mouse_event", "x": 521, "y": 221, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191822.5225728}
+{"type": "mouse_event", "x": 521, "y": 221, "vx": 0, "vy": 0, "terminate": true, "sent_to_game": false, "ts": 1765191822.5397346}
+{"type": "mouse_event", "x": 538, "y": 218, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191822.8371646}
+{"type": "mouse_event", "x": 549, "y": 216, "vx": 3, "vy": -1, "terminate": false, "sent_to_game": false, "ts": 1765191822.8706682}
+{"type": "mouse_event", "x": 571, "y": 213, "vx": 3, "vy": -1, "terminate": false, "sent_to_game": false, "ts": 1765191822.9046116}
+{"type": "mouse_event", "x": 594, "y": 209, "vx": 3, "vy": -1, "terminate": false, "sent_to_game": false, "ts": 1765191822.937069}
+{"type": "mouse_event", "x": 606, "y": 207, "vx": 2, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191822.9704704}
+{"type": "mouse_event", "x": 606, "y": 207, "vx": 2, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191823.0036075}
+{"type": "mouse_event", "x": 586, "y": 212, "vx": -3, "vy": 1, "terminate": false, "sent_to_game": false, "ts": 1765191823.0376534}
+{"type": "mouse_event", "x": 538, "y": 225, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191823.0719464}
+{"type": "mouse_event", "x": 483, "y": 241, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191823.105118}
+{"type": "mouse_event", "x": 406, "y": 265, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191823.137953}
+{"type": "mouse_event", "x": 379, "y": 273, "vx": -3, "vy": 3, "terminate": true, "sent_to_game": false, "ts": 1765191823.1525548}
+{"type": "mouse_event", "x": 606, "y": 152, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191823.7736075}
+{"type": "mouse_event", "x": 606, "y": 152, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191823.8066087}
+{"type": "mouse_event", "x": 606, "y": 152, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191823.8399029}
+{"type": "mouse_event", "x": 606, "y": 152, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191823.8731966}
+{"type": "mouse_event", "x": 606, "y": 152, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765191823.9065573}
+{"type": "mouse_event", "x": 594, "y": 157, "vx": -3, "vy": 2, "terminate": false, "sent_to_game": false, "ts": 1765191823.9413538}
+{"type": "mouse_event", "x": 558, "y": 174, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765191823.9753697}
+{"type": "mouse_event", "x": 549, "y": 178, "vx": -3, "vy": 3, "terminate": true, "sent_to_game": false, "ts": 1765191823.9858477}
+{"type": "mouse_event", "x": 641, "y": 100, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765193105.003285}
+{"type": "mouse_event", "x": 641, "y": 100, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765193105.0359666}
+{"type": "mouse_event", "x": 641, "y": 100, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765193105.0693088}
+{"type": "mouse_event", "x": 641, "y": 100, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765193105.1024654}
+{"type": "mouse_event", "x": 641, "y": 100, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765193105.1357458}
+{"type": "mouse_event", "x": 641, "y": 100, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765193105.1688118}
+{"type": "mouse_event", "x": 641, "y": 100, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765193105.2019377}
+{"type": "mouse_event", "x": 622, "y": 111, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765193105.2372236}
+{"type": "mouse_event", "x": 589, "y": 132, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765193105.272629}
+{"type": "mouse_event", "x": 555, "y": 154, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765193105.3059332}
+{"type": "mouse_event", "x": 526, "y": 175, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765193105.3400679}
+{"type": "mouse_event", "x": 507, "y": 188, "vx": -3, "vy": 3, "terminate": true, "sent_to_game": false, "ts": 1765193105.3643036}
+{"type": "mouse_event", "x": 555, "y": 226, "vx": 0, "vy": 0, "terminate": false, "item": "wind", "sent_to_game": true, "ts": 1765193117.4951699}
+{"type": "mouse_event", "x": 555, "y": 226, "vx": 0, "vy": 0, "terminate": false, "item": "wind", "sent_to_game": true, "ts": 1765193117.5286524}
+{"type": "mouse_event", "x": 555, "y": 226, "vx": 0, "vy": 0, "terminate": false, "item": "wind", "sent_to_game": true, "ts": 1765193117.561446}
+{"type": "mouse_event", "x": 555, "y": 226, "vx": 0, "vy": 0, "terminate": false, "item": "wind", "sent_to_game": true, "ts": 1765193117.5951943}
+{"type": "mouse_event", "x": 555, "y": 226, "vx": 0, "vy": 0, "terminate": false, "item": "wind", "sent_to_game": true, "ts": 1765193117.6279783}
+{"type": "mouse_event", "x": 526, "y": 240, "vx": -3, "vy": 3, "terminate": false, "item": "wind", "sent_to_game": true, "ts": 1765193117.661674}
+{"type": "mouse_event", "x": 479, "y": 267, "vx": -3, "vy": 3, "terminate": false, "item": "wind", "sent_to_game": true, "ts": 1765193117.6946988}
+{"type": "mouse_event", "x": 428, "y": 301, "vx": -3, "vy": 3, "terminate": false, "item": "wind", "sent_to_game": true, "ts": 1765193117.7299168}
+{"type": "mouse_event", "x": 428, "y": 301, "vx": -3, "vy": 3, "terminate": true, "item": "wind", "sent_to_game": true, "ts": 1765193117.7354076}
+{"type": "mouse_event", "x": 563, "y": 210, "vx": 0, "vy": 0, "terminate": false, "item": "wind", "sent_to_game": true, "ts": 1765193120.3525498}
+{"type": "mouse_event", "x": 563, "y": 210, "vx": 0, "vy": 0, "terminate": false, "item": "wind", "sent_to_game": true, "ts": 1765193120.3858275}
+{"type": "mouse_event", "x": 563, "y": 210, "vx": 0, "vy": 0, "terminate": false, "item": "wind", "sent_to_game": true, "ts": 1765193120.419431}
+{"type": "mouse_event", "x": 563, "y": 210, "vx": 0, "vy": 0, "terminate": false, "item": "wind", "sent_to_game": true, "ts": 1765193120.4519086}
+{"type": "mouse_event", "x": 563, "y": 210, "vx": 0, "vy": 0, "terminate": false, "item": "wind", "sent_to_game": true, "ts": 1765193120.4856687}
+{"type": "mouse_event", "x": 563, "y": 210, "vx": 0, "vy": 0, "terminate": false, "item": "wind", "sent_to_game": true, "ts": 1765193120.5188763}
+{"type": "mouse_event", "x": 538, "y": 221, "vx": -3, "vy": 3, "terminate": false, "item": "wind", "sent_to_game": true, "ts": 1765193120.551608}
+{"type": "mouse_event", "x": 519, "y": 230, "vx": -3, "vy": 3, "terminate": true, "item": "wind", "sent_to_game": true, "ts": 1765193120.5642266}
+{"type": "mouse_event", "x": 497, "y": 234, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765193123.201366}
+{"type": "mouse_event", "x": 497, "y": 234, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765193123.2339134}
+{"type": "mouse_event", "x": 497, "y": 234, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765193123.2670572}
+{"type": "mouse_event", "x": 484, "y": 240, "vx": -3, "vy": 2, "terminate": false, "sent_to_game": false, "ts": 1765193123.3005383}
+{"type": "mouse_event", "x": 451, "y": 256, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765193123.3367827}
+{"type": "mouse_event", "x": 414, "y": 275, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765193123.3699188}
+{"type": "mouse_event", "x": 382, "y": 293, "vx": -3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765193123.4029567}
+{"type": "mouse_event", "x": 374, "y": 297, "vx": -3, "vy": 2, "terminate": true, "sent_to_game": false, "ts": 1765193123.4200327}
+{"type": "mouse_event", "x": 708, "y": 78, "vx": 0, "vy": 0, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193153.0301325}
+{"type": "mouse_event", "x": 708, "y": 78, "vx": 0, "vy": 0, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193153.0633106}
+{"type": "mouse_event", "x": 708, "y": 78, "vx": 0, "vy": 0, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193153.096984}
+{"type": "mouse_event", "x": 708, "y": 78, "vx": 0, "vy": 0, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193153.1297593}
+{"type": "mouse_event", "x": 708, "y": 78, "vx": 0, "vy": 0, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193153.1628518}
+{"type": "mouse_event", "x": 708, "y": 78, "vx": 0, "vy": 0, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193153.1960168}
+{"type": "mouse_event", "x": 708, "y": 78, "vx": 0, "vy": 0, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193153.2292516}
+{"type": "mouse_event", "x": 708, "y": 78, "vx": 0, "vy": 0, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193153.262857}
+{"type": "mouse_event", "x": 688, "y": 90, "vx": -3, "vy": 3, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193153.295835}
+{"type": "mouse_event", "x": 648, "y": 112, "vx": -3, "vy": 3, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193153.3288333}
+{"type": "mouse_event", "x": 601, "y": 137, "vx": -3, "vy": 3, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193153.362145}
+{"type": "mouse_event", "x": 572, "y": 153, "vx": -3, "vy": 3, "terminate": true, "item": "shield", "sent_to_game": true, "ts": 1765193153.394617}
+{"type": "mouse_event", "x": 201, "y": 118, "vx": 0, "vy": 0, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193156.2309084}
+{"type": "mouse_event", "x": 201, "y": 118, "vx": 0, "vy": 0, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193156.2641013}
+{"type": "mouse_event", "x": 201, "y": 118, "vx": 0, "vy": 0, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193156.2978404}
+{"type": "mouse_event", "x": 201, "y": 118, "vx": 0, "vy": 0, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193156.3321087}
+{"type": "mouse_event", "x": 201, "y": 118, "vx": 0, "vy": 0, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193156.3642342}
+{"type": "mouse_event", "x": 201, "y": 118, "vx": 0, "vy": 0, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193156.397605}
+{"type": "mouse_event", "x": 201, "y": 118, "vx": 0, "vy": 0, "terminate": true, "item": "shield", "sent_to_game": true, "ts": 1765193156.4302573}
+{"type": "mouse_event", "x": 236, "y": 145, "vx": 0, "vy": 0, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193157.51108}
+{"type": "mouse_event", "x": 236, "y": 145, "vx": 0, "vy": 0, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193157.5442665}
+{"type": "mouse_event", "x": 236, "y": 145, "vx": 0, "vy": 0, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193157.5772562}
+{"type": "mouse_event", "x": 236, "y": 145, "vx": 0, "vy": 0, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193157.6106837}
+{"type": "mouse_event", "x": 236, "y": 145, "vx": 0, "vy": 0, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193157.6438642}
+{"type": "mouse_event", "x": 263, "y": 163, "vx": 3, "vy": 3, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193157.6768897}
+{"type": "mouse_event", "x": 311, "y": 196, "vx": 3, "vy": 3, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193157.7101147}
+{"type": "mouse_event", "x": 321, "y": 203, "vx": 3, "vy": 3, "terminate": true, "item": "shield", "sent_to_game": true, "ts": 1765193157.7195501}
+{"type": "mouse_event", "x": 595, "y": 267, "vx": 0, "vy": 0, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193160.2166176}
+{"type": "mouse_event", "x": 595, "y": 267, "vx": 0, "vy": 0, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193160.2496912}
+{"type": "mouse_event", "x": 595, "y": 267, "vx": 0, "vy": 0, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193160.2842479}
+{"type": "mouse_event", "x": 595, "y": 267, "vx": 0, "vy": 0, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193160.3166366}
+{"type": "mouse_event", "x": 595, "y": 267, "vx": 0, "vy": 0, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193160.3500059}
+{"type": "mouse_event", "x": 595, "y": 267, "vx": 0, "vy": 0, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193160.383855}
+{"type": "mouse_event", "x": 550, "y": 295, "vx": -3, "vy": 3, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193160.418018}
+{"type": "mouse_event", "x": 505, "y": 321, "vx": -3, "vy": 3, "terminate": true, "item": "shield", "sent_to_game": true, "ts": 1765193160.4524665}
+{"type": "mouse_event", "x": 667, "y": 210, "vx": 0, "vy": 0, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193162.694058}
+{"type": "mouse_event", "x": 667, "y": 210, "vx": 0, "vy": 0, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193162.7271423}
+{"type": "mouse_event", "x": 667, "y": 210, "vx": 0, "vy": 0, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193162.7602499}
+{"type": "mouse_event", "x": 667, "y": 210, "vx": 0, "vy": 0, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193162.7935674}
+{"type": "mouse_event", "x": 667, "y": 210, "vx": 0, "vy": 0, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193162.8269374}
+{"type": "mouse_event", "x": 658, "y": 214, "vx": -3, "vy": 3, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193162.8605633}
+{"type": "mouse_event", "x": 601, "y": 243, "vx": -3, "vy": 3, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193162.8936114}
+{"type": "mouse_event", "x": 569, "y": 259, "vx": -3, "vy": 3, "terminate": true, "item": "shield", "sent_to_game": true, "ts": 1765193162.9062684}
+{"type": "mouse_event", "x": 167, "y": 336, "vx": 0, "vy": 0, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193164.084349}
+{"type": "mouse_event", "x": 167, "y": 336, "vx": 0, "vy": 0, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193164.1198955}
+{"type": "mouse_event", "x": 151, "y": 335, "vx": -3, "vy": 0, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193164.1552901}
+{"type": "mouse_event", "x": 145, "y": 334, "vx": -2, "vy": -1, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193164.1882436}
+{"type": "mouse_event", "x": 146, "y": 334, "vx": 1, "vy": 0, "terminate": false, "item": "shield", "sent_to_game": true, "ts": 1765193164.221333}
+{"type": "mouse_event", "x": 156, "y": 335, "vx": 3, "vy": 1, "terminate": true, "item": "shield", "sent_to_game": true, "ts": 1765193164.2358902}
+{"type": "mouse_event", "x": 279, "y": 352, "vx": 0, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765193168.0070186}
+{"type": "mouse_event", "x": 276, "y": 351, "vx": -3, "vy": -1, "terminate": false, "sent_to_game": false, "ts": 1765193168.0411034}
+{"type": "mouse_event", "x": 262, "y": 350, "vx": -3, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765193168.0741653}
+{"type": "mouse_event", "x": 255, "y": 349, "vx": -1, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765193168.1071255}
+{"type": "mouse_event", "x": 261, "y": 349, "vx": 3, "vy": 0, "terminate": false, "sent_to_game": false, "ts": 1765193168.1404912}
+{"type": "mouse_event", "x": 290, "y": 354, "vx": 3, "vy": 3, "terminate": false, "sent_to_game": false, "ts": 1765193168.1738007}
+{"type": "mouse_event", "x": 344, "y": 362, "vx": 3, "vy": 2, "terminate": true, "sent_to_game": false, "ts": 1765193168.2002962}

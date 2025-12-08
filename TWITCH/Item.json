@@ -1,0 +1,42 @@
+{
+  "freeze_orb": {
+    "emoji": "🧊",
+    "name": "Freeze Orb",
+    "short_command": "freeze",
+    "description": "Brief snowstorm, slows movement",
+    "effect_type": "slow",
+    "color": [150, 220, 255]
+  },
+  "power_core": {
+    "emoji": "🔥",
+    "name": "Power Core",
+    "short_command": "fire",
+    "description": "Fire bursts / fireworks",
+    "effect_type": "damage_boost",
+    "color": [255, 80, 50]
+  },
+  "wind_boots": {
+    "emoji": "💨",
+    "name": "Wind Boots",
+    "short_command": "wind",
+    "description": "Strong gust pushes players",
+    "effect_type": "push",
+    "color": [200, 200, 255]
+  },
+  "shield_stone": {
+    "emoji": "🧱",
+    "name": "Shield Stone",
+    "short_command": "shield",
+    "description": "Falling stones create cover",
+    "effect_type": "shield",
+    "color": [160, 120, 90]
+  },
+  "chaos_mask": {
+    "emoji": "🎭",
+    "name": "Chaos Mask",
+    "short_command": "chaos",
+    "description": "Random status effects",
+    "effect_type": "random",
+    "color": [180, 80, 200]
+  }
+}
