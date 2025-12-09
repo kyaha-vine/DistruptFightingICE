@@ -12,7 +12,8 @@ import websockets
 
 # Import protobuf message
 import sys
-sys.path.insert(0, '/home/analys/fight_rw_jv/src_python')
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src_python')))
 try:
     import message_pb2
     HAS_PROTOBUF = True
@@ -94,7 +95,7 @@ def connect_game_socket():
         GAME_SOCKET = None
 
 
-def send_game_event(event_type: int, x: int, y: int, vx: int, vy: int, terminate: bool):
+def send_game_event(event_type: int, x: int, y: int, vx: int, vy: int, hx: int, hy: int, terminate: bool):
     """Send event to game server using protobuf"""
     global GAME_SOCKET, GAME_EVENT_ID
     
@@ -109,6 +110,8 @@ def send_game_event(event_type: int, x: int, y: int, vx: int, vy: int, terminate
         event.y = y
         event.vx = vx
         event.vy = vy
+        event.hx = hx
+        event.hy = hy
         event.time = 180
         event.terminate = terminate
         
@@ -463,7 +466,7 @@ async def ws_client_handler(websocket):
                         event_type = item_index if terminate else 0
                         
                         print(f"[GAME] Item pending: {item_key} (index={item_index}), sending to game...")
-                        send_game_event(event_type=event_type, x=x, y=y, vx=vx, vy=vy, terminate=terminate)
+                        send_game_event(event_type=event_type, x=x, y=y, vx=vx, vy=vy, hx=100 , hy=100, terminate=terminate)
                         
                         # Log event
                         log_event = {

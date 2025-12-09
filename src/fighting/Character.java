@@ -640,6 +640,15 @@ public class Character {
         }
     }
 
+    public void hitPrimitive( int damage , int impact , int direction) {
+        setHp(this.hp - damage );
+        setSpeedX(direction * impact);
+        setEnergy(this.energy + 20);
+        runAction(Action.CHANGE_DOWN, false);
+        setRemainingFrame(this.motionList.get(this.action.ordinal()).getFrameNumber());
+    }
+
+
     /**
      * 攻撃がヒットしたときの処理を行う．
      *

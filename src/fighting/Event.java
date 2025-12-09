@@ -90,6 +90,13 @@ public class Event {
         this.scale = scale;
     }
 
+    public int getHitX() {
+        return hitX;
+    }
+    public int getHitY() {
+        return hitY;
+    }
+
     public void initialize(int x, int y, int vx, int vy, int duration, int hitX, int hitY) {
         this.x = x;
         this.y = y;

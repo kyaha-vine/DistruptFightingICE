@@ -175,6 +175,26 @@ public class Fighting {
 				iterator.remove();
 			}
 		}
+
+		iterator = this.eventDeque.iterator();
+		while (iterator.hasNext()) {
+			Event event_EXCUTE = iterator.next();
+			EventHitPlayers(event_EXCUTE, iterator, currentFrame);
+		}
+	}
+
+	protected void EventHitPlayers(Event event, java.util.Iterator<Event> iterator, int currentFrame) {
+		for (int i = 0; i < 2; i++) {
+			if (event.getX() - event.getHitX() <= this.playerCharacters[i].getHitAreaRight()
+					&& event.getX() + event.getHitX() >= this.playerCharacters[i].getHitAreaLeft()
+					&& event.getY() - event.getHitY() <= this.playerCharacters[i].getHitAreaBottom()
+					&& event.getY() + event.getHitY() >= this.playerCharacters[i].getHitAreaTop()) {
+				System.out.println("Event ID=" + event.getEventId() + " hit Player " + (i+1));
+				this.playerCharacters[i].hitPrimitive( 50 , 5 , event.getVx() > 0 ? 1 : -1);	
+				iterator.remove();
+				break;
+			}
+		}
 	}
 
 	/**
