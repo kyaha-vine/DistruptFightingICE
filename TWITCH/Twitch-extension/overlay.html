@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Twitch Interactive Overlay</title>
+  <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
+  <style>
+    html, body {
+      margin: 0; padding: 0; background: transparent;
+      overflow: hidden; width: 100%; height: 100%;
+      font-family: system-ui, -apple-system, sans-serif;
+      color: white;
+      pointer-events: none; /* Pass clicks through to the video player */
+    }
+
+    /* Removed top-status */
+
+    #mouse-zone {
+      position: absolute; top: 0; left: 0;
+      width: 100%; height: 100%; 
+      border: 3px solid rgba(145, 70, 255, 0.3);
+      background: rgba(0, 0, 0, 0);
+      border-radius: 0; cursor: crosshair; 
+      pointer-events: none; /* Default to none, active class makes it auto */
+      box-sizing: border-box;
+    }
+    #mouse-zone.active { pointer-events: auto; border-color: #00ff6a; background: rgba(0, 255, 106, 0.05); }
+
+    /* Removed mouse-hud */
+
+    #winner-banner {
+      position: absolute; top: 20%; left: 50%; transform: translateX(-50%);
+      text-align: center; opacity: 0; transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      background: rgba(0,0,0,0); padding: 15px 30px; border-radius: 15px;
+      border: 2px solid #9146FF; z-index: 100; box-shadow: 0 0 40px rgba(0,0,0,0.8);
+      pointer-events: none; /* Always none so it never blocks clicks */
+    }
+    #winner-banner.show { opacity: 1; transform: translateX(-50%) scale(1.1); pointer-events: none; }
+    #winner-user { color: #00ff6a; font-size: 24px; font-weight: 900; display: block; }
+    #winner-item-text { font-size: 16px; color: #fff; margin-top: 5px; display: block; }
+
+    #root {
+      position: absolute; top: 50%; right: 0; transform: translateY(-50%);
+      width: 23.4375vw; padding: 0.52vw; border-radius: 0.78vw 0 0 0.78vw;
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-right: none;
+      pointer-events: auto; /* Allow voting */
+    }
+    #top-row { display: flex; justify-content: space-between; margin-bottom: 0.52vw; padding: 0 0.26vw; }
+    #title { font-size: 0.94vw; font-weight: 800; color: #9146FF; }
+    #timer { font-size: 0.83vw; font-weight: bold; color: #ffcc00; }
+
+    #items { display: flex; flex-direction: column; gap: 0.42vw; width: 100%; }
+    .item {
+      flex: 1;
+      display: flex; flex-direction: row; align-items: center; justify-content: space-between;
+      padding: 0.42vw 0.625vw; border-radius: 0.42vw; background: rgba(0, 0, 0, 0);
+      border: 1px solid rgba(255,255,255,0.05);
+      transition: border-color 0.2s, background-color 0.2s;
+      min-width: 0; /* Allow flex shrink */
+    }
+    .item.selected {
+      border: 2px solid #ff0000;
+      background: rgba(255, 0, 0, 0.15);
+    }
+    .item.locked {
+      border: 2px solid #00ff00;
+      background: rgba(0, 255, 0, 0.15);
+      box-shadow: 0 0 10px #00ff00;
+    }
+    /* Auto-scale fonts based on viewport but with reasonable limits */
+    .emoji { font-size: 1.25vw; line-height: 1.2; margin-right: 0.52vw; }
+    .label { font-size: 0.73vw; font-weight: bold; margin-top: 0; text-align: left; white-space: nowrap; flex-grow: 1; }
+    .votes { font-size: 0.73vw; color: #00ff6a; font-weight: bold; margin-top: 0; white-space: nowrap; }
+  </style>
+</head>
+<body>
+  <!-- Removed top-status -->
+
+  <div id="mouse-zone">
+    <!-- Removed mouse-hud -->
+  </div>
+
+  <div id="winner-banner">
+    <div id="winner-emoji" style="font-size: 40px;">🏆</div>
+    <span id="winner-user">@USER</span>
+    <span id="winner-item-text">Is placing ITEM</span>
+  </div>
+
+  <!-- Debug Box Removed -->
+
+  <div id="root">
+    <div id="top-row">
+      <div id="title">ACTIVE VOTE</div>
+      <div id="timer">TIME: --s</div>
+    </div>
+    <div id="items"></div>
+  </div>
+
+  <script src="./overlay.js"></script>
+</body>
+</html>
